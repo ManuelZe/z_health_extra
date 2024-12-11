@@ -3,14 +3,14 @@
 <data>
 
     <xpath
-        expr="/form/field[@name='number']"
+        expr="/form/group/field[@name='number']"
         position="after">
         <label name="bpc"/>
         <field name="bpc"/>
     </xpath>
 
     <xpath
-        expr="/form/field[@name='plan_id']"
+        expr="/form/group/field[@name='plan_id']"
         position="after">
         <label name="couverture"/>
         <field name="couverture"/>
