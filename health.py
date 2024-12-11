@@ -51,26 +51,6 @@ from trytond.i18n import gettext
 from trytond.pool import PoolMeta
 
 
-from .exceptions import (
-    WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
-    MedEndDateBeforeStart, NextDoseBeforeFirst, DrugPregnancySafetyCheck,
-    EvaluationEndBeforeStart, MustBeAPerson, NoAssociatedHealthProfessional,
-    DupOfficialName, FedAccountMismatch, BirthCertDateMismatch,
-    CanNotModifyVaccination
-    )
-
-from .core import (get_institution, compute_age_from_dates,
-                   get_health_professional)
-
-# ftp = ftplib.FTP('172.16.145.184')
-# ftp.login('iuc','iuc123456')
-try:
-    from PIL import Image
-except ImportError:
-    Image = None
-
-
-
 class Insurance(metaclass=PoolMeta):
     'Insurance'
     __name__ = 'gnuhealth.insurance'

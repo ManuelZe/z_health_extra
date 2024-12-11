@@ -3,6 +3,7 @@
 
 from trytond.pool import Pool
 from .import health_services
+from . import health
 
 __all__ = ['register']
 
@@ -10,6 +11,7 @@ __all__ = ['register']
 def register():
     Pool.register(
         health_services.HealthService,
+        health.Insurance,
         module='z_health_extra', type_='model')
     Pool.register(
         module='z_health_extra', type_='wizard')

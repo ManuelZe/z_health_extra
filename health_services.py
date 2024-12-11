@@ -29,10 +29,6 @@ from trytond.i18n import gettext
 from trytond.modules.health.core import get_institution
 from trytond.pool import PoolMeta
 
-from .exceptions import (
-    ServiceAlreadyInvoiced, NoServiceAssociated, NoProductAssociated,
-    )
-
 
 class HealthService(metaclass=PoolMeta):
     'Health Service'

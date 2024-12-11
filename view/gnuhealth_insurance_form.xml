@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<data>
+
+    <xpath
+        expr="/form/field[@name='number']"
+        position="after">
+        <label name="bpc"/>
+        <field name="bpc"/>
+    </xpath>
+
+    <xpath
+        expr="/form/field[@name='plan_id']"
+        position="after">
+        <label name="couverture"/>
+        <field name="couverture"/>
+        <label name="plafond"/>
+        <field name="plafond"/>
+    </xpath>
+
+    <xpath
+        expr="/form/field[@name='member_exp']"
+        position="after">
+        <label name="date_em"/>
+        <field name="date_em"/>
+        <label name="employeur"/>
+        <field name="employeur"/>
+        <label name="assureur"/>
+        <field name="assureur"/>
+    </xpath>
+
+</data>
