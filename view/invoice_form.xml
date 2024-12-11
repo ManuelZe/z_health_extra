@@ -2,8 +2,8 @@
 <data>
     <xpath expr="/form/notebook/page/group/group/group/field[@name=&quot;total_amount&quot;]" position="after">
         <newline/>
-        <label name="montant_assurance"/>
-        <field name="montant_patient"/>
-        <label name="dernier_versement"/>
+        <label name="part_assurance"/>
+        <field name="part_patient"/>
+        <label name="dernier_payement"/>
     </xpath>
 </data>
