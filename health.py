@@ -67,3 +67,6 @@ class Insurance(metaclass=PoolMeta):
         domain=[('is_insurance_company', '=', True)])
     
     date_em = fields.Date("Date d'émmission")
+
+    z_couverture = fields.Numeric("Couverture", digits=(3, 2), help="La couverture",
+                                  required=False)

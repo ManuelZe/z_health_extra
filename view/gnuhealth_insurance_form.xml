@@ -11,8 +11,8 @@
     <xpath
         expr="/form/group/field[@name='plan_id']"
         position="after">
-        <label name="couverture"/>
-        <field name="couverture"/>
+        <label name="z_couverture"/>
+        <field name="z_couverture"/>
         <label name="plafond"/>
         <field name="plafond"/>
     </xpath>
