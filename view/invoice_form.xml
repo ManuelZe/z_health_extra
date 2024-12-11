@@ -2,11 +2,8 @@
 <data>
     <xpath expr="/form/group/field[@name=&quot;total_amount&quot;]" position="after">
         <newline/>
-        <label name="part_as"/>
-        <field name="part_as"/>
-        <label name="part_clt"/>
-        <field name="part_clt"/>
-        <label name="dernier_v"/>
-        <field name="dernier_v"/>
+        <label name="montant_assurance"/>
+        <field name="montant_patient"/>
+        <label name="dernier_versement"/>
     </xpath>
 </data>
