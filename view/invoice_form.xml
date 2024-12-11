@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <data>
-    <xpath expr="/form/group/field[@name=&quot;total_amount&quot;]" position="after">
+    <xpath expr="/form/notebook/page/group/group/group/field[@name=&quot;total_amount&quot;]" position="after">
         <newline/>
         <label name="montant_assurance"/>
         <field name="montant_patient"/>
