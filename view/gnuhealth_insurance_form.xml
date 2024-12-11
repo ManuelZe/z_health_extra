@@ -18,7 +18,7 @@
     </xpath>
 
     <xpath
-        expr="/form/group/field[@name='member_exp']"
+        expr="/form/field[@name='member_exp']"
         position="after">
         <label name="date_em"/>
         <field name="date_em"/>
