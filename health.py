@@ -63,6 +63,10 @@ from trytond.pool import PoolMeta
 from trytond.modules.account.tax import TaxableMixin
 from trytond.modules.product import price_digits
 
+from .exceptions import (
+    InvoiceTaxValidationError, InvoiceNumberError, InvoiceValidationError,
+    InvoiceLineValidationError, PayInvoiceError, InvoicePaymentTermDateWarning)
+
 
 class Insurance(metaclass=PoolMeta):
     'Insurance'
@@ -237,6 +241,10 @@ class Invoice(metaclass=PoolMeta):
                     elif invoice.health_service.insurance_plan.plafond != None  and total_amount[invoice.id] < Decimal(invoice.health_service.insurance_plan.plafond):
                         montant_patient[invoice.id] = Decimal(0)
                         montant_assurance[invoice.id] = total_amount[invoice.id]
+                        total_amount[invoice.id] = montant_assurance[invoice.id]
+            else :
+                montant_patient[invoice.id] = total_amount[invoice.id]
+                montant_assurance[invoice.id] = Decimal(0)
 
             if invoice.payment_lines :
                 dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
@@ -259,6 +267,10 @@ class Invoice(metaclass=PoolMeta):
                     elif invoice.health_service.insurance_plan.plafond != None  and total_amount[invoice.id] < Decimal(invoice.health_service.insurance_plan.plafond):
                         montant_patient[invoice.id] = Decimal(0)
                         montant_assurance[invoice.id] = total_amount[invoice.id]
+                        total_amount[invoice.id] = montant_assurance[invoice.id]
+            else :
+                montant_patient[invoice.id] = total_amount[invoice.id]
+                montant_assurance[invoice.id] = Decimal(0)
 
         result = {
             'untaxed_amount': untaxed_amount,
@@ -272,4 +284,271 @@ class Invoice(metaclass=PoolMeta):
             if key not in names:
                 del result[key]
         return result
+    
+    def get_move_lines_with_assurance(self):
+        '''
+        Return a list of move lines instances for invoice line
+        '''
+        pool = Pool()
+        Currency = pool.get('currency.currency')
+        MoveLine = pool.get('account.move.line')
+        if self.type != 'line':
+            return []
+        line = MoveLine()
+        if self.invoice.currency != self.invoice.company.currency:
+            with Transaction().set_context(date=self.invoice.currency_date):
+                amount = Currency.compute(self.invoice.currency,
+                    self.montant_patient, self.invoice.company.currency)
+            line.amount_second_currency = self.amount
+            line.second_currency = self.invoice.currency
+        else:
+            amount = self.montant_patient
+            line.amount_second_currency = None
+            line.second_currency = None
+        if amount >= 0:
+            if self.invoice.type == 'out':
+                line.debit, line.credit = 0, amount
+            else:
+                line.debit, line.credit = amount, 0
+        else:
+            if self.invoice.type == 'out':
+                line.debit, line.credit = -amount, 0
+            else:
+                line.debit, line.credit = 0, -amount
+        if line.amount_second_currency:
+            line.amount_second_currency = (
+                line.amount_second_currency.copy_sign(
+                    line.debit - line.credit))
+        line.account = self.account
+        if self.account.party_required:
+            line.party = self.invoice.party
+        line.origin = self
+        line.tax_lines = self._compute_taxes()
+        return [line]
+    
+    def get_move_with_assurance(self):
+        '''
+        Compute account move for the invoice and return the created move
+        '''
+        pool = Pool()
+        Move = pool.get('account.move')
+        Period = pool.get('account.period')
+        Date = pool.get('ir.date')
+        Warning = pool.get('res.user.warning')
+        Lang = pool.get('ir.lang')
 
+        today = Date.today()
+
+        if self.move:
+            return self.move
+        self.update_taxes(exception=True)
+        move_lines = []
+        for line in self.lines:
+            move_lines += line.get_move_lines_with_assurance()
+        for tax in self.taxes:
+            move_lines += tax.get_move_lines_with_assurance()
+
+        total = sum(l.debit - l.credit for l in move_lines)
+        if self.payment_term:
+            payment_date = self.payment_term_date or self.invoice_date
+            term_lines = self.payment_term.compute(
+                total, self.company.currency, payment_date)
+        else:
+            term_lines = [(self.payment_term_date or today, total)]
+        if self.currency != self.company.currency:
+            remainder_total_currency = self.total_amount.copy_sign(total)
+        else:
+            remainder_total_currency = 0
+        past_payment_term_dates = []
+        for date, amount in term_lines:
+            line = self._get_move_line(date, amount)
+            if line.amount_second_currency:
+                remainder_total_currency += line.amount_second_currency
+            move_lines.append(line)
+            if self.type == 'out' and date < today:
+                past_payment_term_dates.append(date)
+        if any(past_payment_term_dates):
+            lang = Lang.get()
+            warning_key = 'invoice_payment_term_%d' % self.id
+            if Warning.check(warning_key):
+                raise InvoicePaymentTermDateWarning(warning_key,
+                    gettext('account_invoice'
+                        '.msg_invoice_payment_term_date_past',
+                        invoice=self.rec_name,
+                        date=lang.strftime(min(past_payment_term_dates))))
+        if not self.currency.is_zero(remainder_total_currency):
+            move_lines[-1].amount_second_currency -= \
+                remainder_total_currency
+
+        accounting_date = self.accounting_date or self.invoice_date
+        period_id = Period.find(self.company.id, date=accounting_date)
+
+        move = Move()
+        move.journal = self.journal
+        move.period = period_id
+        move.date = accounting_date
+        move.origin = self
+        move.company = self.company
+        move.lines = move_lines
+        return move
+
+class PayInvoice(Wizard):
+
+    'Pay Invoice'
+    __name__ = 'account.invoice.pay'
+    start_with_assurance = StateView('account.invoice.pay.start',
+        'account_invoice.pay_start_view_form', [
+            Button('Cancel', 'end', 'tryton-cancel'),
+            Button('OK', 'choice', 'tryton-ok', default=True),
+            ])
+    choice_with_assurance = StateTransition()
+    ask_with_assurance = StateView('account.invoice.pay.ask',
+        'account_invoice.pay_ask_view_form', [
+            Button('Cancel', 'end', 'tryton-cancel'),
+            Button('OK', 'pay', 'tryton-ok', default=True),
+            ])
+    pay = StateTransition()
+
+    @classmethod
+    def __setup__(cls):
+        super(PayInvoice, cls).__setup__()
+        cls.__rpc__['create'].fresh_session = True
+
+    def get_reconcile_lines_for_amount(self, invoice, amount):
+        if invoice.type == 'in':
+            amount *= -1
+        return invoice.get_reconcile_lines_for_amount(amount)
+
+    def default_start_with_assurance(self, fields):
+        default = {}
+        invoice = self.record
+        default['company'] = invoice.company.id
+        default['currency'] = invoice.currency.id
+        default['currency_digits'] = invoice.currency.digits
+        default['amount'] = (invoice.amount_to_pay_today
+            or invoice.amount_to_pay)
+        default['invoice_account'] = invoice.account.id
+        return default
+    
+    def transition_choice(self):
+        pool = Pool()
+        Currency = pool.get('currency.currency')
+
+        invoice = self.record
+
+        with Transaction().set_context(date=self.start.date):
+            amount = Currency.compute(self.start.currency,
+                self.start.amount, invoice.company.currency)
+            amount_invoice = Currency.compute(
+                self.start.currency, self.start.amount, invoice.currency)
+        _, remainder = self.get_reconcile_lines_for_amount(invoice, amount)
+        if (remainder == Decimal('0.0')
+                and amount_invoice <= invoice.amount_to_pay):
+            return 'pay'
+        return 'ask'
+
+    def default_ask(self, fields):
+        pool = Pool()
+        Currency = pool.get('currency.currency')
+
+        default = {}
+        invoice = self.record
+        default['lines_to_pay'] = [x.id for x in invoice.lines_to_pay
+                if not x.reconciliation]
+
+        default['amount'] = self.start.amount
+        default['date'] = self.start.date
+        default['currency'] = self.start.currency.id
+        default['currency_digits'] = self.start.currency_digits
+        default['company'] = invoice.company.id
+
+        with Transaction().set_context(date=self.start.date):
+            amount = Currency.compute(self.start.currency,
+                self.start.amount, invoice.company.currency)
+            amount_invoice = Currency.compute(
+                self.start.currency, self.start.amount, invoice.currency)
+
+        if invoice.company.currency.is_zero(amount):
+            lines = invoice.lines_to_pay
+        else:
+            lines, _ = self.get_reconcile_lines_for_amount(invoice, amount)
+        default['lines'] = [x.id for x in lines]
+
+        for line_id in default['lines'][:]:
+            if line_id not in default['lines_to_pay']:
+                default['lines'].remove(line_id)
+        
+        default['payment_lines'] = [x.id for x in invoice.payment_lines
+                if not x.reconciliation]
+
+        default['currency_writeoff'] = invoice.company.currency.id
+        default['currency_digits_writeoff'] = invoice.company.currency.digits
+        default['invoice'] = invoice.id
+
+        if (amount_invoice > invoice.amount_to_pay
+                or invoice.company.currency.is_zero(amount)):
+            default['type'] = 'writeoff'
+        return default
+
+    def transition_pay(self):
+        pool = Pool()
+        Currency = pool.get('currency.currency')
+        MoveLine = pool.get('account.move.line')
+        Lang = pool.get('ir.lang')
+
+        invoice = self.record
+
+        with Transaction().set_context(date=self.start.date):
+            amount = Currency.compute(self.start.currency,
+                self.start.amount, invoice.company.currency)
+            amount_invoice = Currency.compute(
+                self.start.currency, self.start.amount, invoice.currency)
+
+        reconcile_lines, remainder = \
+            self.get_reconcile_lines_for_amount(invoice, amount)
+
+        amount_second_currency = None
+        second_currency = None
+        if self.start.currency != invoice.company.currency:
+            amount_second_currency = self.start.amount
+            second_currency = self.start.currency
+        
+        overpayment = 0
+        if (0 <= invoice.amount_to_pay < amount_invoice
+                or amount_invoice < invoice.amount_to_pay <= 0):
+            if self.ask.type == 'partial':
+                lang = Lang.get()
+                raise PayInvoiceError(
+                    gettext('account_invoice'
+                        '.msg_invoice_pay_amount_greater_amount_to_pay',
+                        invoice=invoice.rec_name,
+                        amount_to_pay=lang.currency(
+                            invoice.amount_to_pay, invoice.currency)))
+            else:
+                overpayment = amount_invoice - invoice.amount_to_pay
+
+        lines = []
+        if not invoice.company.currency.is_zero(amount):
+            lines = invoice.pay_invoice(amount,
+                self.start.payment_method, self.start.date,
+                self.start.description, amount_second_currency,
+                second_currency, overpayment)
+
+        if remainder:
+            if self.ask.type != 'partial':
+                to_reconcile = {l for l in self.ask.lines}
+                to_reconcile.update(
+                    l for l in invoice.payment_lines
+                    if not l.reconciliation)
+                if self.ask.type == 'writeoff':
+                    to_reconcile.update(lines)
+                if to_reconcile:
+                    MoveLine.reconcile(
+                        to_reconcile,
+                        writeoff=self.ask.writeoff,
+                        date=self.start.date)
+        else:
+            reconcile_lines += lines
+            if reconcile_lines:
+                MoveLine.reconcile(reconcile_lines)
+        return 'end'
