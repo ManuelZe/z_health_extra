@@ -13,6 +13,7 @@ def register():
         health_services.HealthService,
         health.Insurance,
         health.Invoice,
+        health.InvoiceLine
         module='z_health_extra', type_='model')
     Pool.register(
         module='z_health_extra', type_='wizard')
