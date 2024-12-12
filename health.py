@@ -371,11 +371,11 @@ class InvoiceLine(metaclass=PoolMeta):
         if self.invoice.currency != self.invoice.company.currency:
             with Transaction().set_context(date=self.invoice.currency_date):
                 amount = Currency.compute(self.invoice.currency,
-                    self.montant_patient, self.invoice.company.currency)
+                    self.amount, self.invoice.company.currency)
             line.amount_second_currency = self.amount
             line.second_currency = self.invoice.currency
         else:
-            amount = self.montant_patient
+            amount = self.amount
             line.amount_second_currency = None
             line.second_currency = None
         
@@ -403,7 +403,7 @@ class InvoiceLine(metaclass=PoolMeta):
         print("Essayons de regarder les lignes ----------------------------- ", line)
         return [line]
     
-    
+
 class PayInvoice(Wizard):
 
     'Pay Invoice'
