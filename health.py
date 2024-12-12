@@ -228,8 +228,6 @@ class Invoice(metaclass=PoolMeta):
             untaxed_amount[invoice.id] = (
                 total_amount[invoice.id] - tax_amount[invoice.id])
             
-            dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
-            
             if invoice.health_service != None:
                 if invoice.health_service.insurance_plan != None:
                     if invoice.health_service.insurance_plan.plafond != None and total_amount[invoice.id] > Decimal(invoice.health_service.insurance_plan.plafond):
@@ -239,6 +237,9 @@ class Invoice(metaclass=PoolMeta):
                     elif invoice.health_service.insurance_plan.plafond != None  and total_amount[invoice.id] < Decimal(invoice.health_service.insurance_plan.plafond):
                         montant_patient[invoice.id] = Decimal(0)
                         montant_assurance[invoice.id] = total_amount[invoice.id]
+
+            if invoice.payment_lines :
+                dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
 
                         
 
