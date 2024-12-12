@@ -2,11 +2,11 @@
 <data>
     <xpath expr="/form/notebook/page/group/group/group/field[@name=&quot;total_amount&quot;]" position="after">
         <newline/>
-        <label name="part_assurance"/>
-        <field name="part_assurance"/>
-        <label name="part_patient"/>
-        <field name="part_patient"/>
-        <label name="dernier_payement"/>
-        <field name="dernier_payement"/>
+        <label name="montant_assurance"/>
+        <field name="montant_assurance"/>
+        <label name="montant_patient"/>
+        <field name="montant_patient"/>
+        <label name="dernier_versement"/>
+        <field name="dernier_versement"/>
     </xpath>
 </data>
