@@ -285,48 +285,7 @@ class Invoice(metaclass=PoolMeta):
                 del result[key]
         return result
     
-    def get_move_lines_with_assurance(self):
-        '''
-        Return a list of move lines instances for invoice line
-        '''
-        pool = Pool()
-        Currency = pool.get('currency.currency')
-        MoveLine = pool.get('account.move.line')
-        if self.type != 'line':
-            return []
-        line = MoveLine()
-        if self.invoice.currency != self.invoice.company.currency:
-            with Transaction().set_context(date=self.invoice.currency_date):
-                amount = Currency.compute(self.invoice.currency,
-                    self.montant_patient, self.invoice.company.currency)
-            line.amount_second_currency = self.amount
-            line.second_currency = self.invoice.currency
-        else:
-            amount = self.montant_patient
-            line.amount_second_currency = None
-            line.second_currency = None
-        if amount >= 0:
-            if self.invoice.type == 'out':
-                line.debit, line.credit = 0, amount
-            else:
-                line.debit, line.credit = amount, 0
-        else:
-            if self.invoice.type == 'out':
-                line.debit, line.credit = -amount, 0
-            else:
-                line.debit, line.credit = 0, -amount
-        if line.amount_second_currency:
-            line.amount_second_currency = (
-                line.amount_second_currency.copy_sign(
-                    line.debit - line.credit))
-        line.account = self.account
-        if self.account.party_required:
-            line.party = self.invoice.party
-        line.origin = self
-        line.tax_lines = self._compute_taxes()
-        return [line]
-    
-    def get_move_with_assurance(self):
+    def get_move(self):
         '''
         Compute account move for the invoice and return the created move
         '''
@@ -390,8 +349,55 @@ class Invoice(metaclass=PoolMeta):
         move.origin = self
         move.company = self.company
         move.lines = move_lines
+        print("Essayons de regarder le move ----------------------------- ", move)
         return move
 
+    def get_move_lines_with_assurance(self):
+        '''
+        Return a list of move lines instances for invoice line
+        '''
+        pool = Pool()
+        Currency = pool.get('currency.currency')
+        MoveLine = pool.get('account.move.line')
+        if self.type != 'line':
+            return []
+        line = MoveLine()
+        if self.invoice.currency != self.invoice.company.currency:
+            with Transaction().set_context(date=self.invoice.currency_date):
+                amount = Currency.compute(self.invoice.currency,
+                    self.montant_patient, self.invoice.company.currency)
+            line.amount_second_currency = self.amount
+            line.second_currency = self.invoice.currency
+        else:
+            amount = self.montant_patient
+            line.amount_second_currency = None
+            line.second_currency = None
+        
+        print("Essayons de regarder le montant ----------------------------- ", amount)
+        if amount >= 0:
+            if self.invoice.type == 'out':
+                line.debit, line.credit = 0, amount
+            else:
+                line.debit, line.credit = amount, 0
+        else:
+            if self.invoice.type == 'out':
+                line.debit, line.credit = -amount, 0
+            else:
+                line.debit, line.credit = 0, -amount
+        if line.amount_second_currency:
+            line.amount_second_currency = (
+                line.amount_second_currency.copy_sign(
+                    line.debit - line.credit))
+        line.account = self.account
+        if self.account.party_required:
+            line.party = self.invoice.party
+        line.origin = self
+        line.tax_lines = self._compute_taxes()
+
+        print("Essayons de regarder les lignes ----------------------------- ", line)
+        return [line]
+    
+    
 class PayInvoice(Wizard):
 
     'Pay Invoice'
