@@ -98,17 +98,13 @@ class Invoice(metaclass=PoolMeta):
                 Eval('currency_digits', 2)), depends=['currency_digits']),
                 'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
     
-    dernier_versement = fields.Function(fields.Numeric('dernier versement', digits=(16,
+    dernier_versement = fields.Function(fields.Numeric('Dernier Versement', digits=(16,
                 Eval('currency_digits', 2)), depends=['currency_digits']),
                                'get_amount_with_insurance')
 
     total_amount2 = fields.Function(fields.Numeric('Total Avec Assurance', digits=(16,
                 Eval('currency_digits', 2)), depends=['currency_digits']),
                                     'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
-    
-    part_assurance = fields.Float("Part Assurance", digits=(16, Eval('currency_digits', 2)),  depends=['currency_digits'])
-    part_patient = fields.Float("Part Patient", digits=(16, Eval('currency_digits', 2)),  depends=['currency_digits'])
-    dernier_payement = fields.Float("Dernier Payement", digits=(16, Eval('currency_digits', 2)),  depends=['currency_digits'])
 
     
     @classmethod
@@ -164,9 +160,6 @@ class Invoice(metaclass=PoolMeta):
         montant_patient = dict((i.id, Decimal(0)) for i in invoices)
         montant_assurance = dict((i.id, Decimal(0)) for i in invoices)
         total_amount2 = dict((i.id, Decimal(0)) for i in invoices)
-        part_assurance = dict((i.id, Decimal(0)) for i in invoices)
-        part_patient = dict((i.id, Decimal(0)) for i in invoices)
-        dernier_payement = dict((i.id, Decimal(0)) for i in invoices)
 
         type_name = cls.tax_amount._field.sql_type().base
         tax = InvoiceTax.__table__()
@@ -273,9 +266,6 @@ class Invoice(metaclass=PoolMeta):
             'montant_patient' : montant_patient,
             'montant_assurance' : montant_assurance,
             'dernier_versement' :dernier_versement,
-            'part_assurance' : montant_assurance,
-            'part_patient' : montant_patient,
-            'dernier_payement' : dernier_versement
             }
         for key in list(result.keys()):
             if key not in names:
