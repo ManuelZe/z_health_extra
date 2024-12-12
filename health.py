@@ -285,7 +285,7 @@ class Invoice(metaclass=PoolMeta):
                 del result[key]
         return result
     
-    def get_moves_lines(self):
+    def get_move_lines(self):
         '''
         Return a list of move lines instances for invoice line
         '''
@@ -349,9 +349,9 @@ class Invoice(metaclass=PoolMeta):
         self.update_taxes(exception=True)
         move_lines = []
         for line in self.lines:
-            move_lines += line.get_moves_lines()
+            move_lines += line.get_move_lines()
         for tax in self.taxes:
-            move_lines += tax.get_moves_lines()
+            move_lines += tax.get_move_lines()
 
         total = sum(l.debit - l.credit for l in move_lines)
         if self.payment_term:
