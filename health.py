@@ -87,7 +87,6 @@ class Insurance(metaclass=PoolMeta):
 
     z_couverture = fields.Numeric("Couverture", digits=(3, 2), help="La couverture",
                                   required=False)
-    
 
 
 class Invoice(metaclass=PoolMeta):
@@ -416,59 +415,3 @@ class Invoice(metaclass=PoolMeta):
         move.lines = move_lines
         print("Essayons de regarder le move ----------------------------- ", move)
         return move
-
-
-class InvoiceLine(metaclass=PoolMeta):
-    'Invoice Line'
-    __name__ = 'account.invoice.line'
-
-    def get_amount(self, name):
-        if self.type == 'line':
-            # Récupération du montant de la ligne actuelle
-            line_amount = self.on_change_with_amount()
-            return line_amount
-
-        elif self.type == 'subtotal':
-            subtotal = Decimal(0)
-            list_prix = []
-
-            for line2 in self.invoice.lines:
-                if line2.type == 'line':
-                    subtotal += line2.on_change_with_amount()
-                elif line2.type == 'subtotal':
-                    if self == line2:
-                        break
-                    subtotal = Decimal(0)
-            return subtotal
-
-            # Appliquer la logique de calcul pour répartir `a`
-            if self.invoice.health_service != None:
-                if self.invoice.health_service.insurance_plan != None:
-                    if self.invoice.health_service.insurance_plan.plafond != None:
-
-                        for line2 in self.invoice.lines:
-                            if line2.type == 'line':
-                                list_prix.append(line2.on_change_with_amount())
-                            elif line2.type == 'subtotal':
-                                if self == line2:
-                                    break
-                                subtotal = Decimal(0)
-                        remaining_a = Decimal(self.invoice.health_service.insurance_plan.plafond)  # Copie locale de `a` pour traitement
-                        
-                        for i, value in enumerate(list_prix):
-                            if value <= remaining_a:
-                                remaining_a -= value
-                                list_prix[i] = Decimal(0)  # Tout le montant est utilisé
-                            else:
-                                list_prix[i] -= remaining_a  # Partiel
-                                remaining_a = Decimal(0)
-                                break
-                        
-                        # Retourner la liste des montants mis à jour
-                        return list_prix
-        
-        else:
-            return Decimal(0)
-
-    
-
