@@ -137,7 +137,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             # Invoice Lines
             seq = 0
             invoice_lines = []
-            plafond = service.plan.plafond
+            plafond = service.insurance_plan.plafond
 
             for line in service.service_line:
                 seq = seq + 1
