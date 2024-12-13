@@ -296,14 +296,10 @@ class Invoice(metaclass=PoolMeta):
             
             if invoice.health_service != None:
                 if invoice.health_service.insurance_plan != None:
-                    if invoice.health_service.insurance_plan.plafond != None and total_amount[invoice.id] > Decimal(invoice.health_service.insurance_plan.plafond):
-                        montant_patient[invoice.id] = total_amount[invoice.id] - Decimal(invoice.health_service.insurance_plan.plafond)
+                    if invoice.health_service.insurance_plan.plafond != None:
+                        montant_patient[invoice.id] = total_amount[invoice.id]
                         montant_assurance[invoice.id] = Decimal(invoice.health_service.insurance_plan.plafond)
-                        total_amount[invoice.id] = montant_patient[invoice.id]
-                    elif invoice.health_service.insurance_plan.plafond != None  and total_amount[invoice.id] < Decimal(invoice.health_service.insurance_plan.plafond):
-                        montant_patient[invoice.id] = Decimal(0)
-                        montant_assurance[invoice.id] = total_amount[invoice.id]
-                        total_amount[invoice.id] = montant_assurance[invoice.id]
+                        total_amount[invoice.id] = montant_patient[invoice.id] + montant_assurance[invoice.id]
             else :
                 montant_patient[invoice.id] = total_amount[invoice.id]
                 montant_assurance[invoice.id] = Decimal(0)
@@ -322,14 +318,10 @@ class Invoice(metaclass=PoolMeta):
             
             if invoice.health_service != None:
                 if invoice.health_service.insurance_plan != None:
-                    if invoice.health_service.insurance_plan.plafond != None and total_amount[invoice.id] > Decimal(invoice.health_service.insurance_plan.plafond):
-                        montant_patient[invoice.id] = total_amount[invoice.id] - Decimal(invoice.health_service.insurance_plan.plafond)
+                    if invoice.health_service.insurance_plan.plafond != None:
+                        montant_patient[invoice.id] = total_amount[invoice.id]
                         montant_assurance[invoice.id] = Decimal(invoice.health_service.insurance_plan.plafond)
-                        total_amount[invoice.id] = montant_patient[invoice.id]
-                    elif invoice.health_service.insurance_plan.plafond != None  and total_amount[invoice.id] < Decimal(invoice.health_service.insurance_plan.plafond):
-                        montant_patient[invoice.id] = Decimal(0)
-                        montant_assurance[invoice.id] = total_amount[invoice.id]
-                        total_amount[invoice.id] = montant_assurance[invoice.id]
+                        total_amount[invoice.id] = montant_patient[invoice.id] + montant_assurance[invoice.id]
             else :
                 montant_patient[invoice.id] = total_amount[invoice.id]
                 montant_assurance[invoice.id] = Decimal(0)
