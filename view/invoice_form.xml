@@ -8,5 +8,7 @@
         <field name="montant_patient"/>
         <label name="dernier_versement"/>
         <field name="dernier_versement"/>
+        <label name="total_amount2"/>
+        <field name="total_amount2"/>
     </xpath>
 </data>
