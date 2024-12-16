@@ -21,6 +21,7 @@
 #
 ##############################################################################
 import datetime
+from decimal import ROUND_HALF_UP
 import decimal
 from trytond.wizard import Wizard
 from trytond.transaction import Transaction
@@ -191,9 +192,11 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                         desc = f"{line.desc} (policy plan)"
                                         montant_ass = unit_price2 - unit_price
                         
+                        montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                         amount = unit_price * line.qty
                         if (plafond and discount['value']/100 == 1) or (plafond and not discount):
                             montant_ass = service.insurance_plan.plafond
+                            montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                             if Decimal(plafond) > Decimal(0) :
                                 if Decimal(amount) <= Decimal(plafond) :
                                     unit_price = Decimal(0)
