@@ -185,14 +185,14 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                         desc = line.desc + " (Assurance " + \
                                                str(str_disc) + ")"
                                         
-                                        montant_ass = unit_price2 - unit_price
+                                        montant_ass = (unit_price2 - unit_price)*line.qty
                                             
                                     else:
                                         unit_price = discount['value']
                                         desc = f"{line.desc} (policy plan)"
-                                        montant_ass = unit_price2 - unit_price
+                                        montant_ass = (unit_price2 - unit_price)*line.qty
                         
-                        montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+                                    montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                         amount = unit_price * line.qty
                         if (plafond and discount['value']/100 == 1) or (plafond and not discount):
                             montant_ass = service.insurance_plan.plafond
