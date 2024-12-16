@@ -335,11 +335,12 @@ class Invoice(metaclass=PoolMeta):
             if invoice.payment_lines :
                 dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
 
+        total_amount2[invoice.id] = total_amount[invoice.id] + invoice.montant_assurance
         result = {
             'untaxed_amount': untaxed_amount,
             'tax_amount': tax_amount,
             'total_amount': total_amount,
-            'total_amount2': total_amount+invoice.montant_assurance,
+            'total_amount2': total_amount2,
             'montant_patient' : montant_patient,
             'dernier_versement' :dernier_versement,
             }
