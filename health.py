@@ -93,9 +93,9 @@ class Invoice(metaclass=PoolMeta):
     __name__ = "account.invoice"
 
 
-    montant_assurance = fields.Function(fields.Numeric('Montant Assurance', digits=(16,
-                Eval('currency_digits', 2)), depends=['currency_digits']),
-                'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
+    # montant_assurance = fields.Function(fields.Numeric('Montant Assurance', digits=(16,
+    #             Eval('currency_digits', 2)), depends=['currency_digits']),
+    #             'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
 
     montant_patient = fields.Function(fields.Numeric('Montant Client', digits=(16,
                 Eval('currency_digits', 2)), depends=['currency_digits']),
@@ -108,6 +108,18 @@ class Invoice(metaclass=PoolMeta):
     total_amount2 = fields.Function(fields.Numeric('Total Avec Assurance', digits=(16,
                 Eval('currency_digits', 2)), depends=['currency_digits']),
                                     'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
+    
+    montant_assurance = fields.Numeric('Montant Assurance', digits=(16,
+                Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
+
+    # montant_patient = fields.Numeric('Montant Client', digits=(16,
+    #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
+    
+    # dernier_versement = fields.Numeric('Dernier Versement', digits=(16,
+    #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
+
+    # total_amount2 = fields.Numeric('Total avec Assurance', digits=(16,
+    #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
 
     
     @classmethod
@@ -298,11 +310,8 @@ class Invoice(metaclass=PoolMeta):
                 if invoice.health_service.insurance_plan != None:
                     if invoice.health_service.insurance_plan.plafond != None:
                         montant_patient[invoice.id] = total_amount[invoice.id]
-                        montant_assurance[invoice.id] = Decimal(invoice.health_service.insurance_plan.plafond)
-                        total_amount[invoice.id] = montant_patient[invoice.id] + montant_assurance[invoice.id]
             else :
                 montant_patient[invoice.id] = total_amount[invoice.id]
-                montant_assurance[invoice.id] = Decimal(0)
 
             if invoice.payment_lines :
                 dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
@@ -320,11 +329,11 @@ class Invoice(metaclass=PoolMeta):
                 if invoice.health_service.insurance_plan != None:
                     if invoice.health_service.insurance_plan.plafond != None:
                         montant_patient[invoice.id] = total_amount[invoice.id]
-                        montant_assurance[invoice.id] = Decimal(invoice.health_service.insurance_plan.plafond)
-                        total_amount[invoice.id] = montant_patient[invoice.id] + montant_assurance[invoice.id]
             else :
                 montant_patient[invoice.id] = total_amount[invoice.id]
-                montant_assurance[invoice.id] = Decimal(0)
+
+            if invoice.payment_lines :
+                dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
 
         result = {
             'untaxed_amount': untaxed_amount,
@@ -332,7 +341,6 @@ class Invoice(metaclass=PoolMeta):
             'total_amount': total_amount,
             'total_amount2': total_amount,
             'montant_patient' : montant_patient,
-            'montant_assurance' : montant_assurance,
             'dernier_versement' :dernier_versement,
             }
         for key in list(result.keys()):

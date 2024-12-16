@@ -138,7 +138,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             seq = 0
             invoice_lines = []
             plafond = service.insurance_plan.plafond
-
+            total_assurance = 0
             for line in service.service_line:
                 seq = seq + 1
                 account = line.product.template.account_revenue_used.id
@@ -151,6 +151,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             line.qty, line.product.default_uom)
                 else:
                     unit_price = line.product.list_price
+                
+                unit_price2 = unit_price
 
                 if line.to_invoice:
                     taxes = []
@@ -181,12 +183,17 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                         str_disc = str(discount['value']) + '%'
                                         desc = line.desc + " (Assurance " + \
                                                str(str_disc) + ")"
+                                        
+                                        montant_ass = unit_price2 - unit_price
+                                            
                                     else:
                                         unit_price = discount['value']
                                         desc = f"{line.desc} (policy plan)"
+                                        montant_ass = unit_price2 - unit_price
                         
                         amount = unit_price * line.qty
-                        if plafond and not discount:
+                        if (plafond and discount['value']/100 == 1) or (plafond and not discount):
+                            montant_ass = service.insurance_plan.plafond
                             if Decimal(plafond) > Decimal(0) :
                                 if Decimal(amount) <= Decimal(plafond) :
                                     unit_price = Decimal(0)
@@ -210,7 +217,9 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                         }]))
                 invoice_data['lines'] = invoice_lines
 
+                total_assurance += montant_ass
 
+            invoice_data['montant_assurance'] = total_assurance
             invoices.append(invoice_data)
 
         Invoice.update_taxes(Invoice.create(invoices))
