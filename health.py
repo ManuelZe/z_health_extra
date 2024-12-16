@@ -339,7 +339,7 @@ class Invoice(metaclass=PoolMeta):
             'untaxed_amount': untaxed_amount,
             'tax_amount': tax_amount,
             'total_amount': total_amount,
-            'total_amount2': total_amount,
+            'total_amount2': total_amount+invoice.montant_assurance,
             'montant_patient' : montant_patient,
             'dernier_versement' :dernier_versement,
             }
