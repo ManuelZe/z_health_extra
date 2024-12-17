@@ -140,7 +140,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             invoice_lines = []
             if service.insurance_plan and service.insurance_plan.plafond :
                 plafond = service.insurance_plan.plafond
-            total_assurance = 0
+            total_assurance = Decimal(0)
             for line in service.service_line:
                 seq = seq + 1
                 account = line.product.template.account_revenue_used.id
@@ -242,9 +242,9 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                         }]))
                 invoice_data['lines'] = invoice_lines
 
-                if service.insurance_plan.plafond :
+                if service.insurance_plan and service.insurance_plan.plafond :
                     total_assurance = service.insurance_plan.plafond
-                else :
+                elif service.insurance_plan :
                     total_assurance += montant_ass
 
             invoice_data['montant_assurance'] = total_assurance
