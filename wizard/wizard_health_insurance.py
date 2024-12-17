@@ -169,6 +169,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             service.insurance_plan,
                             line.product)
 
+                        amount = unit_price * line.qty
+
                         if discount:
                             if 'value' in list(discount.keys()):
                                 if discount['value']:
@@ -193,8 +195,20 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                         montant_ass = (unit_price2 - unit_price)*line.qty
                         
                                     montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-                        amount = unit_price * line.qty
-                        if (plafond and discount['value']/100 == 1) or (plafond and not discount):
+                        
+                                    if plafond and discount['value']/100 == 1:
+                                        montant_ass = service.insurance_plan.plafond
+                                        montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+                                        if Decimal(plafond) > Decimal(0) :
+                                            if Decimal(amount) <= Decimal(plafond) :
+                                                unit_price = Decimal(0)
+                                                plafond -= Decimal(amount)
+                                            else:
+                                                amount = amount - plafond
+                                                unit_price = amount/line.qty
+                                                plafond = Decimal(0)
+
+                        if plafond and not discount:
                             montant_ass = service.insurance_plan.plafond
                             montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                             if Decimal(plafond) > Decimal(0) :
