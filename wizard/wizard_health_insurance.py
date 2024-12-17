@@ -220,6 +220,13 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                     unit_price = amount/line.qty
                                     plafond = Decimal(0)
 
+                    elif service.remise :
+                        remise = service.remise
+                        amount = unit_price * line.qty
+                        if service.remise/100 != 1 :
+                            amount *= decimal.Decimal(1 - remise / 100)
+                            
+                            unit_price = amount/line.qty
 
                     invoice_lines.append(('create', [{
                             'origin': str(line),
