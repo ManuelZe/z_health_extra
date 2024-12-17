@@ -234,7 +234,10 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                         }]))
                 invoice_data['lines'] = invoice_lines
 
-                total_assurance += montant_ass
+                if plafond :
+                    total_assurance = service.insurance_plan.plafond
+                else :
+                    total_assurance += montant_ass
 
             invoice_data['montant_assurance'] = total_assurance
             invoices.append(invoice_data)
