@@ -10,6 +10,8 @@ this repository contains the full copyright notices and license terms. -->
         <field name="requestor"/>
         <label name="agent"/>
         <field name="agent"/>
+        <label name="agent"/>
+        <field name="agent"/>
     </xpath>
 
 </data>
