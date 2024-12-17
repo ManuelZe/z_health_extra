@@ -234,12 +234,15 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                         }]))
                 invoice_data['lines'] = invoice_lines
 
+                print("--------------------- ", plafond)
                 if plafond :
                     total_assurance = service.insurance_plan.plafond
                 else :
                     total_assurance += montant_ass
 
             invoice_data['montant_assurance'] = total_assurance
+
+            print("--------- montant_assurance ------ ", invoice_data['montant_assurance'])
             invoices.append(invoice_data)
 
         Invoice.update_taxes(Invoice.create(invoices))
