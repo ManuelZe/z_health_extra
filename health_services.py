@@ -38,5 +38,3 @@ class HealthService(metaclass=PoolMeta):
         'gnuhealth.healthprofessional', 'Prescripteur',
         help="Médécin prescripteur", select=True, required=True)
     agent = fields.Many2One('commission.agent', 'Agent de Commission',select=True, required=True)
-    remise = fields.Numeric("Remise", digits=(3, 2), help="La Remise à appliquer sur la facture",
-                                  required=False)
