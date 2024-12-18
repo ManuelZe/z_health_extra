@@ -121,6 +121,12 @@ class Invoice(metaclass=PoolMeta):
     # total_amount2 = fields.Numeric('Total avec Assurance', digits=(16,
     #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
 
+
+    def on_change_agent(self, name):
+        try:
+            return self.lines[0].origin.name.agent.id
+        except:
+            return None
     
     @classmethod
     def search_total_amount_with_insurance(cls, name, clause):
