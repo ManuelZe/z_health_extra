@@ -68,6 +68,14 @@ from .exceptions import (
     InvoiceLineValidationError, PayInvoiceError, InvoicePaymentTermDateWarning)
 
 
+class Lab(metaclass=PoolMeta):
+    'Patient Lab Test Results'
+    __name__ = 'gnuhealth.lab'
+
+    renseignements = fields.Text('Renseignements Cliniques')
+    macroscopie = fields.Text('Macroscopie')
+    microscopie = fields.Text('Microscopie')
+
 class Insurance(metaclass=PoolMeta):
     'Insurance'
     __name__ = 'gnuhealth.insurance'

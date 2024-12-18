@@ -14,6 +14,7 @@ def register():
         health_services.HealthService,
         health.Insurance,
         health.Invoice,
+        health.Lab,
         module='z_health_extra', type_='model')
     Pool.register(
         wizard_health_insurance.CreateServiceInvoice,
