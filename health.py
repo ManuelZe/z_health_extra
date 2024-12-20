@@ -51,6 +51,7 @@ from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond.rpc import RPC
 from trytond.config import config
+from num2words import num2words
 
 import psycopg2
 import string
@@ -96,7 +97,18 @@ class Insurance(metaclass=PoolMeta):
     z_couverture = fields.Numeric("Couverture", digits=(3, 2), help="La couverture",
                                   required=False)
 
+class PayInvoiceStart(ModelView):
+    'Pay Invoice'
+    __name__ = 'account.invoice.pay.start'
 
+    number = fields.Char("Number")
+    amount_l = fields.Char('Lettre')
+
+    @fields.depends('amount')
+    def on_change_with_amount_l(self):
+        return num2words(self.amount, lang='fr').capitalize()
+    
+    
 class Invoice(metaclass=PoolMeta):
     __name__ = "account.invoice"
 
