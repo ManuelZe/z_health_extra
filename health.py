@@ -97,7 +97,7 @@ class Insurance(metaclass=PoolMeta):
     z_couverture = fields.Numeric("Couverture", digits=(3, 2), help="La couverture",
                                   required=False)
 
-class PayInvoiceStart(ModelView):
+class PayInvoiceStart(metaclass=PoolMeta):
     'Pay Invoice'
     __name__ = 'account.invoice.pay.start'
 
@@ -108,7 +108,7 @@ class PayInvoiceStart(ModelView):
     def on_change_with_amount_l(self):
         return num2words(self.amount, lang='fr').capitalize()
     
-    
+
 class Invoice(metaclass=PoolMeta):
     __name__ = "account.invoice"
 
