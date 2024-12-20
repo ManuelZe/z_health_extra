@@ -131,6 +131,12 @@ class Invoice(metaclass=PoolMeta):
     
     montant_assurance = fields.Numeric('Montant Assurance', digits=(16,
                 Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
+    
+    montant_en_lettre = fields.Char('Lettre')
+
+    @fields.depends('dernier_versement')
+    def on_change_with_montant_en_lettre(self):
+        return num2words(self.amount, lang='fr').capitalize()
 
     # montant_patient = fields.Numeric('Montant Client', digits=(16,
     #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
