@@ -139,8 +139,8 @@ class Invoice(metaclass=PoolMeta):
         return num2words(self.amount, lang='fr').capitalize()
     
     @classmethod
-    def convert_letter(self, name):
-        return num2words(self.name, lang='fr').capitalize()
+    def convert_letter(name):
+        return num2words(name, lang='fr').capitalize()
 
     # montant_patient = fields.Numeric('Montant Client', digits=(16,
     #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
