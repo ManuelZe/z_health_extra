@@ -138,7 +138,7 @@ class Invoice(metaclass=PoolMeta):
     def on_change_with_montant_en_lettre(self):
         return num2words(self.amount, lang='fr').capitalize()
     
-    @classmethod
+    @staticmethod
     def convert_letter(name):
         return num2words(name, lang='fr').capitalize()
 
