@@ -146,7 +146,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                 account = line.product.template.account_revenue_used.id
 
                 if sale_price_list:
-                    print("La liste des prix - --------------- ", sale_price_list)
+                    print("La liste des prix - --------------- ", sale_price_list.name)
                     with Transaction().set_context(ctx):
                         unit_price = sale_price_list.compute(
                             party,
