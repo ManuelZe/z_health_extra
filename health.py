@@ -141,6 +141,39 @@ class Invoice(metaclass=PoolMeta):
     @staticmethod
     def convert_letter(name):
         return num2words(name, lang='fr').capitalize()
+    
+    @staticmethod
+    def calcul_prix_MSH(party, line):
+        pool = Pool()
+        # Liste de sortie
+        # elt = [indice, prix_unitaire, qte, montant_total]
+        elt = []
+        elt[0] = line.product.list_price
+        Product_Price_List = pool.get("product.price_list")
+        sale_price_list = Product_Price_List.search([
+                ('name', '=', 'PORT AUTONOME DE DOUALA'),
+                ], limit=1)
+        print("Sale Price List List --------------- ", sale_price_list)
+        unit_price = sale_price_list.compute(
+                            party,
+                            line.product, line.product.list_price,
+                            line.qty, line.product.default_uom)
+        print("Unit price price --------------- ", unit_price)
+        elt[1] = unit_price
+        elt[2] = line.qty
+        elt[3] = elt[1]*elt[2]
+        print("Les éléments --------------- ", elt)
+        return elt
+    
+    @staticmethod
+    def calcul_prix_total_MSH(self, record):
+        
+        total = 0
+        for line in record.lines :
+            elt = self.calcul_prix_MSH(line, record.party)
+            total = total + elt[3]
+        return total
+
 
     # montant_patient = fields.Numeric('Montant Client', digits=(16,
     #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
