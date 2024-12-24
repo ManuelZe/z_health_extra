@@ -148,29 +148,29 @@ class Invoice(metaclass=PoolMeta):
         # Liste de sortie
         # elt = [indice, prix_unitaire, qte, montant_total]
         elt = []
-        elt[0] = line.product.list_price
+        elt.append(line.product.list_price)
         Product_Price_List = pool.get("product.price_list")
         sale_price_list = Product_Price_List.search([
-                ('name', '=', 'PORT AUTONOME DE DOUALA'),
+                ('name', '=', 'Port Autonome de Douala'),
                 ], limit=1)
-        print("Sale Price List List --------------- ", sale_price_list)
-        unit_price = sale_price_list.compute(
+        print("Sale Price List List --------------- ", sale_price_list[0])
+        unit_price = sale_price_list[0].compute(
                             party,
                             line.product, line.product.list_price,
-                            line.qty, line.product.default_uom)
+                            line.quantity, line.product.default_uom)
         print("Unit price price --------------- ", unit_price)
-        elt[1] = unit_price
-        elt[2] = line.qty
-        elt[3] = elt[1]*elt[2]
+        elt.append(unit_price)
+        elt.append(line.quantity)
+        elt.append(elt[1]*Decimal(elt[2]))
         print("Les éléments --------------- ", elt)
         return elt
     
-    @staticmethod
-    def calcul_prix_total_MSH(self, record):
-        
+    @classmethod
+    def calcul_prix_total_MSH(cls, record):
+
         total = 0
         for line in record.lines :
-            elt = self.calcul_prix_MSH(line, record.party)
+            elt = cls.calcul_prix_MSH(record.party, line)
             total = total + elt[3]
         return total
 
