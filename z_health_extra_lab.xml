@@ -5,5 +5,44 @@
          <field name="inherit" ref="health_lab.gnuhealth_lab_view"/>
          <field name="name">gnuhealth_lab_form</field>
       </record>
+
+      <record model="ir.ui.view" id="z_health_extra_gnuhealth_lab_test_view">
+         <field name="model">gnuhealth.lab</field>
+         <field name="inherit" ref="health_lab.gnuhealth_lab_test_view"/>
+         <field name="name">gnuhealth_lab_test</field>
+      </record>
+
+      <!-- Paillasse -->
+
+	    <record model="ir.ui.view" id="z_health_extra_gnuhealth_lab_form">
+            <field name="model">gnuhealth.lab.type</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_lab_pail_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_lab_tree2">
+            <field name="model">gnuhealth.lab.type</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_lab_pail_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="gnuhealth_action_lab">
+            <field name="name">Paillasse</field>
+            <field name="res_model">gnuhealth.lab.type</field>
+        </record>
+        <record model="ir.action.act_window.view" id="gnuhealth_action_lab_tree_view">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="gnuhealth_lab_tree2"/>
+            <field name="act_window" ref="gnuhealth_action_lab"/>
+        </record>
+        <record model="ir.action.act_window.view" id="gnuhealth_action_lab_form_view">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="z_health_extra_gnuhealth_lab_form"/>
+            <field name="act_window" ref="gnuhealth_action_lab"/>
+        </record>
+
+        <menuitem parent="gnuhealth_conf_laboratory" action="gnuhealth_action_lab"
+            id="gnuhealth_labtest" icon="gnuhealth-list"/>
+
    </data>
 </tryton>

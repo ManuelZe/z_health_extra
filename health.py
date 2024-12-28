@@ -107,7 +107,20 @@ class PayInvoiceStart(metaclass=PoolMeta):
     @fields.depends('amount')
     def on_change_with_amount_l(self):
         return num2words(self.amount, lang='fr').capitalize()
-    
+
+class TestType(ModelSQL, ModelView):
+    'Type of Lab test'
+    __name__ = 'gnuhealth.lab.test_type'
+
+    test_type = fields.Many2One(
+        'gnuhealth.lab.type', 'Paillasse')
+
+class LabTestType(ModelSQL, ModelView):
+    'Lab Test Type'
+    __name__ = 'gnuhealth.lab.type'
+
+    code = fields.Char('Code', required=True)
+    name = fields.Char('Name', required=True)
 
 class Invoice(metaclass=PoolMeta):
     __name__ = "account.invoice"
