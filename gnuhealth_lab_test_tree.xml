@@ -2,7 +2,7 @@
 
 <data>
     <xpath
-        expr="/form/notebook/page/group/field[@name='code']"
+        expr="/tree/field[@name='code']"
         position="after">
         <label name="test_type"/>
         <field name="test_type"/>
