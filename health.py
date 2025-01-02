@@ -108,7 +108,7 @@ class PayInvoiceStart(metaclass=PoolMeta):
     def on_change_with_amount_l(self):
         return num2words(self.amount, lang='fr').capitalize()
 
-class TestType(ModelSQL, ModelView):
+class TestType(metaclass=PoolMeta):
     'Type of Lab test'
     __name__ = 'gnuhealth.lab.test_type'
 
