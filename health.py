@@ -166,16 +166,13 @@ class Invoice(metaclass=PoolMeta):
         sale_price_list = Product_Price_List.search([
                 ('name', '=', 'Port Autonome de Douala'),
                 ], limit=1)
-        print("Sale Price List List --------------- ", sale_price_list[0])
         unit_price = sale_price_list[0].compute(
                             party,
                             line.product, line.product.list_price,
                             line.quantity, line.product.default_uom)
-        print("Unit price price --------------- ", unit_price)
         elt.append(unit_price)
         elt.append(line.quantity)
         elt.append(elt[1]*Decimal(elt[2]))
-        print("Les éléments --------------- ", elt)
         return elt
     
     @classmethod
@@ -416,8 +413,11 @@ class Invoice(metaclass=PoolMeta):
 
             if invoice.payment_lines :
                 dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
-
-        total_amount2[invoice.id] = total_amount[invoice.id] + invoice.montant_assurance
+        
+        if invoice.montant_assurance != None :
+            total_amount2[invoice.id] = total_amount[invoice.id] + invoice.montant_assurance
+        else : 
+            total_amount2[invoice.id] = total_amount[invoice.id]
         result = {
             'untaxed_amount': untaxed_amount,
             'tax_amount': tax_amount,
