@@ -195,6 +195,23 @@ class Invoice(metaclass=PoolMeta):
     #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
 
 
+    def total_medecin(self, records):
+        # Exemplaire de sortie de liste 
+        # elements = ["montant" , "Impot", "net_a_payer"]
+        
+        elements = []
+        for record in records :
+
+            amount = sum(line.unit_price for line in record.lines)
+            elements.append(amount)
+            net_a_payer = sum(line.amount for line in record.lines)
+            elements.append(net_a_payer)
+            impots = amount - net_a_payer
+            elements.append(impots)
+
+        return elements
+
+    
     def on_change_agent(self, name):
         try:
             return self.lines[0].origin.name.agent.id
