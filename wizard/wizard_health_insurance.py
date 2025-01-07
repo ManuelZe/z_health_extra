@@ -139,6 +139,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             # Invoice Lines
             seq = 0
             invoice_lines = []
+            plafond = Decimal(0)
             if service.insurance_plan and service.insurance_plan.plafond :
                 plafond = service.insurance_plan.plafond
             total_assurance = Decimal(0)
@@ -198,7 +199,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                         
                                     montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                         
-                                    if plafond and discount['value']/100 == 1:
+                                    if plafond != (Decimal(0), None) and discount['value']/100 == 1:
                                         montant_ass = service.insurance_plan.plafond
                                         montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                                         if Decimal(plafond) > Decimal(0) :
@@ -210,7 +211,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                                 unit_price = amount/line.qty
                                                 plafond = Decimal(0)
 
-                        if plafond and not discount:
+                        if plafond != (Decimal(0), None) and not discount:
                             montant_ass = service.insurance_plan.plafond
                             montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                             if Decimal(plafond) > Decimal(0) :
