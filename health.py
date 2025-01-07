@@ -199,17 +199,16 @@ class Invoice(metaclass=PoolMeta):
         # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
 
         elements = []
-        for record in records :
-            total_amount = sum(record.total_amount)
-            elements.append(total_amount)
-            montant_assurance = sum(record.montant_assurance)
-            elements.append(montant_assurance)
-            montant_patient = sum(record.montant_patient)
-            elements.append(montant_patient)
-            amount_to_pay = sum(record.amount_to_pay)
-            difference = sum(montant_patient-amount_to_pay)
-            elements.append(difference)
-            elements.append(amount_to_pay)
+        total_amount = sum(record.total_amount for record in records)
+        elements.append(total_amount)
+        montant_assurance = sum(record.montant_assurance for record in records)
+        elements.append(montant_assurance)
+        montant_patient = sum(record.montant_patient for record in records)
+        elements.append(montant_patient)
+        amount_to_pay = sum(record.amount_to_pay for record in records)
+        difference = sum(montant_patient-amount_to_pay for record in records)
+        elements.append(difference)
+        elements.append(amount_to_pay)
         
         return elements
 
