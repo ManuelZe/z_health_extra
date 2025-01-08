@@ -211,6 +211,18 @@ class Invoice(metaclass=PoolMeta):
         elements.append(amount_to_pay)
         
         return elements
+    
+    def total_synth_facture_par_produits(self, records):
+        # Exemplaire de sortie de liste 
+        # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
+
+        elements = []
+        unit_price = sum(record.unit_price for record in records)
+        elements.append(unit_price)
+        amount = sum(record.amount for record in records)
+        elements.append(amount)
+        
+        return elements
 
 
     def total_medecin(self, records):
