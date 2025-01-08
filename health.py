@@ -212,7 +212,7 @@ class Invoice(metaclass=PoolMeta):
         
         return elements
     
-    def total_synth_facture_par_produits(self, records):
+    def total_facture_par_produits(self, records):
         # Exemplaire de sortie de liste 
         # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
 
