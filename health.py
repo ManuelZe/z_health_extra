@@ -434,15 +434,12 @@ class Invoice(metaclass=PoolMeta):
             
             if invoice.health_service != None:
                 if invoice.health_service.insurance_plan != None:
-                    if invoice.health_service.insurance_plan.plafond != None:
-                        montant_patient[invoice.id] = total_amount[invoice.id]
+                    montant_patient[invoice.id] = total_amount[invoice.id]
             else :
                 montant_patient[invoice.id] = total_amount[invoice.id]
 
             if invoice.payment_lines :
-                dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
-
-                        
+                dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit  
 
         for invoice in invoices_no_move:
             untaxed_amount[invoice.id] = sum(
@@ -453,8 +450,7 @@ class Invoice(metaclass=PoolMeta):
             
             if invoice.health_service != None:
                 if invoice.health_service.insurance_plan != None:
-                    if invoice.health_service.insurance_plan.plafond != None:
-                        montant_patient[invoice.id] = total_amount[invoice.id]
+                    montant_patient[invoice.id] = total_amount[invoice.id]
             else :
                 montant_patient[invoice.id] = total_amount[invoice.id]
 
