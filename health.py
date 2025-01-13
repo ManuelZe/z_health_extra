@@ -102,7 +102,7 @@ class PayInvoiceStart(metaclass=PoolMeta):
     __name__ = 'account.invoice.pay.start'
 
     number = fields.Char("Number")
-    amount_l = fields.Char('Lettre')
+    amount_l = fields.Char('Lettre', size=None)
 
     @fields.depends('amount')
     def on_change_with_amount_l(self):
