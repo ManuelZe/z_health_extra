@@ -3,6 +3,6 @@
     <xpath expr="/form/field[@name=&quot;date&quot;]" position="after">
         <newline/>
         <label name="amount_l"/>
-        <field name="amount_l"/>
+        <field name="amount_l" colspan="3"/>
     </xpath>
 </data>
