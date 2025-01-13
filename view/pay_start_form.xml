@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <data>
-    <xpath expr="/form/field[@name=&quot;description&quot;]" position="before">
+    <xpath expr="/form/field[@name=&quot;date&quot;]" position="after">
         <newline/>
         <label name="amount_l"/>
         <field name="amount_l"/>
