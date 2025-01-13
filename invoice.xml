@@ -5,6 +5,13 @@
          <field name="inherit" ref="account_invoice.invoice_view_form"/>
          <field name="name">invoice_form</field>
       </record>
+
+      <record model="ir.ui.view" id="z_health_extra_view_invoice_start_form">
+         <field name="model">account.invoice.pay.start</field>
+         <field name="inherit" ref="account_invoice.pay_start_view_form"/>
+         <field name="name">pay_start_form</field>
+      </record>
+
    </data>
 </tryton>
 

@@ -164,7 +164,7 @@ class Invoice(metaclass=PoolMeta):
         elt.append(line.product.list_price)
         Product_Price_List = pool.get("product.price_list")
         sale_price_list = Product_Price_List.search([
-                ('name', '=', 'Port Autonome de Douala'),
+                ('name', '=', 'PORT AUTONOME DE DOUALA'),
                 ], limit=1)
         unit_price = sale_price_list[0].compute(
                             party,
