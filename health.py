@@ -95,7 +95,7 @@ class Insurance(metaclass=PoolMeta):
     date_em = fields.Date("Date d'émmission")
 
     z_couverture = fields.Numeric("Couverture", digits=(3, 2), help="La couverture",
-                                  required=False)
+                                  required=True)
 
 class PayInvoiceStart(metaclass=PoolMeta):
     'Pay Invoice'
