@@ -263,7 +263,7 @@ class Invoice(metaclass=PoolMeta):
                 unit_price = sale_price_list.compute(
                              record.party,
                              line.product, line.product.list_price,
-                             line.qty, line.product.default_uom)
+                             line.quantity, line.product.default_uom)
                 
                 liste_montants.append(unit_price)
         
