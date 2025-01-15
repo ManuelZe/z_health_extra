@@ -247,6 +247,31 @@ class Invoice(metaclass=PoolMeta):
             return self.lines[0].origin.name.agent.id
         except:
             return None
+        
+    def montant_recu(self, record):
+        # Record corespond au recu
+        # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
+
+        sale_price_list = None
+        if hasattr(record.party, 'sale_price_list'):
+            sale_price_list = record.party.sale_price_list
+
+        liste_montants = []
+        for line in record.lines:
+            unit_price = Decimal(0)
+            if sale_price_list : 
+                unit_price = sale_price_list.compute(
+                             record.party,
+                             line.product, line.product.list_price,
+                             line.qty, line.product.default_uom)
+                
+                liste_montants.append(unit_price)
+        
+        total_recu = sum(liste_montants)
+
+        liste_montants.append(total_recu)
+
+        return liste_montants
     
     @classmethod
     def search_total_amount_with_insurance(cls, name, clause):
