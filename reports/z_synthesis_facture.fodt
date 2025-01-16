@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:styl="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2023-02-16T10:59:32.256922983</meta:creation-date><dc:date>2025-01-07T16:19:27.272326241</dc:date><meta:editing-duration>PT4H43M31S</meta:editing-duration><meta:editing-cycles>11</meta:editing-cycles><meta:generator>LibreOffice/24.2.7.2$Linux_X86_64 LibreOffice_project/420$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="57" meta:word-count="96" meta:character-count="1466" meta:non-whitespace-character-count="1421"/></office:meta>
+<office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:sty="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:creation-date>2023-02-16T10:59:32.256922983</meta:creation-date><dc:date>2025-01-16T09:26:25.838196341</dc:date><meta:editing-duration>PT4H45M45S</meta:editing-duration><meta:editing-cycles>13</meta:editing-cycles><meta:generator>LibreOffice/24.8.3.2$Linux_X86_64 LibreOffice_project/480$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="50" meta:word-count="81" meta:character-count="1232" meta:non-whitespace-character-count="1196"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">12793</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">1323</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">30247</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">13677</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">30693</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">16588</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">19498</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">25130</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">15961</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">3962</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">12793</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">30245</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">26469</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">1323</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">30692</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">17909</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -41,6 +41,8 @@
    <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
    <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintEmptyPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PaintHellOverHeaderFooter" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToEmptyLineAtEndOfParagraph" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
    <config:config-item config:name="NoNumberingShowFollowBy" config:type="boolean">false</config:config-item>
    <config:config-item config:name="HyphenateURLs" config:type="boolean">true</config:config-item>
@@ -65,6 +67,7 @@
    <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">false</config:config-item>
    <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
    <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
    <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ProtectBookmarks" config:type="boolean">false</config:config-item>
@@ -102,11 +105,7 @@
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="HeaderSpacingBelowLastPara" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
    <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterName" config:type="string"/>
    <config:config-item config:name="AddParaLineSpacingToTableCells" config:type="boolean">true</config:config-item>
    <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
@@ -133,16 +132,19 @@
    <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
    <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
    <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreHiddenCharsForLineCalculation" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
    <config:config-item config:name="DropCapPunctuation" config:type="boolean">false</config:config-item>
    <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">877173</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1005124</config:config-item>
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
    <config:config-item config:name="MsWordCompMinLineHeightByFly" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
   </config:config-item-set>
  </office:settings>
  <office:scripts>
@@ -153,111 +155,111 @@
   </office:script>
  </office:scripts>
  <office:font-face-decls>
-  <styl:font-face styl:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" styl:font-family-generic="swiss" styl:font-pitch="variable"/>
-  <styl:font-face styl:name="Liberation Serif" svg:font-family="&apos;Liberation Serif&apos;" styl:font-family-generic="roman" styl:font-pitch="variable"/>
-  <styl:font-face styl:name="Lohit Devanagari" svg:font-family="&apos;Lohit Devanagari&apos;"/>
-  <styl:font-face styl:name="Lohit Devanagari1" svg:font-family="&apos;Lohit Devanagari&apos;" styl:font-family-generic="system" styl:font-pitch="variable"/>
-  <styl:font-face styl:name="Noto Sans CJK SC" svg:font-family="&apos;Noto Sans CJK SC&apos;" styl:font-family-generic="system" styl:font-pitch="variable"/>
-  <styl:font-face styl:name="Noto Serif CJK SC" svg:font-family="&apos;Noto Serif CJK SC&apos;" styl:font-family-generic="system" styl:font-pitch="variable"/>
+  <sty:font-face sty:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" sty:font-family-generic="swiss" sty:font-pitch="variable"/>
+  <sty:font-face sty:name="Liberation Serif" svg:font-family="&apos;Liberation Serif&apos;" sty:font-family-generic="roman" sty:font-pitch="variable"/>
+  <sty:font-face sty:name="Lohit Devanagari" svg:font-family="&apos;Lohit Devanagari&apos;"/>
+  <sty:font-face sty:name="Lohit Devanagari1" svg:font-family="&apos;Lohit Devanagari&apos;" sty:font-family-generic="system" sty:font-pitch="variable"/>
+  <sty:font-face sty:name="Noto Sans CJK SC" svg:font-family="&apos;Noto Sans CJK SC&apos;" sty:font-family-generic="system" sty:font-pitch="variable"/>
+  <sty:font-face sty:name="Noto Serif CJK SC" svg:font-family="&apos;Noto Serif CJK SC&apos;" sty:font-family-generic="system" sty:font-pitch="variable"/>
  </office:font-face-decls>
  <office:styles>
-  <styl:default-style styl:family="graphic">
-   <styl:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" styl:flow-with-text="false"/>
-   <styl:paragraph-properties styl:text-autospace="ideograph-alpha" styl:line-break="strict" loext:tab-stop-distance="0in" styl:writing-mode="lr-tb" styl:font-independent-line-spacing="false">
-    <styl:tab-stops/>
-   </styl:paragraph-properties>
-   <styl:text-properties styl:use-window-font-color="true" loext:opacity="0%" styl:font-name="Liberation Serif" fo:font-size="12pt" fo:language="fr" fo:country="FR" styl:letter-kerning="true" styl:font-name-asian="Noto Serif CJK SC" styl:font-size-asian="10.5pt" styl:language-asian="zh" styl:country-asian="CN" styl:font-name-complex="Lohit Devanagari1" styl:font-size-complex="12pt" styl:language-complex="hi" styl:country-complex="IN"/>
-  </styl:default-style>
-  <styl:default-style styl:family="paragraph">
-   <styl:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" styl:text-autospace="ideograph-alpha" styl:punctuation-wrap="hanging" styl:line-break="strict" styl:tab-stop-distance="0.4925in" styl:writing-mode="page"/>
-   <styl:text-properties styl:use-window-font-color="true" loext:opacity="0%" styl:font-name="Liberation Serif" fo:font-size="12pt" fo:language="fr" fo:country="FR" styl:letter-kerning="true" styl:font-name-asian="Noto Serif CJK SC" styl:font-size-asian="10.5pt" styl:language-asian="zh" styl:country-asian="CN" styl:font-name-complex="Lohit Devanagari1" styl:font-size-complex="12pt" styl:language-complex="hi" styl:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2" loext:hyphenation-no-caps="false" loext:hyphenation-no-last-word="false" loext:hyphenation-word-char-count="5" loext:hyphenation-zone="no-limit"/>
-  </styl:default-style>
-  <styl:default-style styl:family="table">
-   <styl:table-properties table:border-model="collapsing"/>
-  </styl:default-style>
-  <styl:default-style styl:family="table-row">
-   <styl:table-row-properties fo:keep-together="auto"/>
-  </styl:default-style>
-  <styl:style styl:name="Standard" styl:family="paragraph" styl:class="text"/>
-  <styl:style styl:name="Heading" styl:family="paragraph" styl:parent-style-name="Standard" styl:next-style-name="Text_20_body" styl:class="text">
-   <styl:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0835in" styl:contextual-spacing="false" fo:keep-with-next="always"/>
-   <styl:text-properties styl:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" styl:font-family-generic="swiss" styl:font-pitch="variable" fo:font-size="14pt" styl:font-name-asian="Noto Sans CJK SC" styl:font-family-asian="&apos;Noto Sans CJK SC&apos;" styl:font-family-generic-asian="system" styl:font-pitch-asian="variable" styl:font-size-asian="14pt" styl:font-name-complex="Lohit Devanagari1" styl:font-family-complex="&apos;Lohit Devanagari&apos;" styl:font-family-generic-complex="system" styl:font-pitch-complex="variable" styl:font-size-complex="14pt"/>
-  </styl:style>
-  <styl:style styl:name="Text_20_body" styl:display-name="Text body" styl:family="paragraph" styl:parent-style-name="Standard" styl:class="text">
-   <styl:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.0972in" styl:contextual-spacing="false" fo:line-height="115%"/>
-  </styl:style>
-  <styl:style styl:name="List" styl:family="paragraph" styl:parent-style-name="Text_20_body" styl:class="list">
-   <styl:text-properties styl:font-size-asian="12pt" styl:font-name-complex="Lohit Devanagari" styl:font-family-complex="&apos;Lohit Devanagari&apos;"/>
-  </styl:style>
-  <styl:style styl:name="Caption" styl:family="paragraph" styl:parent-style-name="Standard" styl:class="extra">
-   <styl:paragraph-properties fo:margin-top="0.0835in" fo:margin-bottom="0.0835in" styl:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
-   <styl:text-properties fo:font-size="12pt" fo:font-style="italic" styl:font-size-asian="12pt" styl:font-style-asian="italic" styl:font-name-complex="Lohit Devanagari" styl:font-family-complex="&apos;Lohit Devanagari&apos;" styl:font-size-complex="12pt" styl:font-style-complex="italic"/>
-  </styl:style>
-  <styl:style styl:name="Index" styl:family="paragraph" styl:parent-style-name="Standard" styl:class="index">
-   <styl:paragraph-properties text:number-lines="false" text:line-number="0"/>
-   <styl:text-properties styl:font-size-asian="12pt" styl:font-name-complex="Lohit Devanagari" styl:font-family-complex="&apos;Lohit Devanagari&apos;"/>
-  </styl:style>
-  <styl:style styl:name="Table_20_Contents" styl:display-name="Table Contents" styl:family="paragraph" styl:parent-style-name="Standard" styl:class="extra">
-   <styl:paragraph-properties text:number-lines="false" text:line-number="0"/>
-  </styl:style>
-  <styl:style styl:name="Placeholder" styl:family="text">
-   <styl:text-properties fo:font-variant="small-caps" fo:color="#008080" loext:opacity="100%" styl:text-underline-style="dotted" styl:text-underline-width="auto" styl:text-underline-color="font-color"/>
-  </styl:style>
-  <text:outline-style styl:name="Outline">
-   <text:outline-level-style text:level="1" loext:num-list-format="%1%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+  <sty:default-style sty:family="graphic">
+   <sty:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" sty:writing-mode="lr-tb" sty:flow-with-text="false"/>
+   <sty:paragraph-properties sty:text-autospace="ideograph-alpha" sty:line-break="strict" loext:tab-stop-distance="0in" sty:font-independent-line-spacing="false">
+    <sty:tab-stops/>
+   </sty:paragraph-properties>
+   <sty:text-properties sty:use-window-font-color="true" loext:opacity="0%" sty:font-name="Liberation Serif" fo:font-size="12pt" fo:language="fr" fo:country="FR" sty:letter-kerning="true" sty:font-name-asian="Noto Serif CJK SC" sty:font-size-asian="10.5pt" sty:language-asian="zh" sty:country-asian="CN" sty:font-name-complex="Lohit Devanagari1" sty:font-size-complex="12pt" sty:language-complex="hi" sty:country-complex="IN"/>
+  </sty:default-style>
+  <sty:default-style sty:family="paragraph">
+   <sty:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" fo:hyphenation-keep="auto" loext:hyphenation-keep-type="column" sty:text-autospace="ideograph-alpha" sty:punctuation-wrap="hanging" sty:line-break="strict" sty:tab-stop-distance="0.4925in" sty:writing-mode="page"/>
+   <sty:text-properties sty:use-window-font-color="true" loext:opacity="0%" sty:font-name="Liberation Serif" fo:font-size="12pt" fo:language="fr" fo:country="FR" sty:letter-kerning="true" sty:font-name-asian="Noto Serif CJK SC" sty:font-size-asian="10.5pt" sty:language-asian="zh" sty:country-asian="CN" sty:font-name-complex="Lohit Devanagari1" sty:font-size-complex="12pt" sty:language-complex="hi" sty:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2" loext:hyphenation-no-caps="false" loext:hyphenation-no-last-word="false" loext:hyphenation-word-char-count="5" loext:hyphenation-zone="no-limit"/>
+  </sty:default-style>
+  <sty:default-style sty:family="table">
+   <sty:table-properties table:border-model="collapsing"/>
+  </sty:default-style>
+  <sty:default-style sty:family="table-row">
+   <sty:table-row-properties fo:keep-together="auto"/>
+  </sty:default-style>
+  <sty:style sty:name="Standard" sty:family="paragraph" sty:class="text"/>
+  <sty:style sty:name="Heading" sty:family="paragraph" sty:parent-style-name="Standard" sty:next-style-name="Text_20_body" sty:class="text">
+   <sty:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0835in" sty:contextual-spacing="false" fo:keep-with-next="always"/>
+   <sty:text-properties sty:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" sty:font-family-generic="swiss" sty:font-pitch="variable" fo:font-size="14pt" sty:font-name-asian="Noto Sans CJK SC" sty:font-family-asian="&apos;Noto Sans CJK SC&apos;" sty:font-family-generic-asian="system" sty:font-pitch-asian="variable" sty:font-size-asian="14pt" sty:font-name-complex="Lohit Devanagari1" sty:font-family-complex="&apos;Lohit Devanagari&apos;" sty:font-family-generic-complex="system" sty:font-pitch-complex="variable" sty:font-size-complex="14pt"/>
+  </sty:style>
+  <sty:style sty:name="Text_20_body" sty:display-name="Text body" sty:family="paragraph" sty:parent-style-name="Standard" sty:class="text">
+   <sty:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.0972in" sty:contextual-spacing="false" fo:line-height="115%"/>
+  </sty:style>
+  <sty:style sty:name="List" sty:family="paragraph" sty:parent-style-name="Text_20_body" sty:class="list">
+   <sty:text-properties sty:font-size-asian="12pt" sty:font-name-complex="Lohit Devanagari" sty:font-family-complex="&apos;Lohit Devanagari&apos;"/>
+  </sty:style>
+  <sty:style sty:name="Caption" sty:family="paragraph" sty:parent-style-name="Standard" sty:class="extra">
+   <sty:paragraph-properties fo:margin-top="0.0835in" fo:margin-bottom="0.0835in" sty:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <sty:text-properties fo:font-size="12pt" fo:font-style="italic" sty:font-size-asian="12pt" sty:font-style-asian="italic" sty:font-name-complex="Lohit Devanagari" sty:font-family-complex="&apos;Lohit Devanagari&apos;" sty:font-size-complex="12pt" sty:font-style-complex="italic"/>
+  </sty:style>
+  <sty:style sty:name="Index" sty:family="paragraph" sty:parent-style-name="Standard" sty:class="index">
+   <sty:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <sty:text-properties sty:font-size-asian="12pt" sty:font-name-complex="Lohit Devanagari" sty:font-family-complex="&apos;Lohit Devanagari&apos;"/>
+  </sty:style>
+  <sty:style sty:name="Table_20_Contents" sty:display-name="Table Contents" sty:family="paragraph" sty:parent-style-name="Standard" sty:class="extra">
+   <sty:paragraph-properties text:number-lines="false" text:line-number="0"/>
+  </sty:style>
+  <sty:style sty:name="Placeholder" sty:family="text">
+   <sty:text-properties fo:font-variant="small-caps" fo:color="#008080" loext:opacity="100%" sty:text-underline-style="dotted" sty:text-underline-width="auto" sty:text-underline-color="font-color"/>
+  </sty:style>
+  <text:outline-style sty:name="Outline">
+   <text:outline-level-style text:level="1" loext:num-list-format="%1%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="2" loext:num-list-format="%2%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="2" loext:num-list-format="%2%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="3" loext:num-list-format="%3%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="3" loext:num-list-format="%3%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="4" loext:num-list-format="%4%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="4" loext:num-list-format="%4%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="5" loext:num-list-format="%5%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="5" loext:num-list-format="%5%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="6" loext:num-list-format="%6%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="6" loext:num-list-format="%6%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="7" loext:num-list-format="%7%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="7" loext:num-list-format="%7%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="8" loext:num-list-format="%8%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="8" loext:num-list-format="%8%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="9" loext:num-list-format="%9%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="9" loext:num-list-format="%9%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="10" loext:num-list-format="%10%" styl:num-format="">
-    <styl:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <styl:list-level-label-alignment text:label-followed-by="listtab"/>
-    </styl:list-level-properties>
+   <text:outline-level-style text:level="10" loext:num-list-format="%10%" sty:num-format="">
+    <sty:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <sty:list-level-label-alignment text:label-followed-by="listtab"/>
+    </sty:list-level-properties>
    </text:outline-level-style>
   </text:outline-style>
-  <text:notes-configuration text:note-class="footnote" styl:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
-  <text:notes-configuration text:note-class="endnote" styl:num-format="i" text:start-value="0"/>
-  <text:linenumbering-configuration text:number-lines="false" text:offset="0.1965in" styl:num-format="1" text:number-position="left" text:increment="5"/>
+  <text:notes-configuration text:note-class="footnote" sty:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" sty:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.1965in" sty:num-format="1" text:number-position="left" text:increment="5"/>
   <loext:theme loext:name="Office">
    <loext:theme-colors loext:name="LibreOffice">
     <loext:color loext:name="dark1" loext:color="#000000"/>
@@ -276,168 +278,179 @@
   </loext:theme>
  </office:styles>
  <office:automatic-styles>
-  <styl:style styl:name="Table1" styl:family="table">
-   <styl:table-properties styl:width="7.9167in" fo:margin-left="-0.5854in" table:align="left"/>
-  </styl:style>
-  <styl:style styl:name="Table1.A" styl:family="table-column">
-   <styl:table-column-properties styl:column-width="0.2604in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.B" styl:family="table-column">
-   <styl:table-column-properties styl:column-width="0.8792in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.C" styl:family="table-column">
-   <styl:table-column-properties styl:column-width="0.6771in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.E" styl:family="table-column">
-   <styl:table-column-properties styl:column-width="0.6701in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.F" styl:family="table-column">
-   <styl:table-column-properties styl:column-width="0.4819in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.H" styl:family="table-column">
-   <styl:table-column-properties styl:column-width="0.5014in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.I" styl:family="table-column">
-   <styl:table-column-properties styl:column-width="0.4813in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.N" styl:family="table-column">
-   <styl:table-column-properties styl:column-width="0.6833in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.A1" styl:family="table-cell">
-   <styl:table-cell-properties fo:background-color="#cccccc" fo:padding="0.0382in" fo:border="0.05pt solid #000000" styl:writing-mode="page">
-    <styl:background-image/>
-   </styl:table-cell-properties>
-  </styl:style>
-  <styl:style styl:name="Table1.A2" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.A3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.B3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.C3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.D3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.E3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.F3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.G3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.H3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.I3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.J3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.K3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.L3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.M3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.N3" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.A4" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" styl:writing-mode="page"/>
-  </styl:style>
-  <styl:style styl:name="Table1.5" styl:family="table-row">
-   <styl:table-row-properties fo:keep-together="auto" styl:max-row-height="0.625in"/>
-  </styl:style>
-  <styl:style styl:name="Table1.A5" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
-  </styl:style>
-  <styl:style styl:name="Table1.G5" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
-  </styl:style>
-  <styl:style styl:name="Table1.H5" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
-  </styl:style>
-  <styl:style styl:name="Table1.I5" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
-  </styl:style>
-  <styl:style styl:name="Table1.J5" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
-  </styl:style>
-  <styl:style styl:name="Table1.K5" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
-  </styl:style>
-  <styl:style styl:name="Table1.L5" styl:family="table-cell">
-   <styl:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
-  </styl:style>
-  <styl:style styl:name="P1" styl:family="paragraph" styl:parent-style-name="Standard">
-   <styl:text-properties fo:font-size="8pt" fo:font-weight="bold" officeooo:rsid="000abc47" officeooo:paragraph-rsid="000abc47"/>
-  </styl:style>
-  <styl:style styl:name="P2" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <styl:text-properties fo:font-size="7pt" officeooo:rsid="000abc47" styl:font-size-asian="7pt" styl:font-size-complex="7pt"/>
-  </styl:style>
-  <styl:style styl:name="P3" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <styl:paragraph-properties fo:text-align="center" styl:justify-single-word="false"/>
-   <styl:text-properties fo:font-size="11pt" officeooo:rsid="000abc47" styl:font-size-asian="11pt" styl:font-size-complex="11pt"/>
-  </styl:style>
-  <styl:style styl:name="P4" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <styl:text-properties fo:font-size="9pt" officeooo:rsid="000abc47" officeooo:paragraph-rsid="000abc47" styl:font-size-asian="9pt" styl:font-size-complex="9pt"/>
-  </styl:style>
-  <styl:style styl:name="P5" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <loext:graphic-properties draw:fill="none"/>
-   <styl:paragraph-properties fo:margin-left="-0.5902in" fo:margin-right="0in" fo:text-indent="-0.5118in" styl:auto-text-indent="false" fo:background-color="transparent" text:number-lines="false" text:line-number="0"/>
-  </styl:style>
-  <styl:style styl:name="P6" styl:family="paragraph" styl:parent-style-name="Standard">
-   <styl:paragraph-properties fo:text-align="center" styl:justify-single-word="false"/>
-   <styl:text-properties fo:font-size="8pt" fo:font-weight="bold" officeooo:rsid="000abc47" officeooo:paragraph-rsid="000abc47" styl:font-size-asian="8pt" styl:font-size-complex="8pt"/>
-  </styl:style>
-  <styl:style styl:name="P7" styl:family="paragraph" styl:parent-style-name="Standard">
-   <styl:paragraph-properties fo:text-align="center" styl:justify-single-word="false"/>
-   <styl:text-properties fo:font-size="8pt" styl:font-size-asian="8pt" styl:font-size-complex="8pt"/>
-  </styl:style>
-  <styl:style styl:name="P8" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <styl:paragraph-properties fo:text-align="center" styl:justify-single-word="false"/>
-   <styl:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="000cc8c8" styl:font-size-asian="10pt" styl:font-size-complex="10pt"/>
-  </styl:style>
-  <styl:style styl:name="P9" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <styl:paragraph-properties fo:text-align="center" styl:justify-single-word="false"/>
-   <styl:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="000cc8c8" styl:font-size-asian="8pt" styl:font-size-complex="8pt"/>
-  </styl:style>
-  <styl:style styl:name="P10" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <styl:paragraph-properties fo:text-align="center" styl:justify-single-word="false"/>
-   <styl:text-properties fo:font-size="8pt" styl:font-size-asian="8pt" styl:font-size-complex="8pt"/>
-  </styl:style>
-  <styl:style styl:name="P11" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <styl:paragraph-properties fo:text-align="center" styl:justify-single-word="false"/>
-   <styl:text-properties fo:font-size="8pt" officeooo:rsid="000abc47" styl:font-size-asian="8pt" styl:font-size-complex="8pt"/>
-  </styl:style>
-  <styl:style styl:name="P12" styl:family="paragraph" styl:parent-style-name="Table_20_Contents">
-   <styl:paragraph-properties fo:text-align="center" styl:justify-single-word="false"/>
-   <styl:text-properties fo:font-size="8pt" officeooo:rsid="000abc47" officeooo:paragraph-rsid="000d6275" styl:font-size-asian="8pt" styl:font-size-complex="8pt"/>
-  </styl:style>
-  <styl:page-layout styl:name="pm1">
-   <styl:page-layout-properties fo:page-width="8.2681in" fo:page-height="11.6929in" styl:num-format="1" styl:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" styl:writing-mode="lr-tb" styl:layout-grid-color="#c0c0c0" styl:layout-grid-lines="20" styl:layout-grid-base-height="0.278in" styl:layout-grid-ruby-height="0.139in" styl:layout-grid-mode="none" styl:layout-grid-ruby-below="false" styl:layout-grid-print="false" styl:layout-grid-display="false" styl:footnote-max-height="0in" loext:margin-gutter="0in">
-    <styl:footnote-sep styl:width="0.0071in" styl:distance-before-sep="0.0398in" styl:distance-after-sep="0.0398in" styl:line-style="solid" styl:adjustment="left" styl:rel-width="25%" styl:color="#000000"/>
-   </styl:page-layout-properties>
-   <styl:header-style/>
-   <styl:footer-style/>
-  </styl:page-layout>
-  <styl:style styl:name="dp1" styl:family="drawing-page">
-   <styl:drawing-page-properties draw:background-size="full"/>
-  </styl:style>
+  <sty:style sty:name="Table1" sty:family="table">
+   <sty:table-properties sty:width="7.9167in" fo:margin-left="-0.5854in" table:align="left"/>
+  </sty:style>
+  <sty:style sty:name="Table1.A" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.2604in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.B" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.8792in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.C" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.6771in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.D" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.5986in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.E" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.684in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.F" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.5465in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.G" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.5208in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.H" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.4625in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.I" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.4813in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.J" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.5535in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.K" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.5014in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.L" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.4361in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.M" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.6319in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.N" sty:family="table-column">
+   <sty:table-column-properties sty:column-width="0.6833in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.A1" sty:family="table-cell">
+   <sty:table-cell-properties fo:background-color="#cccccc" fo:padding="0.0382in" fo:border="0.05pt solid #000000" sty:writing-mode="page">
+    <sty:background-image/>
+   </sty:table-cell-properties>
+  </sty:style>
+  <sty:style sty:name="Table1.A2" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.A3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.B3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.C3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.D3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.E3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.F3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.G3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.H3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.I3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.J3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.K3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.L3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.M3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.N3" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.A4" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" sty:writing-mode="page"/>
+  </sty:style>
+  <sty:style sty:name="Table1.5" sty:family="table-row">
+   <sty:table-row-properties fo:keep-together="auto" sty:max-row-height="0.625in"/>
+  </sty:style>
+  <sty:style sty:name="Table1.A5" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </sty:style>
+  <sty:style sty:name="Table1.G5" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </sty:style>
+  <sty:style sty:name="Table1.H5" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </sty:style>
+  <sty:style sty:name="Table1.I5" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </sty:style>
+  <sty:style sty:name="Table1.J5" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </sty:style>
+  <sty:style sty:name="Table1.K5" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </sty:style>
+  <sty:style sty:name="Table1.L5" sty:family="table-cell">
+   <sty:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </sty:style>
+  <sty:style sty:name="P1" sty:family="paragraph" sty:parent-style-name="Table_20_Contents">
+   <sty:paragraph-properties fo:text-align="center" sty:justify-single-word="false"/>
+   <sty:text-properties fo:font-size="11pt" officeooo:rsid="000abc47" sty:font-size-asian="11pt" sty:font-size-complex="11pt"/>
+  </sty:style>
+  <sty:style sty:name="P2" sty:family="paragraph" sty:parent-style-name="Standard">
+   <sty:paragraph-properties fo:text-align="center" sty:justify-single-word="false"/>
+   <sty:text-properties fo:font-size="8pt" fo:font-weight="bold" officeooo:rsid="000abc47" officeooo:paragraph-rsid="000abc47" sty:font-size-asian="8pt" sty:font-size-complex="8pt"/>
+  </sty:style>
+  <sty:style sty:name="P3" sty:family="paragraph" sty:parent-style-name="Table_20_Contents">
+   <sty:paragraph-properties fo:text-align="center" sty:justify-single-word="false"/>
+   <sty:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="000cc8c8" sty:font-size-asian="8pt" sty:font-size-complex="8pt"/>
+  </sty:style>
+  <sty:style sty:name="P4" sty:family="paragraph" sty:parent-style-name="Table_20_Contents">
+   <sty:paragraph-properties fo:text-align="center" sty:justify-single-word="false"/>
+   <sty:text-properties fo:font-size="8pt" officeooo:rsid="000abc47" sty:font-size-asian="8pt" sty:font-size-complex="8pt"/>
+  </sty:style>
+  <sty:style sty:name="P5" sty:family="paragraph" sty:parent-style-name="Standard">
+   <sty:paragraph-properties fo:text-align="center" sty:justify-single-word="false"/>
+   <sty:text-properties fo:font-size="8pt" sty:font-size-asian="8pt" sty:font-size-complex="8pt"/>
+  </sty:style>
+  <sty:style sty:name="P6" sty:family="paragraph" sty:parent-style-name="Standard">
+   <sty:paragraph-properties fo:text-align="center" sty:justify-single-word="false"/>
+   <sty:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="000f3352" sty:font-size-asian="8pt" sty:font-size-complex="8pt"/>
+  </sty:style>
+  <sty:style sty:name="P7" sty:family="paragraph" sty:parent-style-name="Table_20_Contents">
+   <sty:paragraph-properties fo:text-align="center" sty:justify-single-word="false"/>
+   <sty:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="000cc8c8" sty:font-size-asian="10pt" sty:font-size-complex="10pt"/>
+  </sty:style>
+  <sty:style sty:name="P8" sty:family="paragraph" sty:parent-style-name="Table_20_Contents">
+   <sty:paragraph-properties fo:text-align="center" sty:justify-single-word="false"/>
+   <sty:text-properties fo:font-size="8pt" officeooo:rsid="000abc47" officeooo:paragraph-rsid="000d6275" sty:font-size-asian="8pt" sty:font-size-complex="8pt"/>
+  </sty:style>
+  <sty:style sty:name="T1" sty:family="text">
+   <sty:text-properties officeooo:rsid="000f5644"/>
+  </sty:style>
+  <sty:style sty:name="T2" sty:family="text">
+   <sty:text-properties fo:font-weight="bold" officeooo:rsid="000abc47"/>
+  </sty:style>
+  <sty:page-layout sty:name="pm1">
+   <sty:page-layout-properties fo:page-width="8.2681in" fo:page-height="11.6929in" sty:num-format="1" sty:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" sty:writing-mode="lr-tb" sty:layout-grid-color="#c0c0c0" sty:layout-grid-lines="20" sty:layout-grid-base-height="0.278in" sty:layout-grid-ruby-height="0.139in" sty:layout-grid-mode="none" sty:layout-grid-ruby-below="false" sty:layout-grid-print="false" sty:layout-grid-display="false" sty:footnote-max-height="0in" loext:margin-gutter="0in">
+    <sty:footnote-sep sty:width="0.0071in" sty:distance-before-sep="0.0398in" sty:distance-after-sep="0.0398in" sty:line-style="solid" sty:adjustment="left" sty:rel-width="25%" sty:color="#000000"/>
+   </sty:page-layout-properties>
+   <sty:header-style/>
+   <sty:footer-style/>
+  </sty:page-layout>
+  <sty:style sty:name="dp1" sty:family="drawing-page">
+   <sty:drawing-page-properties draw:background-size="full"/>
+  </sty:style>
  </office:automatic-styles>
  <office:master-styles>
-  <styl:master-page styl:name="Standard" styl:page-layout-name="pm1" draw:style-name="dp1"/>
+  <sty:master-page sty:name="Standard" sty:page-layout-name="pm1" draw:style-name="dp1"/>
  </office:master-styles>
  <office:body>
   <office:text>
@@ -452,69 +465,73 @@
    <text:p text:style-name="Standard"/>
    <text:p text:style-name="Standard"/>
    <text:p text:style-name="Standard"/>
-   <text:p text:style-name="P3">Synthese des factures</text:p>
-   <text:p text:style-name="P3">Date du <text:placeholder text:placeholder-type="text">&lt;records[len(records)-1].invoice_date&gt;</text:placeholder><text:s/>au <text:placeholder text:placeholder-type="text">&lt;records[0].invoice_date&gt;</text:placeholder><text:s/></text:p>
+   <text:p text:style-name="P1">Synthese des <text:span text:style-name="T1">F</text:span>actures</text:p>
+   <text:p text:style-name="P1">Date du <text:placeholder text:placeholder-type="text">&lt;records[len(records)-1].invoice_date&gt;</text:placeholder><text:s/>au <text:placeholder text:placeholder-type="text">&lt;records[0].invoice_date&gt;</text:placeholder><text:s/></text:p>
    <text:p text:style-name="Standard"/>
    <table:table table:name="Table1" table:style-name="Table1">
     <table:table-column table:style-name="Table1.A"/>
     <table:table-column table:style-name="Table1.B"/>
-    <table:table-column table:style-name="Table1.C" table:number-columns-repeated="2"/>
+    <table:table-column table:style-name="Table1.C"/>
+    <table:table-column table:style-name="Table1.D"/>
     <table:table-column table:style-name="Table1.E"/>
-    <table:table-column table:style-name="Table1.F" table:number-columns-repeated="2"/>
+    <table:table-column table:style-name="Table1.F"/>
+    <table:table-column table:style-name="Table1.G"/>
     <table:table-column table:style-name="Table1.H"/>
     <table:table-column table:style-name="Table1.I"/>
-    <table:table-column table:style-name="Table1.F" table:number-columns-repeated="3"/>
-    <table:table-column table:style-name="Table1.C"/>
+    <table:table-column table:style-name="Table1.J"/>
+    <table:table-column table:style-name="Table1.K"/>
+    <table:table-column table:style-name="Table1.L"/>
+    <table:table-column table:style-name="Table1.M"/>
     <table:table-column table:style-name="Table1.N"/>
     <table:table-header-rows>
      <table:table-row>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">N</text:p>
+       <text:p text:style-name="P2">N</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">N Facture</text:p>
+       <text:p text:style-name="P2">N Facture</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Date facture</text:p>
+       <text:p text:style-name="P2">Date facture</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Service</text:p>
+       <text:p text:style-name="P2">Service</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Patient</text:p>
+       <text:p text:style-name="P2">Patient</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Tarifaire</text:p>
+       <text:p text:style-name="P2">Tarifaire</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Montant</text:p>
+       <text:p text:style-name="P2">Montant</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Remise</text:p>
+       <text:p text:style-name="P2">Remise</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Net a payer</text:p>
+       <text:p text:style-name="P2">Net a payer</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Paye</text:p>
+       <text:p text:style-name="P2">Pay<text:span text:style-name="T1">é</text:span></text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Solde</text:p>
+       <text:p text:style-name="P2">Solde</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Etat</text:p>
+       <text:p text:style-name="P2">Etat</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Cotateur</text:p>
+       <text:p text:style-name="P2">Cotateur</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-       <text:p text:style-name="P6">Prescripteur</text:p>
+       <text:p text:style-name="P2">Prescripteur</text:p>
       </table:table-cell>
      </table:table-row>
     </table:table-header-rows>
     <table:table-row>
      <table:table-cell table:style-name="Table1.A2" table:number-columns-spanned="14" office:value-type="string">
-      <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;i, record in enumerate(records, start=1)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P3"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;i, record in enumerate(records, start=1)&quot;&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -532,70 +549,64 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table1.A3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;i&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;i&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.number&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.number&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.C3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.invoice_date&gt;</text:placeholder><text:s/></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.invoice_date&gt;</text:placeholder><text:s/></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.D3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.reference&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.reference&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.E3" office:value-type="string">
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.party.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.party.lastname&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.party.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.party.lastname&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.F3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party&quot;&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list&quot;&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.party.sale_price_list.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:s/></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party&quot;&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list&quot;&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.party.sale_price_list.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:s/></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.G3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.total_amount&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.total_amount&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.H3" office:value-type="string">
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;choose test=&quot;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;record.health_service.insurance_plan.company.name == &apos;BREAST CLINIQUE&apos;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;invoice.part_as&gt;</text:placeholder><text:s/>(<text:placeholder text:placeholder-type="text">&lt;int(record.health_service.insurance_plan.couverture)&gt;</text:placeholder>%) </text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;otherwise test=&quot;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P6">0 (0%)</text:p>
-      <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;/otherwise&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/choose&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.z_remise2&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:span text:style-name="T2"><text:placeholder text:placeholder-type="text">&lt;record.health_service.z_remise2&gt;</text:placeholder></text:span><text:span text:style-name="T2">%</text:span></text:p>
+      <text:p text:style-name="P6"><text:span text:style-name="T2"/></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.I3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.montant_patient&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.montant_patient&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.J3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.montant_patient - record.amount_to_pay&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.montant_patient - record.amount_to_pay&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.K3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.amount_to_pay&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.amount_to_pay&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.L3" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.state&gt;</text:placeholder><text:s/></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.state&gt;</text:placeholder><text:s/></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.M3" office:value-type="string">
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.health_service.create_uid.name&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.health_service.create_uid.name&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.N3" office:value-type="string">
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.requestor&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;record.health_service.requestor.name.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.health_service.requestor.name.lastname&gt;</text:placeholder><text:s/></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.requestor&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;record.health_service.requestor.name.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.health_service.requestor.name.lastname&gt;</text:placeholder><text:s/></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table1.A4" table:number-columns-spanned="14" office:value-type="string">
-      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -613,7 +624,7 @@
     </table:table-row>
     <table:table-row table:style-name="Table1.5">
      <table:table-cell table:style-name="Table1.A5" table:number-columns-spanned="6" office:value-type="string">
-      <text:p text:style-name="P6">TOTAUX</text:p>
+      <text:p text:style-name="P2">TOTAUX</text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -621,22 +632,22 @@
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:table-cell table:style-name="Table1.G5" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[0]&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[0]&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.H5" office:value-type="string">
-      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[1]&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[1]&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.I5" office:value-type="string">
-      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[2]&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[2]&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.G5" office:value-type="string">
-      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[3]&gt;</text:placeholder></text:p>
+     <table:table-cell table:style-name="Table1.J5" office:value-type="string">
+      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[3]&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.G5" office:value-type="string">
-      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[4]&gt;</text:placeholder></text:p>
+     <table:table-cell table:style-name="Table1.K5" office:value-type="string">
+      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;records[0].total_synth_facture(records)[4]&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.L5" table:number-columns-spanned="3" office:value-type="string">
-      <text:p text:style-name="P7"/>
+      <text:p text:style-name="P5"/>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
