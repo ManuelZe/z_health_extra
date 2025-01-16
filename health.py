@@ -220,10 +220,13 @@ class Invoice(metaclass=PoolMeta):
         # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
 
         elements = []
-        unit_price = sum(record.unit_price for record in records)
-        elements.append(unit_price)
-        amount = sum(record.amount for record in records)
-        elements.append(amount)
+        for record in records :
+            unit_price = sum(line.unit_price for line in record.lines)
+            elements.append(unit_price)
+            amount = sum(line.amount for line in record.lines)
+            elements.append(amount)
+            quantity = sum(line.quantity for line in record.lines)
+            elements.append(quantity)
         
         return elements
 
