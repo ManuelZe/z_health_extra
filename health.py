@@ -204,7 +204,7 @@ class Invoice(metaclass=PoolMeta):
         elements.append(total_amount)
         montant_assurance = sum(record.montant_assurance for record in records if record.montant_assurance)
         elements.append(montant_assurance)
-        z_remise2 = sum(record.health_service.z_remise2 for record in records if record.health_service)
+        z_remise2 = sum(record.health_service.z_remise2 for record in records if record.health_service if record.health_service.z_remise2)
         elements.append(z_remise2)
         net_a_payer = sum(record.montant_patient for record in records)
         elements.append(net_a_payer)
