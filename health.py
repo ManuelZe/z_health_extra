@@ -230,6 +230,39 @@ class Invoice(metaclass=PoolMeta):
         
         return elements
 
+    def commission_docteur(self, records):
+        # Le modèle de sortie de la liste des docteurs : 
+        # {"JUDITH": (montant, impot, net_a_payer), "FRED": (montant, impot, net_a_payer), "MARINA": (montant, impot, net_a_payer)}
+        liste_docteurs = {}
+        for record in records:
+            montant = 0
+            docteur = record.party.name+" "+record.party.lastname
+            list_element = []
+            for line in record.lines:
+                if docteur in liste_docteurs.keys():
+                    liste_docteurs[docteur](0) = liste_docteurs[docteur](0) + line.unit_price
+                    liste_docteurs[docteur](1) = liste_docteurs[docteur](1) + (line.unit_price - 0.055(line.unit_price))
+                    liste_docteurs[docteur](2) = liste_docteurs[docteur](2) + line.amount
+                else:
+                    list_element.append(line.unit_price)
+                    list_element.append(line.unit_price - 0.055(line.unit_price))
+                    list_element.append(line.amount)
+                    liste_docteurs[docteur] = list_element
+            
+            totaux = [0] * len(next(iter(liste_docteurs.values())))  # Crée une liste de zéros de la même longueur que les listes
+
+            # Calcul des totaux
+            for valeurs in liste_docteurs.values():
+                for i in range(len(valeurs)):
+                    totaux[i] += valeurs[i]
+
+            # Ajouter le total au dictionnaire
+            liste_docteurs["TOTAL"] = totaux
+            cle, valeur = list(liste_docteurs.items())[-1]
+            print("Clé :", cle, "Valeur :", valeur)
+
+            return liste_docteurs
+                    
 
     def total_medecin(self, records):
         # Exemplaire de sortie de liste 
