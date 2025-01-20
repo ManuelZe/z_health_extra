@@ -239,6 +239,11 @@ class Invoice(metaclass=PoolMeta):
             docteur = record.party.name+" "+record.party.lastname
             list_element = []
             for line in record.lines:
+                # for key, values in liste_docteurs.items():
+                #     if liste_docteurs[docteur] :
+                #         values[0] += line.unit_price
+                #         values[1] += (line.unit_price - 0.055(line.unit_price))
+                #         values[2] += line.amount
                 if docteur in liste_docteurs.keys():
                     liste_docteurs[docteur](0) = liste_docteurs[docteur](0) + line.unit_price
                     liste_docteurs[docteur](1) = liste_docteurs[docteur](1) + (line.unit_price - 0.055(line.unit_price))
