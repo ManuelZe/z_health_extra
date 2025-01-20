@@ -235,7 +235,6 @@ class Invoice(metaclass=PoolMeta):
         # {"JUDITH": (montant, impot, net_a_payer), "FRED": (montant, impot, net_a_payer), "MARINA": (montant, impot, net_a_payer)}
         liste_docteurs = {}
         for record in records:
-            montant = 0
             docteur = record.party.name+" "+record.party.lastname
             list_element = []
             for line in record.lines:
@@ -249,19 +248,19 @@ class Invoice(metaclass=PoolMeta):
                     list_element.append(line.amount)
                     liste_docteurs[docteur] = list_element
             
-            totaux = [0] * len(next(iter(liste_docteurs.values())))  # Crée une liste de zéros de la même longueur que les listes
+        totaux = [0] * len(next(iter(liste_docteurs.values())))  # Crée une liste de zéros de la même longueur que les listes
 
-            # Calcul des totaux
-            for valeurs in liste_docteurs.values():
-                for i in range(len(valeurs)):
-                    totaux[i] += valeurs[i]
+        # Calcul des totaux
+        for valeurs in liste_docteurs.values():
+            for i in range(len(valeurs)):
+                totaux[i] += valeurs[i]
 
-            # Ajouter le total au dictionnaire
-            liste_docteurs["TOTAL"] = totaux
-            cle, valeur = list(liste_docteurs.items())[-1]
-            print("Clé :", cle, "Valeur :", valeur)
+        # Ajouter le total au dictionnaire
+        liste_docteurs["TOTAL"] = totaux
+        cle, valeur = list(liste_docteurs.items())[-1]
+        print("Clé :", cle, "Valeur :", valeur)
 
-            return liste_docteurs
+        return liste_docteurs
                     
 
     def total_medecin(self, records):
