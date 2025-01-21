@@ -271,6 +271,28 @@ class Invoice(metaclass=PoolMeta):
 
         return liste_docteurs
                     
+    def bordereau_commission(self, records):
+        # exemplaire de sortie canevas
+        # liste_prix = ["Montant_prime_ht", "taxe", "Net_a_payer"]
+        liste_prix = []
+
+        Montant_prime_ht = 0
+        taxe = 0
+        net_a_payer = 0
+        for record in records :
+            if liste_prix == []:
+                Montant_prime_ht = record.amount
+                taxe = (0.055*record.amount)
+                net_a_payer = record.amount-0.055*record.amount
+            else :
+                liste_prix[0] += record.amount
+                liste_prix[1] += (0.055*record.amount)
+                liste_prix[2] += (record.amount-0.055*record.amount)
+
+        return liste_prix
+
+
+
 
     def total_medecin(self, records):
         # Exemplaire de sortie de liste 
