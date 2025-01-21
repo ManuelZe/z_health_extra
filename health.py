@@ -137,7 +137,7 @@ class Commission(metaclass=PoolMeta):
             if liste_prix == []:
                 Montant_prime_ht = record.amount
                 print(type(0.055), "----------------- ", type(record.amount))
-                taxe = (0.055*record.amount)
+                #taxe = (0.055*record.amount)
                 net_a_payer = record.amount-0.055*record.amount
             else :
                 liste_prix[0] += record.amount
