@@ -122,6 +122,29 @@ class LabTestType(ModelSQL, ModelView):
     code = fields.Char('Code', required=True)
     name = fields.Char('Name', required=True)
 
+class Commission(metaclass=PoolMeta):
+    __name__ = "commission"
+
+    def bordereau_commission(self, records):
+        # exemplaire de sortie canevas
+        # liste_prix = ["Montant_prime_ht", "taxe", "Net_a_payer"]
+        liste_prix = []
+
+        Montant_prime_ht = 0
+        taxe = 0
+        net_a_payer = 0
+        for record in records :
+            if liste_prix == []:
+                Montant_prime_ht = record.amount
+                taxe = (0.055*record.amount)
+                net_a_payer = record.amount-0.055*record.amount
+            else :
+                liste_prix[0] += record.amount
+                liste_prix[1] += (0.055*record.amount)
+                liste_prix[2] += (record.amount-0.055*record.amount)
+
+        return liste_prix
+
 class Invoice(metaclass=PoolMeta):
     __name__ = "account.invoice"
 
@@ -270,28 +293,6 @@ class Invoice(metaclass=PoolMeta):
         print("Clé :", cle, "Valeur :", valeur)
 
         return liste_docteurs
-                    
-    def bordereau_commission(self, records):
-        # exemplaire de sortie canevas
-        # liste_prix = ["Montant_prime_ht", "taxe", "Net_a_payer"]
-        liste_prix = []
-
-        Montant_prime_ht = 0
-        taxe = 0
-        net_a_payer = 0
-        for record in records :
-            if liste_prix == []:
-                Montant_prime_ht = record.amount
-                taxe = (0.055*record.amount)
-                net_a_payer = record.amount-0.055*record.amount
-            else :
-                liste_prix[0] += record.amount
-                liste_prix[1] += (0.055*record.amount)
-                liste_prix[2] += (record.amount-0.055*record.amount)
-
-        return liste_prix
-
-
 
 
     def total_medecin(self, records):
