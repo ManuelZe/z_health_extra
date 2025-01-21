@@ -230,6 +230,15 @@ class Invoice(metaclass=PoolMeta):
         
         return elements
 
+    @staticmethod
+    def default_invoice_date():
+        aujourdhui = datetime.today()
+
+        # Formater la date au format JJ.MM.AAAA
+        date_formatee = aujourdhui.strftime("%d.%m.%Y")
+
+        return date_formatee
+
     def commission_docteur(self, records):
         # Le modèle de sortie de la liste des docteurs : 
         # {"JUDITH": (montant, impot, net_a_payer), "FRED": (montant, impot, net_a_payer), "MARINA": (montant, impot, net_a_payer)}
