@@ -102,11 +102,19 @@ class PayInvoiceStart(metaclass=PoolMeta):
     __name__ = 'account.invoice.pay.start'
 
     number = fields.Char("Number")
+    montant_facture = fields.Numeric("Montant à Payer", readonly=True)
+    reste_payer = fields.Numeric("Reste à Payer", readonly=True)
     amount_l = fields.Char('Lettre', size=None)
+
+    @fields.depends('amount')
+    def on_change_with_montant_facture(self):
+        return self.amount
 
     @fields.depends('amount')
     def on_change_with_amount_l(self):
         return num2words(self.amount, lang='fr').capitalize()
+    
+    
 
 class TestType(metaclass=PoolMeta):
     'Type of Lab test'
@@ -159,6 +167,14 @@ class Invoice(metaclass=PoolMeta):
     montant_patient = fields.Function(fields.Numeric('Montant Client', digits=(16,
                 Eval('currency_digits', 2)), depends=['currency_digits']),
                 'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
+    
+    montant_verse = fields.Function(fields.Numeric('Montant Versé', digits=(16,
+                Eval('currency_digits', 2)), depends=['currency_digits']),
+                               'get_amount_with_insurance')
+    
+    remboursement = fields.Function(fields.Numeric('Remboursement', digits=(16,
+                Eval('currency_digits', 2)), depends=['currency_digits']),
+                               'get_amount_with_insurance')
     
     dernier_versement = fields.Function(fields.Numeric('Dernier Versement', digits=(16,
                 Eval('currency_digits', 2)), depends=['currency_digits']),
@@ -460,6 +476,8 @@ class Invoice(metaclass=PoolMeta):
         total_amount = dict((i.id, Decimal(0)) for i in invoices)
         dernier_versement = dict((i.id, Decimal(0)) for i in invoices)
         montant_patient = dict((i.id, Decimal(0)) for i in invoices)
+        montant_verse = dict((i.id, Decimal(0)) for i in invoices)
+        remboursement = dict((i.id, Decimal(0)) for i in invoices)
         montant_assurance = dict((i.id, Decimal(0)) for i in invoices)
         total_amount2 = dict((i.id, Decimal(0)) for i in invoices)
 
@@ -537,7 +555,22 @@ class Invoice(metaclass=PoolMeta):
                 montant_patient[invoice.id] = total_amount[invoice.id]
 
             if invoice.payment_lines :
+                next_lines_moves = 1
+                montant_verse[invoice.id] = 0
+                remboursement[invoice.id] = 0
+                i = 0
+                while next_lines_moves != 0 :
+                    next_lines_moves = MoveLine.search([('id', '=', invoice.payment_lines[len(invoice.payment_lines) -1].id+i)], limit=1)
+                    if next_lines_moves and next_lines_moves[0].credit != 0 :
+                        next_lines_moves = next_lines_moves[0].credit
+                        print("Le next_lines_moves", next_lines_moves)
+                    else :
+                        montant_verse[invoice.id] = next_lines_moves = MoveLine.search([('id', '=', invoice.payment_lines[len(invoice.payment_lines) -1].id+i)], limit=1)[0].debit
+                        print("Le Montant_versé", montant_verse)
+                        next_lines_moves = 0
+                    i = i+1
                 dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit  
+                remboursement[invoice.id] = montant_verse[invoice.id] - dernier_versement[invoice.id]
 
         for invoice in invoices_no_move:
             untaxed_amount[invoice.id] = sum(
@@ -553,7 +586,22 @@ class Invoice(metaclass=PoolMeta):
                 montant_patient[invoice.id] = total_amount[invoice.id]
 
             if invoice.payment_lines :
-                dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit
+                next_lines_moves = 1
+                montant_verse[invoice.id] = 0
+                remboursement[invoice.id] = 0
+                i = 0
+                while next_lines_moves != 0 :
+                    next_lines_moves = MoveLine.search([('id', '=', invoice.payment_lines[len(invoice.payment_lines) -1].id+i)], limit=1)
+                    if next_lines_moves and next_lines_moves[0].credit != 0 :
+                        next_lines_moves = next_lines_moves[0].credit
+                        print("Le next_lines_moves", next_lines_moves)
+                    else :
+                        montant_verse[invoice.id] = next_lines_moves = MoveLine.search([('id', '=', invoice.payment_lines[len(invoice.payment_lines) -1].id+i)], limit=1)[0].debit
+                        print("Le Montant_versé", montant_verse)
+                        next_lines_moves = 0
+                    i = i+1
+                dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit  
+                remboursement[invoice.id] = montant_verse[invoice.id] - dernier_versement[invoice.id]
         
         if invoice.montant_assurance != None :
             total_amount2[invoice.id] = total_amount[invoice.id] + invoice.montant_assurance
@@ -565,7 +613,9 @@ class Invoice(metaclass=PoolMeta):
             'total_amount': total_amount,
             'total_amount2': total_amount2,
             'montant_patient' : montant_patient,
-            'dernier_versement' :dernier_versement,
+            'dernier_versement' : dernier_versement,
+            'montant_verse' : montant_verse,
+            'remboursement' :remboursement,
             }
         for key in list(result.keys()):
             if key not in names:
