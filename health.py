@@ -118,7 +118,7 @@ class PayInvoiceStart(metaclass=PoolMeta):
     def on_change_with_reste_payer_l(self):
         return num2words(self.reste_payer, lang='fr').capitalize()
     
-    @fields.depends(['amount', 'montant_facture'])
+    @fields.depends('amount', 'montant_facture')
     def on_change_with_amount_l(self):
         return self.amount - self.montant_facture
     
