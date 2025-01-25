@@ -105,14 +105,22 @@ class PayInvoiceStart(metaclass=PoolMeta):
     montant_facture = fields.Numeric("Montant à Payer", readonly=True)
     reste_payer = fields.Numeric("Reste à Payer", readonly=True)
     amount_l = fields.Char('Lettre', size=None)
+    reste_payer_l = fields.Char('Reste à Payer en Lettre', size=None)
 
-    @fields.depends('amount')
     def on_change_with_montant_facture(self):
         return self.amount
 
     @fields.depends('amount')
     def on_change_with_amount_l(self):
         return num2words(self.amount, lang='fr').capitalize()
+    
+    @fields.depends('reste_payer')
+    def on_change_with_reste_payer_l(self):
+        return num2words(self.reste_payer, lang='fr').capitalize()
+    
+    @fields.depends(['amount', 'montant_facture'])
+    def on_change_with_amount_l(self):
+        return self.amount - self.montant_facture
     
     
 

@@ -9,7 +9,6 @@
         <newline/>
         <label name="montant_facture"/>
         <field name="montant_facture" colspan="3"/>
-        <field name="montant_facture_l" colspan="4"/>
     </xpath>
     <xpath expr="/form/field[@name=&quot;amount_l&quot;]" position="after">
         <newline/>
