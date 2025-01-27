@@ -10,5 +10,7 @@
         <field name="total_amount2"/>
         <label name="dernier_versement"/>
         <field name="dernier_versement"/>
+        <label name="remboursement"/>
+        <field name="remboursement"/>
     </xpath>
 </data>
