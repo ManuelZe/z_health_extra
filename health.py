@@ -129,7 +129,7 @@ class PayInvoice(metaclass=PoolMeta):
         invoice = self.record
 
         with Transaction().set_context(date=self.start.date):
-            if self.start.amount < (invoice.amount_to_pay_today or invoice.amount_to_pay)(1-0.6):
+            if self.start.amount < (invoice.amount_to_pay_today or invoice.amount_to_pay)*(1-0.6):
                 raise PayInvoiceError(
                     gettext('account_invoice'
                         '.msg_payment_amount_patient_60%'))
