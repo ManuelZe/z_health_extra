@@ -5,14 +5,9 @@
         <label name="amount_l"/>
         <field name="amount_l" colspan="3"/>
     </xpath>
-    <!-- <xpath expr="/form/field[@name=&quot;amount&quot;]" position="before">
-        <newline/>
-        <label name="montant_facture"/>
-        <field name="montant_facture" colspan="3"/>
-    </xpath>
     <xpath expr="/form/field[@name=&quot;payment_method&quot;]" position="after">
         <newline/>
         <label name="number"/>
         <field name="number"/>
-    </xpath> -->
+    </xpath>
 </data>
