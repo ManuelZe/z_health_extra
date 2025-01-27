@@ -175,7 +175,7 @@ class Invoice(metaclass=PoolMeta):
                 Eval('currency_digits', 2)), depends=['currency_digits']),
                 'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
     
-    montant_verse = fields.Function(fields.Numeric('Montant Versé', digits=(16,
+    montant_verse = fields.Function(fields.Numeric('Montant Versé Par le Patient', digits=(16,
                 Eval('currency_digits', 2)), depends=['currency_digits']),
                                'get_amount_with_insurance')
     
@@ -622,7 +622,7 @@ class Invoice(metaclass=PoolMeta):
             'montant_patient' : montant_patient,
             'dernier_versement' : dernier_versement,
             'montant_verse' : montant_verse,
-            'remboursement' :remboursement,
+            'remboursement' : remboursement,
             }
         for key in list(result.keys()):
             if key not in names:
