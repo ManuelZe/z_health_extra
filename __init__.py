@@ -21,6 +21,7 @@ def register():
         health.Commission,
         module='z_health_extra', type_='model')
     Pool.register(
+        health.PayInvoice,
         wizard_health_insurance.CreateServiceInvoice,
         module='z_health_extra', type_='wizard')
     Pool.register(

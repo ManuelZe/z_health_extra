@@ -116,7 +116,32 @@ class PayInvoiceStart(metaclass=PoolMeta):
     @fields.depends('reste_payer')
     def on_change_with_reste_payer_l(self):
         return num2words(self.reste_payer, lang='fr').capitalize()
-    
+
+
+class PayInvoice(metaclass=PoolMeta):
+    'Pay Invoice'
+    __name__ = 'account.invoice.pay'
+
+    def transition_choice(self):
+        pool = Pool()
+        Currency = pool.get('currency.currency')
+
+        invoice = self.record
+
+        with Transaction().set_context(date=self.start.date):
+            if self.start.amount < (invoice.amount_to_pay_today or invoice.amount_to_pay)(1-0.6):
+                raise PayInvoiceError(
+                    gettext('account_invoice'
+                        '.msg_payment_amount_patient_60%'))
+            amount = Currency.compute(self.start.currency,
+                self.start.amount, invoice.company.currency)
+            amount_invoice = Currency.compute(
+                self.start.currency, self.start.amount, invoice.currency)
+        _, remainder = self.get_reconcile_lines_for_amount(invoice, amount)
+        if (remainder == Decimal('0.0')
+                and amount_invoice <= invoice.amount_to_pay):
+            return 'pay'
+        return 'ask'
 
 class TestType(metaclass=PoolMeta):
     'Type of Lab test'

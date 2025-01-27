@@ -28,6 +28,7 @@ from trytond.pool import Pool
 from trytond.i18n import gettext
 from trytond.modules.health.core import get_institution
 from trytond.pool import PoolMeta
+from decimal import Decimal
 
 
 class HealthService(metaclass=PoolMeta):
@@ -39,3 +40,8 @@ class HealthService(metaclass=PoolMeta):
         help="Médécin prescripteur", select=True, required=True)
     agent = fields.Many2One('commission.agent', 'Agent de Commission',select=True, required=True)
     z_remise2 = fields.Numeric("Remise", digits=(3, 2), help="La Remise à appliquer sur la facture", required=False)
+
+    @fields.depends('z_remise2')
+    def on_change_with_z_remise2(self):
+        if self.z_remise2 :
+            return Decimal(10)
