@@ -16,9 +16,9 @@
         <field name="reste_payer" colspan="3"/>
         <field name="reste_payer_l" colspan="3"/>
     </xpath> -->
-    <xpath expr="/form/field[@name=&quot;payment_method&quot;]" position="after">
-        
+    <!-- <xpath expr="/form/field[@name=&quot;payment_method&quot;]" position="after">
+        <newline/>
         <label name="number"/>
         <field name="number"/>
-    </xpath>
+    </xpath> -->
 </data>
