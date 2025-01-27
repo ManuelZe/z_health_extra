@@ -311,7 +311,6 @@ class Invoice(metaclass=PoolMeta):
         # Ajouter le total au dictionnaire
         liste_docteurs["TOTAL"] = totaux
         cle, valeur = list(liste_docteurs.items())[-1]
-        print("Clé :", cle, "Valeur :", valeur)
 
         return liste_docteurs
 
@@ -565,10 +564,8 @@ class Invoice(metaclass=PoolMeta):
                     next_lines_moves = MoveLine.search([('id', '=', invoice.payment_lines[len(invoice.payment_lines) -1].id+i)], limit=1)
                     if next_lines_moves and next_lines_moves[0].credit != 0 :
                         next_lines_moves = next_lines_moves[0].credit
-                        print("Le next_lines_moves", next_lines_moves)
                     else :
                         montant_verse[invoice.id] = next_lines_moves = MoveLine.search([('id', '=', invoice.payment_lines[len(invoice.payment_lines) -1].id+i)], limit=1)[0].debit
-                        print("Le Montant_versé", montant_verse)
                         next_lines_moves = 0
                     i = i+1
                 dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit  
@@ -596,10 +593,8 @@ class Invoice(metaclass=PoolMeta):
                     next_lines_moves = MoveLine.search([('id', '=', invoice.payment_lines[len(invoice.payment_lines) -1].id+i)], limit=1)
                     if next_lines_moves and next_lines_moves[0].credit != 0 :
                         next_lines_moves = next_lines_moves[0].credit
-                        print("Le next_lines_moves", next_lines_moves)
                     else :
                         montant_verse[invoice.id] = next_lines_moves = MoveLine.search([('id', '=', invoice.payment_lines[len(invoice.payment_lines) -1].id+i)], limit=1)[0].debit
-                        print("Le Montant_versé", montant_verse)
                         next_lines_moves = 0
                     i = i+1
                 dernier_versement[invoice.id] = invoice.payment_lines[len(invoice.payment_lines) - 1].credit  
