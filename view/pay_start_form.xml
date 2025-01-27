@@ -5,16 +5,10 @@
         <label name="amount_l"/>
         <field name="amount_l" colspan="3"/>
     </xpath>
-    <xpath expr="/form/field[@name=&quot;amount&quot;]" position="before">
+    <xpath expr="/form/field[@name=&quot;amount_l&quot;]" position="before">
         <newline/>
         <label name="montant_facture"/>
         <field name="montant_facture" colspan="3"/>
-    </xpath>
-    <xpath expr="/form/field[@name=&quot;amount_l&quot;]" position="after">
-        <newline/>
-        <label name="reste_payer"/>
-        <field name="reste_payer" colspan="3"/>
-        <field name="reste_payer_l" colspan="3"/>
     </xpath>
     <xpath expr="/form/field[@name=&quot;payment_method&quot;]" position="after">
         <newline/>
