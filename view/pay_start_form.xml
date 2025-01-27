@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <data>
-    <xpath expr="/form/field[@name=&quot;amount&quot;]" position="after">
+    <xpath expr="/form/field[@name=&quot;currency&quot;]" position="after">
         <newline/>
         <label name="amount_l"/>
         <field name="amount_l" colspan="3"/>
     </xpath>
-    <!-- <xpath expr="/form/field[@name=&quot;amount&quot;]" position="before">
+    <xpath expr="/form/field[@name=&quot;amount&quot;]" position="before">
         <newline/>
         <label name="montant_facture"/>
         <field name="montant_facture" colspan="3"/>
@@ -15,10 +15,10 @@
         <label name="reste_payer"/>
         <field name="reste_payer" colspan="3"/>
         <field name="reste_payer_l" colspan="3"/>
-    </xpath> -->
-    <!-- <xpath expr="/form/field[@name=&quot;payment_method&quot;]" position="after">
+    </xpath>
+    <xpath expr="/form/field[@name=&quot;payment_method&quot;]" position="after">
         <newline/>
         <label name="number"/>
         <field name="number"/>
-    </xpath> -->
+    </xpath>
 </data>
