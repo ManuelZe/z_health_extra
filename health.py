@@ -300,14 +300,14 @@ class Invoice(metaclass=PoolMeta):
         
         return elements
 
-    # @staticmethod
-    # def default_invoice_date():
-    #     aujourdhui = datetime.today()
-
-    #     # Formater la date au format JJ.MM.AAAA
-    #     date_formatee = aujourdhui.strftime("%d.%m.%Y")
-
-    #     return date_formatee
+    def format_nombre(n):
+        """
+        Formate un nombre en ajoutant des séparateurs de milliers.
+        
+        :param n: int - Le nombre à formater
+        :return: str - Le nombre formaté avec des virgules comme séparateurs de milliers
+        """
+        return f"{n:,}"
 
     def commission_docteur(self, records):
         # Le modèle de sortie de la liste des docteurs : 
