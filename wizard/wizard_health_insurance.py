@@ -176,7 +176,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                         if discount :
                             print("regardons le plafond et le discount[]", type(plafond)==type(Decimal(0)), "-------------- ", discount['value'])
-                            if (plafond != Decimal(0) or plafond != None) and discount['value'] :
+                            if plafond != Decimal(0) and discount['value'] :
                                 montant_ass = service.insurance_plan.plafond
                                 montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                                 str_disc = str(discount['value']) + '%'
