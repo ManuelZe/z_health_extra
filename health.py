@@ -63,6 +63,7 @@ from trytond.model import fields
 from trytond.pool import PoolMeta
 from trytond.modules.account.tax import TaxableMixin
 from trytond.modules.product import price_digits
+from trytond.modules.health.core import get_health_professional
 
 from .exceptions import (
     InvoiceTaxValidationError, InvoiceNumberError, InvoiceValidationError,
@@ -645,4 +646,26 @@ class Invoice(metaclass=PoolMeta):
                 del result[key]
         return result
     
+class GnuHealthPatientLabTest(metaclass=PoolMeta) :
+    'Lab Test Request'
+    __name__ = 'gnuhealth.patient.lab.test'   
+
+    @staticmethod
+    def default_doctor_id():
+        return get_health_professional()
     
+class GnuHealthPatientLabTest(metaclass=PoolMeta) :
+    'Lab Test Request'
+    __name__ = 'gnuhealth.patient.lab.test'   
+
+    @staticmethod
+    def default_doctor_id():
+        return get_health_professional()
+
+class ImagingTestRequest(metaclass=PoolMeta):
+    'Imaging Test Request'
+    __name__ = 'gnuhealth.imaging.test.request'
+
+    @staticmethod
+    def default_doctor():
+        return get_health_professional()
