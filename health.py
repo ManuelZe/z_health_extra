@@ -301,6 +301,7 @@ class Invoice(metaclass=PoolMeta):
         
         return elements
 
+    @staticmethod
     def format_nombre(n):
         """
         Formate un nombre en ajoutant des séparateurs de milliers.
