@@ -216,7 +216,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             
                                         montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                             
-                            elif (plafond == Decimal(0) or plafond == None) and discount['value']/100 == 1:
+                            elif (plafond == Decimal(0) or plafond == None) and discount['value']/Decimal(100) == 1:
                                 if 'value' in list(discount.keys()):
                                     if discount['value']:
                                         if (discount['type'] == 'pct'):
