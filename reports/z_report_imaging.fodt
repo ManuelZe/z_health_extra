@@ -702,8 +702,8 @@
    <text:p text:style-name="P23"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P25"/>
    <text:p text:style-name="P26">Confraternellement</text:p>
-   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.realisate&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P27"><text:placeholder text:placeholder-type="text">&lt;interpretation.realisate.rec_name&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.realisateur&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P27"><text:placeholder text:placeholder-type="text">&lt;interpretation.realisateur.rec_name&gt;</text:placeholder></text:p>
    <text:p text:style-name="P23"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P28"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
   </office:text>
