@@ -106,8 +106,14 @@ class Move(metaclass=PoolMeta):
             to_reconcile = [l for l in move.lines
                 if ((l.debit == l.credit == Decimal('0'))
                     and l.account.reconcile)]
-            print("le to_reconcile ------------ ", to_reconcile)
-            to_reconcile = sorted(to_reconcile, key=keyfunc)
+            print("le to_reconcile ------------ ", to_reconcile[0])
+            MoveLine = Pool().get('account.move.line')
+            lines = MoveLine.browse([271, 270])
+
+            # Affichage des champs pour chaque ligne récupérée
+            for line in lines:
+                print(line.__dict__)
+                to_reconcile = sorted(to_reconcile, key=keyfunc)
             for _, zero_lines in groupby(to_reconcile, keyfunc):
                 Line.reconcile(list(zero_lines))
         cls.save(moves)
