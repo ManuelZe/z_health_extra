@@ -20,3 +20,4 @@ class Invoice(metaclass=PoolMeta):
         except:
             return None
 
+    

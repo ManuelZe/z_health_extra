@@ -256,15 +256,6 @@ class Invoice(metaclass=PoolMeta):
         return total
 
 
-    # montant_patient = fields.Numeric('Montant Client', digits=(16,
-    #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
-    
-    # dernier_versement = fields.Numeric('Dernier Versement', digits=(16,
-    #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
-
-    # total_amount2 = fields.Numeric('Total avec Assurance', digits=(16,
-    #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
-
     def total_synth_facture(self, records):
         # Exemplaire de sortie de liste 
         # elements2 = ["total_amount", "montant_assurance", "Remise",  "montant_patient-amount_to_pay", "montant_patient", "amount_to_pay"]
@@ -491,7 +482,6 @@ class Invoice(metaclass=PoolMeta):
             self.total_amount2 = self.currency.round(self.total_amount)
             self.total_amount = self.currency_round(self.montant_patient)
 
-
     @classmethod
     def get_amount_with_insurance(cls, invoices, names):
         pool = Pool()
@@ -646,7 +636,8 @@ class Invoice(metaclass=PoolMeta):
             if key not in names:
                 del result[key]
         return result
-    
+
+
 class GnuHealthPatientLabTest(metaclass=PoolMeta) :
     'Lab Test Request'
     __name__ = 'gnuhealth.patient.lab.test'   
