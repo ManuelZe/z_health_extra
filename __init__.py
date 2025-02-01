@@ -3,7 +3,7 @@
 
 from trytond.pool import Pool
 from .import health_services
-from . import health
+from . import health, move
 from .wizard import wizard_health_insurance
 
 __all__ = ['register']
@@ -21,6 +21,7 @@ def register():
         health.Commission,
         health.GnuHealthPatientLabTest,
         health.ImagingTestRequest,
+        move.Move,
         module='z_health_extra', type_='model')
     Pool.register(
         health.PayInvoice,
