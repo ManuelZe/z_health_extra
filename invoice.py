@@ -7,6 +7,7 @@ from sql.aggregate import Sum
 from trytond.pyson import Eval, If, Bool
 from trytond.transaction import Transaction
 from trytond.tools import grouped_slice
+from trytond.report import Report
 
 from trytond.modules.product import round_price
 
@@ -18,3 +19,4 @@ class Invoice(metaclass=PoolMeta):
             return self.lines[0].origin.name.agent.id
         except:
             return None
+
