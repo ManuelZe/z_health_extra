@@ -181,7 +181,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                 if 'value' in list(discount.keys()):
                                     if discount['value']:
                                         if (discount['type'] == 'pct'):
-                                            unit_price *= decimal.Decimal(0.01)
+                                            unit_price *= Decimal('0.01')
                                             # Use price_decimal value from
                                             # system configuration to set
                                             # the number of decimals
@@ -192,12 +192,12 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                             desc = line.desc + " (Assurance " + \
                                                 str(str_disc) + ")"
                                             
-                                            montant_ass = (unit_price2 - unit_price)*line.qty
+                                            montant_ass = (unit_price2)*line.qty
                                                 
                                         else:
                                             unit_price = discount['value']
                                             desc = f"{line.desc} (policy plan)"
-                                            montant_ass = (unit_price2 - unit_price)*line.qty
+                                            montant_ass = (unit_price2)*line.qty
                             
                                         montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
 
