@@ -78,6 +78,15 @@ class Lab(metaclass=PoolMeta):
     macroscopie = fields.Text('Macroscopie')
     microscopie = fields.Text('Microscopie')
 
+    @staticmethod
+    def prescriptor_name(self, id):
+
+        pool = Pool()
+        Result = pool.get('gnuhealth.lab')
+        Results = Result.search([('request_order', '=', id)], limit=1)
+        return Results[0].service.requestor.name.name+" "+Results[0].service.requestor.name.lastname
+    
+
 class Insurance(metaclass=PoolMeta):
     'Insurance'
     __name__ = 'gnuhealth.insurance'
@@ -662,16 +671,4 @@ class PatientLabTestRequest(metaclass=PoolMeta):
     def default_doctor_id(self):
         return self.service.requestor
 
-
-class Lab(metaclass=PoolMeta):
-    'Patient Lab Test Results'
-    __name__ = 'gnuhealth.lab'
-    
-    @staticmethod
-    def prescriptor_name(self, id):
-
-        pool = Pool()
-        Result = pool.get('gnuhealth.lab')
-        Results = Result.search([('request_order', '=', id)], limit=1)
-        return Results[0].service.requestor.name.name+" "+Results[0].service.requestor.name.lastname
 
