@@ -644,21 +644,6 @@ class Invoice(metaclass=PoolMeta):
         return result
 
 
-class GnuHealthPatientLabTest(metaclass=PoolMeta) :
-    'Lab Test Request'
-    __name__ = 'gnuhealth.patient.lab.test'   
-
-    @staticmethod
-    def default_doctor_id():
-        return get_health_professional()
-    
-class GnuHealthPatientExpTest(metaclass=PoolMeta) :
-    'Lab Test Request'
-    __name__ = 'gnuhealth.patient.exp.test'   
-
-    @staticmethod
-    def default_doctor_id():
-        return get_health_professional()
 
 class ImagingTestRequest(metaclass=PoolMeta):
     'Imaging Test Request'
