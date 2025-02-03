@@ -245,7 +245,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             desc = line.desc + " (Assurance " + \
                                         str(str_disc) + ")"
                             if Decimal(plafond) > Decimal(0) :
-                                if Decimal(amount) <= Decimal(plafond) :
+                                if Decimal(amount) < Decimal(plafond) :
                                     unit_price = Decimal(0)
                                     plafond -= Decimal(amount)
                                 else:
