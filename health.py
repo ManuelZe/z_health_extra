@@ -622,6 +622,12 @@ class Invoice(metaclass=PoolMeta):
             total_amount2[invoice.id] = total_amount[invoice.id] + invoice.montant_assurance
         else : 
             total_amount2[invoice.id] = total_amount[invoice.id]
+
+        if invoice.health_service != None:
+                if invoice.health_service.insurance_plan != None:
+                    if invoice.health_service.insurance_plan.z_couverture == 100 and invoice.health_service.insurance_plan.plafond == None :
+                        total_amount2[invoice.id] = total_amount[invoice.id]
+            
         result = {
             'untaxed_amount': untaxed_amount,
             'tax_amount': tax_amount,
