@@ -310,6 +310,14 @@ class Invoice(metaclass=PoolMeta):
         :return: str - Le nombre formaté avec des virgules comme séparateurs de milliers
         """
         return f"{n:,}"
+    
+    @staticmethod
+    def affichage_assurance(n) :
+
+        if float(n) < float(3) :
+            return 0.0
+        else :
+            return n
 
     def commission_docteur(self, records):
         # Le modèle de sortie de la liste des docteurs : 
