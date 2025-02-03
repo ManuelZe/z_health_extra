@@ -646,9 +646,9 @@ class GnuHealthPatientLabTest(metaclass=PoolMeta) :
     def default_doctor_id():
         return get_health_professional()
     
-class GnuHealthPatientLabTest(metaclass=PoolMeta) :
+class GnuHealthPatientExpTest(metaclass=PoolMeta) :
     'Lab Test Request'
-    __name__ = 'gnuhealth.patient.lab.test'   
+    __name__ = 'gnuhealth.patient.exp.test'   
 
     @staticmethod
     def default_doctor_id():
