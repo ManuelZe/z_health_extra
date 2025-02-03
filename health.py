@@ -82,7 +82,7 @@ class Lab(metaclass=PoolMeta):
     def prescriptor_name(id):
 
         pool = Pool()
-        Result = pool.get('gnuhealth.lab')
+        Result = pool.get('gnuhealth.patient.lab.test')
         Results = Result.search([('request_order', '=', id)], limit=1)
         return Results[0].service.requestor.name.name+" "+Results[0].service.requestor.name.lastname
     
