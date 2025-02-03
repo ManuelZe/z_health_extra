@@ -175,26 +175,13 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                         amount = unit_price * line.qty
 
-                        if plafond != Decimal(0) :
-                            montant_ass = service.insurance_plan.plafond
-                            montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-                            str_disc = str(discount['value']) + '%'
-                            desc = line.desc + " (Assurance " + \
-                                        str(str_disc) + ")"
-                            if Decimal(plafond) > Decimal(0) :
-                                if Decimal(amount) <= Decimal(plafond) :
-                                    unit_price = Decimal(0)
-                                    plafond -= Decimal(amount)
-                                else:
-                                    amount = amount - plafond
-                                    unit_price = amount/line.qty
-                                    plafond = Decimal(0)
-                            else :
-                                unit_price = unit_price
-                                amount = unit_price * line.qty
+
+                        if plafond == Decimal(0)  :
+                            unit_price = unit_price
+                            amount = unit_price * line.qty
 
 
-                        elif discount and plafond == Decimal(0) :
+                        elif discount :
                             print("regardons le plafond et le discount[]", type(plafond)==type(Decimal(0)), "-------------- ", discount['value'])
                             
                             if discount['value'] == 100.0:
@@ -243,6 +230,23 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                             unit_price = discount['value']
                                             desc = f"{line.desc} (Assurance plan)"
                                             montant_ass = (unit_price2)*line.qty
+
+                        elif plafond != Decimal(0) :
+                            montant_ass = service.insurance_plan.plafond
+                            montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+                            str_disc = str(discount['value']) + '%'
+                            desc = line.desc + " (Assurance " + \
+                                        str(str_disc) + ")"
+                            if Decimal(plafond) > Decimal(0) :
+                                if Decimal(amount) <= Decimal(plafond) :
+                                    unit_price = Decimal(0)
+                                    plafond -= Decimal(amount)
+                                else:
+                                    amount = amount - plafond
+                                    unit_price = amount/line.qty
+                                    plafond = Decimal(0)
+
+
                     elif service.z_remise2 :
                         remise = service.z_remise2
                         amount = unit_price * line.qty
