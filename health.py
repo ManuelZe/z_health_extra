@@ -79,7 +79,7 @@ class Lab(metaclass=PoolMeta):
     microscopie = fields.Text('Microscopie')
 
     @staticmethod
-    def prescriptor_name(self, id):
+    def prescriptor_name(id):
 
         pool = Pool()
         Result = pool.get('gnuhealth.lab')
