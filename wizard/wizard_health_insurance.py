@@ -178,7 +178,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                         if plafond == Decimal(0)  :
                             montant_ass = service.insurance_plan.plafond
-                            montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+                            if montant_ass :
+                                montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                             unit_price = unit_price
                             amount = unit_price * line.qty
 
