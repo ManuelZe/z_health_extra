@@ -667,3 +667,21 @@ class ImagingTestRequest(metaclass=PoolMeta):
     @staticmethod
     def default_doctor():
         return get_health_professional()
+    
+
+class PatientLabTestRequest(metaclass=PoolMeta):
+    'Lab Order'
+    __name__ = 'gnuhealth.patient.lab.test'
+
+    @staticmethod
+    def default_doctor_id(self):
+        return self.service.requestor
+
+
+class ImagingTestRequest(ModelSQL, ModelView):
+    'Imaging Order'
+    __name__ = 'gnuhealth.imaging.test.request'
+
+    @staticmethod
+    def default_doctor(self):
+        return self.service.requestor
