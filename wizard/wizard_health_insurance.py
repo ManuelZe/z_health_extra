@@ -228,9 +228,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                             print("le plafond des plafond ------ ", plafond)
 
-                        if service.insurance_plan.plafond != Decimal(0) :
-                            print("Au cas où le plafond est 0", service.insurance_plan.plafond)
-                            if plafond == Decimal(0) :
+                        if service.insurance_plan.plafond != None and plafond == Decimal(0) :
                                 print("Au cas où le plafond est 0", plafond)
                                 montant_ass = service.insurance_plan.plafond 
                                 if montant_ass :
