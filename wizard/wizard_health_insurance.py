@@ -188,7 +188,10 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                     amount = amount - plafond
                                     unit_price = amount/line.qty
                                     plafond = Decimal(0)
-                                    
+                                
+                                if plafond == Decimal(0) :
+                                    plafond = service.insurance_plan.plafond
+
                         elif discount and plafond == Decimal(0):
                             print("regardons le plafond et le discount[]", type(plafond)==type(Decimal(0)), "-------------- ", discount['value'])
                             
