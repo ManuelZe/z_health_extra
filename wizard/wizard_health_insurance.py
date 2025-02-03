@@ -144,6 +144,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                 plafond = service.insurance_plan.plafond
             total_assurance = Decimal(0)
             for line in service.service_line:
+                plafond2 = plafond
                 seq = seq + 1
                 account = line.product.template.account_revenue_used.id
 
@@ -221,20 +222,22 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                         montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
 
                             else :
-                                print("cas 2 ------------------------")
-                                montant_ass = service.insurance_plan.plafond
-                                montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-                                str_disc = str(discount['value']) + '%'
-                                desc = line.desc + " (Assurance " + \
-                                            str(str_disc) + ")"
-                                if Decimal(plafond) > Decimal(0) :
-                                    if Decimal(amount) <= Decimal(plafond) :
-                                        unit_price = Decimal(0)
-                                        plafond -= Decimal(amount)
-                                    else:
-                                        amount = amount - plafond
-                                        unit_price = amount/line.qty
-                                        plafond = Decimal(0)                            
+                                if 'value' in list(discount.keys()):
+                                    if discount['value']:
+                                        if (discount['type'] == 'pct'):
+                                            unit_price *= decimal.Decimal(
+                                                1 - discount['value']/100)
+                                            # Use price_decimal value from
+                                            # system configuration to set
+                                            # the number of decimals
+                                            unit_price = round_price(unit_price)
+
+                                            # Add remark on description discount
+                                            str_disc = str(discount['value']) + '%'
+                                            desc = line.desc + " (Assurance " + \
+                                                str(str_disc) + ")"
+
+                                            montant_ass = (unit_price2 - unit_price)*line.qty                            
 
                     elif service.z_remise2 :
                         remise = service.z_remise2
