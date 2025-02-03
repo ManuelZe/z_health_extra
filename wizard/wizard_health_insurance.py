@@ -233,7 +233,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             montant_ass = service.insurance_plan.plafond
                             if montant_ass :
                                 montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-                            unit_price = unit_price
+                            unit_price = unit_price2
                             amount = unit_price * line.qty
 
 
