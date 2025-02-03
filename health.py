@@ -83,7 +83,7 @@ class Lab(metaclass=PoolMeta):
 
         pool = Pool()
         Result = pool.get('gnuhealth.patient.lab.test')
-        Results = Result.search([('request_order', '=', id)], limit=1)
+        Results = Result.search([('request', '=', id)], limit=1)
         return Results[0].service.requestor.name.name+" "+Results[0].service.requestor.name.lastname
     
 
