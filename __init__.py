@@ -19,7 +19,6 @@ def register():
         health.TestType,
         health.PayInvoiceStart,
         health.Commission,
-        health.GnuHealthPatientLabTest,
         health.ImagingTestRequest,
         health.PatientLabTestRequest,
         module='z_health_extra', type_='model')
