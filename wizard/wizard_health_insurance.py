@@ -283,6 +283,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                 elif service.insurance_plan :
                     total_assurance += montant_ass
 
+            total_assurance = total_assurance.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
             invoice_data['montant_assurance'] = total_assurance
 
             invoices.append(invoice_data)
