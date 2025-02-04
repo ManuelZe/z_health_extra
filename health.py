@@ -79,6 +79,11 @@ class Lab(metaclass=PoolMeta):
     microscopie = fields.Text('Microscopie')
 
     @staticmethod
+    def liste():
+
+        return []
+
+    @staticmethod
     def prescriptor_name(id):
 
         pool = Pool()
