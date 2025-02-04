@@ -98,7 +98,7 @@ class Lab(metaclass=PoolMeta):
                     print("Cas 2222222222222222222")
                     liste_paillasse.append(record.test.test_type.name)
         
-        print("gerrrrrrrrrrrrrrrrg")
+        print("gerrrrrrrrrrrrrrrrg", liste_paillasse)
         
         return liste_paillasse
 
