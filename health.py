@@ -84,7 +84,7 @@ class Lab(metaclass=PoolMeta):
         unites_remplies = [record.diagnosis for record in records if record.diagnosis]
         
         # Joindre les unités avec des points
-        return ". ".join(unites_remplies)
+        return "\n".join(unites_remplies)
 
     @staticmethod
     def prescriptor_name(id):
