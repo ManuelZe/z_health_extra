@@ -4,7 +4,7 @@
  <office:meta><meta:generator>LibreOffice/24.8.4.2$Linux_X86_64 LibreOffice_project/480$Build-2</meta:generator><meta:creation-date>2008-06-07T15:26:29</meta:creation-date><dc:date>2008-08-27T16:57:45</dc:date><meta:editing-cycles>1</meta:editing-cycles><meta:editing-duration>PT0S</meta:editing-duration><meta:document-statistic meta:table-count="3" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="38" meta:word-count="73" meta:character-count="909" meta:non-whitespace-character-count="870"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">10582</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">4</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">35078</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">18371</config:config-item>
@@ -16,9 +16,9 @@
      <config:config-item config:name="ViewLeft" config:type="long">15187</config:config-item>
      <config:config-item config:name="ViewTop" config:type="long">16088</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">10582</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">4</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">35077</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">28951</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">18373</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
