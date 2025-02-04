@@ -95,9 +95,10 @@ class Lab(metaclass=PoolMeta):
                 if analyte.result_text:
                     res_text = analyte.result_text
                 if analyte.result:
-                    if analyte.units.name :
-                        res = str(analyte.result) + \
-                            " (" + analyte.units.name + ")  "
+                    if analyte.units:
+                        if analyte.units.name :
+                            res = str(analyte.result) + \
+                                " (" + analyte.units.name + ")  "
                     else :
                         res = str(analyte.result) + " "
                 summ = summ + analyte.rec_name + "  " + \
