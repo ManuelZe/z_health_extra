@@ -86,6 +86,21 @@ class Lab(metaclass=PoolMeta):
         # Joindre les unités avec des points
         return "\n".join(unites_remplies)
     
+    def get_analytes_summary(self, name):
+        summ = ""
+        for analyte in self.critearea:
+            if analyte.result or analyte.result_text:
+                res = ""
+                res_text = ""
+                if analyte.result_text:
+                    res_text = analyte.result_text
+                if analyte.result:
+                    res = str(analyte.result) + \
+                        " (" + analyte.units.name + ")  "
+                summ = summ + analyte.rec_name + "  " + \
+                    res + res_text + "\n"
+        return summ
+
     @staticmethod
     def listes_paillasses(records):
         
