@@ -91,8 +91,9 @@ class Lab(metaclass=PoolMeta):
         
         liste_paillasse = []
         for record in records :
-            if record.test.test_type.name and record.test.test_type.name not in liste_paillasse:
-                liste_paillasse.append(record.test.test_type.name)
+            if record.test.test_type.name :
+                if record.test.test_type.name not in liste_paillasse:
+                    liste_paillasse.append(record.test.test_type.name)
         
         print("gerrrrrrrrrrrrrrrrg")
         
