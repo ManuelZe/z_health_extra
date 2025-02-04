@@ -94,6 +94,8 @@ class Lab(metaclass=PoolMeta):
             if record.test.test_type.name and record.test.test_type.name not in liste_paillasse:
                 liste_paillasse.append(record.test.test_type.name)
         
+        print("gerrrrrrrrrrrrrrrrg")
+        
         return liste_paillasse
 
     @staticmethod
