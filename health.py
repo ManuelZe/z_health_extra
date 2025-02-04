@@ -79,9 +79,12 @@ class Lab(metaclass=PoolMeta):
     microscopie = fields.Text('Microscopie')
 
     @staticmethod
-    def liste():
-
-        return []
+    def afficher_unites_compactees(records):
+        # Filtrer les unités non vides
+        unites_remplies = [record.diagnosis for record in records if record.diagnosis]
+        
+        # Joindre les unités avec des points
+        return ". ".join(unites_remplies)
 
     @staticmethod
     def prescriptor_name(id):
