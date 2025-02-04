@@ -84,8 +84,17 @@ class Lab(metaclass=PoolMeta):
         unites_remplies = [record.diagnosis for record in records if record.diagnosis]
         
         # Joindre les unités avec des points
-        print('unites_remplies --------fffffffffffffffffffffffffffff-- ', unites_remplies)
         return "\n".join(unites_remplies)
+    
+    @staticmethod
+    def listes_paillasses(records):
+        
+        liste_paillasse = []
+        for record in records :
+            if record.test.test_type.name and record.test.test_type.name not in liste_paillasse:
+                liste_paillasse.append(record.test.test_type.name)
+        
+        return liste_paillasse
 
     @staticmethod
     def prescriptor_name(id):
