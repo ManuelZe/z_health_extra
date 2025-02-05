@@ -265,47 +265,20 @@ class Invoice(metaclass=PoolMeta):
     
     montant_en_lettre = fields.Char('Lettre')
 
-    imaging_requests = fields.One2Many(
-        'gnuhealth.imaging.test.request', 'service', 'Demandes Imagerie',
-        help="Liste des demandes d’imagerie liées à cette facture."
-    )
-
-    lab_requests = fields.One2Many(
-        'gnuhealth.patient.lab.test', 'service', 'Demandes Laboratoire',
-        help="Liste des demandes de laboratoire liées à cette facture."
-    )
-
-    functional_explorations = fields.One2Many(
-        'gnuhealth.patient.exp.test', 'service', 'Explorations Fonctionnelles',
-        help="Liste des explorations fonctionnelles liées à cette facture."
-    )
-
-    @fields.depends('reference')
-    def on_change_with_imaging_requests(self):
-        ImagingRequest = Pool().get('gnuhealth.imaging.test.request')
-        return ImagingRequest.search([('service.name', '=', self.reference)])
-    
-    @fields.depends('reference')
-    def on_change_with_lab_requests(self):
-        print("la référence ----------- ", self.reference)
-        LabTest = Pool().get('gnuhealth.patient.lab.test')
-        LabTests = LabTest.search([('service.name', '=', self.reference)])
-        print("------------------ ", LabTests)
-        return LabTest.search([('service.name', '=', self.reference)])
-
     @staticmethod
     def lab_requests2(reference):
-        print("la référence ----------- ", reference)
         LabTest = Pool().get('gnuhealth.patient.lab.test')
-        LabTests = LabTest.search([('service.name', '=', reference)])
-        print("------------------ ", LabTests)
         return LabTest.search([('service.name', '=', reference)])
     
-    @fields.depends('reference')
-    def on_change_with_functional_explorations(self):
-        ExpTest = Pool().get('gnuhealth.patient.exp.test')
-        return ExpTest.search([('service.name', '=', self.reference)])
+    @staticmethod
+    def img_requests2(reference):
+        ImagingRequest = Pool().get('gnuhealth.imaging.test.request')
+        return ImagingRequest.search([('service.name', '=', reference)])
     
+    @staticmethod
+    def exp_requests2(reference):
+        ExpTest = Pool().get('gnuhealth.patient.exp.test')
+        return ExpTest.search([('service.name', '=', reference)])    
 
 
     @fields.depends('dernier_versement')
