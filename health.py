@@ -288,6 +288,8 @@ class Invoice(metaclass=PoolMeta):
     @fields.depends('reference')
     def on_change_with_lab_requests(self):
         LabTest = Pool().get('gnuhealth.patient.lab.test')
+        LabTests = LabTest.search([('service.name', '=', self.reference)])
+        print("------------------ ", LabTests)
         return LabTest.search([('service.name', '=', self.reference)])
     
     @fields.depends('reference')
