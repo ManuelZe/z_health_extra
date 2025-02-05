@@ -265,6 +265,38 @@ class Invoice(metaclass=PoolMeta):
     
     montant_en_lettre = fields.Char('Lettre')
 
+    imaging_requests = fields.One2Many(
+        'gnuhealth.imaging.test.request', 'service_number', 'Demandes Imagerie',
+        help="Liste des demandes d’imagerie liées à cette facture."
+    )
+
+    lab_requests = fields.One2Many(
+        'gnuhealth.patient.lab.test', 'service_number', 'Demandes Laboratoire',
+        help="Liste des demandes de laboratoire liées à cette facture."
+    )
+
+    functional_explorations = fields.One2Many(
+        'gnuhealth.patient.exp.test', 'service_number', 'Explorations Fonctionnelles',
+        help="Liste des explorations fonctionnelles liées à cette facture."
+    )
+
+    @fields.depends('reference')
+    def on_change_with_imaging_requests(self):
+        ImagingRequest = Pool().get('gnuhealth.imaging.test.request')
+        return ImagingRequest.search([('service.name', '=', self.reference)])
+    
+    @fields.depends('reference')
+    def on_change_with_lab_requests(self):
+        LabTest = Pool().get('gnuhealth.patient.lab.test')
+        return LabTest.search([('service.name', '=', self.reference)])
+    
+    @fields.depends('reference')
+    def on_change_with_functional_explorations(self):
+        ExpTest = Pool().get('gnuhealth.patient.exp.test')
+        return ExpTest.search([('service.name', '=', self.reference)])
+    
+
+
     @fields.depends('dernier_versement')
     def on_change_with_montant_en_lettre(self):
         return num2words(self.amount, lang='fr').capitalize()
