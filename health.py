@@ -266,17 +266,17 @@ class Invoice(metaclass=PoolMeta):
     montant_en_lettre = fields.Char('Lettre')
 
     imaging_requests = fields.One2Many(
-        'gnuhealth.imaging.test.request', 'service_number', 'Demandes Imagerie',
+        'gnuhealth.imaging.test.request', 'service', 'Demandes Imagerie',
         help="Liste des demandes d’imagerie liées à cette facture."
     )
 
     lab_requests = fields.One2Many(
-        'gnuhealth.patient.lab.test', 'service_number', 'Demandes Laboratoire',
+        'gnuhealth.patient.lab.test', 'service', 'Demandes Laboratoire',
         help="Liste des demandes de laboratoire liées à cette facture."
     )
 
     functional_explorations = fields.One2Many(
-        'gnuhealth.patient.exp.test', 'service_number', 'Explorations Fonctionnelles',
+        'gnuhealth.patient.exp.test', 'service', 'Explorations Fonctionnelles',
         help="Liste des explorations fonctionnelles liées à cette facture."
     )
 
