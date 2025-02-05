@@ -268,16 +268,19 @@ class Invoice(metaclass=PoolMeta):
     @staticmethod
     def lab_requests2(reference):
         LabTest = Pool().get('gnuhealth.patient.lab.test')
+        print("Les résultats Laboratoires -------- ", LabTest.search([('service.name', '=', reference)]))
         return LabTest.search([('service.name', '=', reference)])
     
     @staticmethod
     def img_requests2(reference):
         ImagingRequest = Pool().get('gnuhealth.imaging.test.request')
+        print("Les résultats Laboratoires -------- ", ImagingRequest.search([('service.name', '=', reference)]))
         return ImagingRequest.search([('service.name', '=', reference)])
     
     @staticmethod
     def exp_requests2(reference):
         ExpTest = Pool().get('gnuhealth.patient.exp.test')
+        print("Les résultats Laboratoires -------- ", ExpTest.search([('service.name', '=', reference)]))
         return ExpTest.search([('service.name', '=', reference)])    
 
 
