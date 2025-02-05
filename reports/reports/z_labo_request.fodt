@@ -445,7 +445,7 @@
     <table:table-column table:style-name="Table2.A" table:number-columns-repeated="3"/>
     <table:table-row table:style-name="Table2.1">
      <table:table-cell table:style-name="Table2.A1" office:value-type="string">
-      <text:p text:style-name="P1">Service N° <text:placeholder text:placeholder-type="text">&lt;record.lab_requests2(record.reference).service.name&gt;</text:placeholder><text:s text:c="6"/></text:p>
+      <text:p text:style-name="P1">Service N° <text:placeholder text:placeholder-type="text">&lt;record.lab_requests2(record.reference)[0].service.name&gt;</text:placeholder><text:s text:c="6"/></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table2.A1" office:value-type="string">
       <text:p text:style-name="P2"/>
