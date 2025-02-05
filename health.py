@@ -292,6 +292,14 @@ class Invoice(metaclass=PoolMeta):
         LabTests = LabTest.search([('service.name', '=', self.reference)])
         print("------------------ ", LabTests)
         return LabTest.search([('service.name', '=', self.reference)])
+
+    @staticmethod
+    def lab_requests2(self):
+        print("la référence ----------- ", self.reference)
+        LabTest = Pool().get('gnuhealth.patient.lab.test')
+        LabTests = LabTest.search([('service.name', '=', self.reference)])
+        print("------------------ ", LabTests)
+        return LabTest.search([('service.name', '=', self.reference)])
     
     @fields.depends('reference')
     def on_change_with_functional_explorations(self):
