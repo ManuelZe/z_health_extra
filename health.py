@@ -41,6 +41,7 @@ from trytond.i18n import gettext
 from trytond.model import Workflow, ModelView, ModelSQL, fields, \
     sequence_ordered, Unique, DeactivableMixin, dualmethod
 from trytond.model.exceptions import AccessError
+from trytond.pyson import PYSONEncoder
 from trytond.report import Report
 from trytond.wizard import Wizard, StateView, StateTransition, StateAction, \
     Button
@@ -66,7 +67,7 @@ from trytond.modules.product import price_digits
 from trytond.modules.health.core import get_health_professional
 
 from .exceptions import (
-    InvoiceTaxValidationError, InvoiceNumberError, InvoiceValidationError,
+    InvoiceTaxValidationError, ExploOrderExists, LabOrderExists, InvoiceNumberError, InvoiceValidationError,
     InvoiceLineValidationError, PayInvoiceError, InvoicePaymentTermDateWarning)
 
 
@@ -268,19 +269,117 @@ class Invoice(metaclass=PoolMeta):
     @staticmethod
     def lab_requests2(reference):
         LabTest = Pool().get('gnuhealth.patient.lab.test')
-        print("Les résultats Laboratoires -------- ", LabTest.search([('service.name', '=', reference)]))
+        TestRequest = Pool().get('gnuhealth.patient.lab.test')
+        Lab = Pool().get('gnuhealth.lab')
+
+        tests_report_data = []
+
+        tests = TestRequest.search([('service.name', '=', reference)])
+
+        for lab_test_order in tests:
+
+            test_cases = []
+            test_report_data = {}
+
+            if lab_test_order.state == 'ordered':
+                raise LabOrderExists(
+                    gettext('health_lab.msg_lab_order_exists')
+                    )
+
+            test_report_data['test'] = lab_test_order.name.id
+            test_report_data['patient'] = lab_test_order.patient_id.id
+            if lab_test_order.doctor_id:
+                test_report_data['requestor'] = lab_test_order.doctor_id.id
+            test_report_data['date_requested'] = lab_test_order.date
+            test_report_data['request_order'] = lab_test_order.request
+
+            for critearea in lab_test_order.name.critearea:
+                test_cases.append(('create', [{
+                        'name': critearea.name,
+                        'sequence': critearea.sequence,
+                        'lower_limit': critearea.lower_limit,
+                        'upper_limit': critearea.upper_limit,
+                        'normal_range': critearea.normal_range,
+                        'units': critearea.units and critearea.units.id,
+                    }]))
+            test_report_data['critearea'] = test_cases
+
+            tests_report_data.append(test_report_data)
+
+        Lab.create(tests_report_data)
+        TestRequest.write(tests, {'state': 'ordered'})
         return LabTest.search([('service.name', '=', reference)])
     
     @staticmethod
     def img_requests2(reference):
         ImagingRequest = Pool().get('gnuhealth.imaging.test.request')
-        print("Les résultats Imageries -------- ", ImagingRequest.search([('service.name', '=', reference)]))
+        Request = Pool().get('gnuhealth.imaging.test.request')
+        Result = Pool().get('gnuhealth.imaging.test.result')
+        action = []
+        request_data = []
+        requests = Request.search([('service.name', '=', reference)])
+        for request in requests:
+            request_data.append({
+                'patient': request.patient.id,
+                'date': datetime.now(),
+                'request_date': request.date,
+                'requested_test': request.requested_test,
+                'request': request.id,
+                'order': request.request,
+                'doctor': request.doctor})
+        results = Result.create(request_data)
+
+        action['pyson_domain'] = PYSONEncoder().encode(
+            [('id', 'in', [r.id for r in results])])
+
+        Request.requested(requests)
+        Request.done(requests)
         return ImagingRequest.search([('service.name', '=', reference)])
     
     @staticmethod
     def exp_requests2(reference):
         ExpTest = Pool().get('gnuhealth.patient.exp.test')
-        print("Les résultats Explorations -------- ", ExpTest.search([('service.name', '=', reference)]))
+        TestRequest = Pool().get('gnuhealth.patient.exp.test')
+        Explo = Pool().get('gnuhealth.exp')
+        tests_report_data = []
+        tests = TestRequest.search([('service.name', '=', reference)]) 
+        for explo_test_order in tests:
+
+            test_cases = []
+            test_report_data = {}
+
+            if explo_test_order.state == 'ordered':
+                raise ExploOrderExists(
+                    gettext('health_explo.msg_explo_order_exists')
+                    )
+
+            test_report_data['test'] = explo_test_order.name.id
+            test_report_data['source_type'] = explo_test_order.source_type
+            test_report_data['patient'] = explo_test_order.patient_id and explo_test_order.patient_id.id
+            test_report_data['other_source'] = explo_test_order.other_source
+            if explo_test_order.doctor_id:
+                test_report_data['requestor'] = explo_test_order.doctor_id.id
+            test_report_data['date_requested'] = explo_test_order.date
+            test_report_data['request_order'] = explo_test_order.request
+
+            for critearea in explo_test_order.name.critearea:
+                test_cases.append(('create', [{
+                        'name': critearea.name,
+                        'code': critearea.code,
+                        'sequence': critearea.sequence,
+                        'lower_limit': critearea.lower_limit,
+                        'upper_limit': critearea.upper_limit,
+                        'normal_range': critearea.normal_range,
+                        'units': critearea.units and critearea.units.id,
+                    }]))
+            test_report_data['critearea'] = test_cases
+
+            tests_report_data.append(test_report_data)
+
+        Explo.create(tests_report_data)
+
+        TestRequest.write(tests, {'state': 'ordered'})
+
         return ExpTest.search([('service.name', '=', reference)])    
 
 

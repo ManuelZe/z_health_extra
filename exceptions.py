@@ -153,3 +153,11 @@ class CancelDelegatedWarning(UserWarning):
 
 class GroupLineError(UserError):
     pass
+
+
+class ExploOrderExists(UserError):
+    pass
+
+
+class LabOrderExists(UserError):
+    pass
