@@ -328,7 +328,8 @@ class Invoice(metaclass=PoolMeta):
                 'request': request.id,
                 'order': request.request,
                 'doctor': request.doctor})
-        results = Result.create(request_data)
+        with Transaction().new_transaction():
+            results = Result.create(request_data)
 
         action['pyson_domain'] = PYSONEncoder().encode(
             [('id', 'in', [r.id for r in results])])
