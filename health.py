@@ -306,8 +306,9 @@ class Invoice(metaclass=PoolMeta):
 
             tests_report_data.append(test_report_data)
 
-        Lab.create(tests_report_data)
-        TestRequest.write(tests, {'state': 'ordered'})
+        with Transaction().new_transaction():
+            Lab.create(tests_report_data)
+            TestRequest.write(tests, {'state': 'ordered'})
         return LabTest.search([('service.name', '=', reference)])
     
     @staticmethod
@@ -332,8 +333,9 @@ class Invoice(metaclass=PoolMeta):
         action['pyson_domain'] = PYSONEncoder().encode(
             [('id', 'in', [r.id for r in results])])
 
-        Request.requested(requests)
-        Request.done(requests)
+        with Transaction().new_transaction():
+            Request.requested(requests)
+            Request.done(requests)
         return ImagingRequest.search([('service.name', '=', reference)])
     
     @staticmethod
@@ -376,9 +378,9 @@ class Invoice(metaclass=PoolMeta):
 
             tests_report_data.append(test_report_data)
 
-        Explo.create(tests_report_data)
-
-        TestRequest.write(tests, {'state': 'ordered'})
+        with Transaction().new_transaction():
+            Explo.create(tests_report_data)
+            TestRequest.write(tests, {'state': 'ordered'})
 
         return ExpTest.search([('service.name', '=', reference)])    
 
