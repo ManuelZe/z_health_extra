@@ -727,6 +727,13 @@
    <text:p text:style-name="P25"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
    <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.validated_by.name.signature2&quot;&gt;</text:placeholder></text:p>
+    <text:p text:style-name="P19"><draw:frame draw:style-name="fr2" draw:name="image: (interpretation.validated_by.name.signature2, &apos;image/png&apos;,&apos;5cm&apos;,&apos;3cm&apos;)" text:anchor-type="paragraph" svg:x="" svg:y="" svg:width="20in" svg:height="20in" draw:z-index="0"> 
+        <draw:text-box>
+        <text:p text:style-name="Frame_20_contents"/>
+        </draw:text-box>
+    </draw:frame></text:p>
+   <text:p text:style-name="P15"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
   </office:text>
  </office:body>
 </office:document>
