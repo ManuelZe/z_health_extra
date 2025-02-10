@@ -283,9 +283,7 @@ class Invoice(metaclass=PoolMeta):
             test_report_data = {}
 
             if lab_test_order.state == 'ordered':
-                raise LabOrderExists(
-                    gettext('health_lab.msg_lab_order_exists')
-                    )
+                break
 
             test_report_data['test'] = lab_test_order.name.id
             test_report_data['patient'] = lab_test_order.patient_id.id
@@ -353,9 +351,7 @@ class Invoice(metaclass=PoolMeta):
             test_report_data = {}
 
             if explo_test_order.state == 'ordered':
-                raise ExploOrderExists(
-                    gettext('health_explo.msg_explo_order_exists')
-                    )
+                break
 
             test_report_data['test'] = explo_test_order.name.id
             test_report_data['source_type'] = explo_test_order.source_type
@@ -840,3 +836,8 @@ class PatientLabTestRequest(metaclass=PoolMeta):
         return self.service.requestor
 
 
+
+class Party(metaclass=PoolMeta):
+    __name__ = 'party.party'
+
+    signature2 = fields.Binary("Picture of Signature") 

@@ -1,0 +1,8 @@
+<data>
+   <xpath expr="/form/notebook/page[@name='identifiers']" position="after">
+      <page name="signature2">
+         <label name="signature2"/>
+         <field name="signature2"/>
+      </page>
+   </xpath>
+</data>
