@@ -179,7 +179,7 @@ class PayInvoice(metaclass=PoolMeta):
         invoice = self.record
 
         with Transaction().set_context(date=self.start.date):
-            if self.start_amount < 0 :
+            if self.start.amount < 0 :
                 if self.start.amount > float(invoice.amount_to_pay_today or invoice.amount_to_pay)*(1-0.6):
                     raise PayInvoiceError(
                         message = "Le Montant doit être plus de 60% pour un premier paiement.",
