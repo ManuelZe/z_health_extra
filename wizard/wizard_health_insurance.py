@@ -250,12 +250,15 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                 if Decimal(amount) < Decimal(plafond) :
                                     unit_price = Decimal(0)
                                     plafond -= Decimal(amount)
-                                else:
+                                elif Decimal(amount) > Decimal(plafond):
                                     amount = amount - plafond
                                     if amount == Decimal(0) :
                                         unit_price = Decimal('0.1')
                                     else :
                                         unit_price = amount/line.qty
+                                    plafond = Decimal(0)
+                                else :
+                                    unit_price = Decimal('0.1')
                                     plafond = Decimal(0)
 
 
