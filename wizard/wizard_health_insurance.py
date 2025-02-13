@@ -257,9 +257,6 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                     else :
                                         unit_price = amount/line.qty
                                     plafond = Decimal(0)
-                                else :
-                                    unit_price = Decimal('0.1')
-                                    plafond = Decimal(0)
 
 
                     elif service.z_remise2 :
