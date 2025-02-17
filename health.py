@@ -536,7 +536,13 @@ class Invoice(metaclass=PoolMeta):
             return self.lines[0].origin.name.agent.id
         except:
             return None
-        
+
+    def montant_assurance_facture(self, montant_assurance, montant_total) :
+        if montant_assurance > montant_total:
+            return montant_total
+        else:
+            return montant_assurance
+
     def montant_recu(self, record):
         # Record corespond au recu
         # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
