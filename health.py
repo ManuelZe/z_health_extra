@@ -269,11 +269,8 @@ class Invoice(metaclass=PoolMeta):
                 Eval('currency_digits', 2)), depends=['currency_digits']),
                                     'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
     
-    # montant_assurance = fields.Numeric('Montant Assurance', digits=(16,
-    #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
-    
-    montant_assurance = fields.Function(fields.Numeric('Montant Assurance', digits=(16,
-                Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True), 'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
+    montant_assurance = fields.Numeric('Montant Assurance', digits=(16,
+                Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
     
     montant_en_lettre = fields.Char('Lettre')
 
@@ -803,13 +800,11 @@ class Invoice(metaclass=PoolMeta):
         
         if invoice.montant_assurance != None :
             total_amount2[invoice.id] = total_amount[invoice.id] + invoice.montant_assurance
-            montant_assurance[invoice.id] = invoice.montant_assurance
             for invoice in invoices :
                 record = invoice
                 montant_f = invoice.montant_recu(record)[-1]
                 if invoice.montant_assurance > montant_f :
                     total_amount2[invoice.id] = montant_f
-                    montant_assurance[invoice.id] = montant_f
             # <record.format_nombre(record.montant_recu(record)[-1])>
         else : 
             total_amount2[invoice.id] = total_amount[invoice.id]
@@ -818,7 +813,6 @@ class Invoice(metaclass=PoolMeta):
                 if invoice.health_service.insurance_plan != None:
                     if invoice.health_service.insurance_plan.z_couverture == 100 and invoice.health_service.insurance_plan.plafond == None :
                         total_amount2[invoice.id] = invoice.montant_assurance
-                        montant_assurance[invoice.id] = invoice.montant_assurance
             
         result = {
             'untaxed_amount': untaxed_amount,
@@ -829,7 +823,6 @@ class Invoice(metaclass=PoolMeta):
             'dernier_versement' : dernier_versement,
             'montant_verse' : montant_verse,
             'remboursement' : remboursement,
-            'montant_assurance' : invoice.montant_assurance
             }
         for key in list(result.keys()):
             if key not in names:
