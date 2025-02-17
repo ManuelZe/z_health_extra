@@ -809,6 +809,8 @@ class Invoice(metaclass=PoolMeta):
         else : 
             total_amount2[invoice.id] = total_amount[invoice.id]
 
+        print("------------------------ ", total_amount2[invoice.id])
+
         if invoice.health_service != None:
                 if invoice.health_service.insurance_plan != None:
                     if invoice.health_service.insurance_plan.z_couverture == 100 and invoice.health_service.insurance_plan.plafond == None :
