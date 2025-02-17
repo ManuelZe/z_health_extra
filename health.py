@@ -273,7 +273,7 @@ class Invoice(metaclass=PoolMeta):
     #             Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True)
     
     montant_assurance = fields.Function(fields.Numeric('Montant Assurance', digits=(16,
-                Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True))
+                Eval('currency_digits', 2)), depends=['currency_digits'], readonly=True), 'get_amount_with_insurance', searcher='search_total_amount_with_insurance')
     
     montant_en_lettre = fields.Char('Lettre')
 
