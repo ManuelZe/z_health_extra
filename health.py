@@ -824,6 +824,7 @@ class Invoice(metaclass=PoolMeta):
             'dernier_versement' : dernier_versement,
             'montant_verse' : montant_verse,
             'remboursement' : remboursement,
+            'montant_assurance' : invoice.montant_assurance
             }
         for key in list(result.keys()):
             if key not in names:
