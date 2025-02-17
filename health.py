@@ -803,13 +803,12 @@ class Invoice(metaclass=PoolMeta):
             for invoice in invoices :
                 record = invoice
                 montant_f = invoice.montant_recu(record)[-1]
+                print("------------------------ ", montant_f)
                 if invoice.montant_assurance < montant_f :
                     total_amount2[invoice.id] = montant_f
             # <record.format_nombre(record.montant_recu(record)[-1])>
         else : 
             total_amount2[invoice.id] = total_amount[invoice.id]
-
-        print("------------------------ ", total_amount2[invoice.id])
 
         if invoice.health_service != None:
                 if invoice.health_service.insurance_plan != None:
