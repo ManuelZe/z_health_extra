@@ -800,8 +800,8 @@ class Invoice(metaclass=PoolMeta):
         
         if invoice.montant_assurance != None :
             total_amount2[invoice.id] = total_amount[invoice.id] + invoice.montant_assurance
-            for invoice in invoices :
-                montant_f = cls.montant_recu(invoice)[-1]
+            for record in invoices :
+                montant_f = cls.montant_recu(record)[-1]
                 if invoice.montant_assurance < montant_f :
                     total_amount2[invoice.id] = montant_f
             # <record.format_nombre(record.montant_recu(record)[-1])>
