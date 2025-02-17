@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2024-12-20T12:30:44.865851787</meta:creation-date><dc:date>2025-02-17T15:56:52.284343587</dc:date><meta:editing-duration>PT21H8M52S</meta:editing-duration><meta:editing-cycles>59</meta:editing-cycles><meta:generator>LibreOffice/24.8.4.2$Linux_X86_64 LibreOffice_project/480$Build-2</meta:generator><meta:document-statistic meta:table-count="4" meta:image-count="0" meta:object-count="0" meta:page-count="3" meta:paragraph-count="145" meta:word-count="352" meta:character-count="4754" meta:non-whitespace-character-count="4515"/></office:meta>
+ <office:meta><meta:creation-date>2024-12-20T12:30:44.865851787</meta:creation-date><dc:date>2025-02-17T15:57:54.766950267</dc:date><meta:editing-duration>PT21H9M54S</meta:editing-duration><meta:editing-cycles>60</meta:editing-cycles><meta:generator>LibreOffice/24.8.4.2$Linux_X86_64 LibreOffice_project/480$Build-2</meta:generator><meta:document-statistic meta:table-count="4" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="145" meta:word-count="355" meta:character-count="4822" meta:non-whitespace-character-count="4580"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="ViewAreaTop" config:type="long">65481</config:config-item>
@@ -13,8 +13,8 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">21093</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">74297</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">22950</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">68592</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
      <config:config-item config:name="VisibleTop" config:type="long">65481</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">29898</config:config-item>
@@ -1153,10 +1153,10 @@
      <table:covered-table-cell/>
      <table:table-cell table:style-name="Table4.E9" office:value-type="string">
       <text:p text:style-name="P45"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.total_amount2)&gt;</text:placeholder></text:p>
       <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.montant_assurance &gt; record.total_amount2&quot;&gt;</text:placeholder></text:p>
       <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.total_amount2)&gt;</text:placeholder><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
-      <text:p text:style-name="P45"><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;not record.health_service&quot;&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;record.montant_assurance&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
+      <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.montant_assurance &lt; record.total_amount2&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P45"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.montant_assurance)&gt;</text:placeholder><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;not record.health_service&quot;&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;record.montant_assurance&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
@@ -1185,7 +1185,7 @@
    <text:p text:style-name="P53"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P47"><text:placeholder text:placeholder-type="text">&lt;/otherwise&gt;</text:placeholder></text:p>
    <text:p text:style-name="P47"><text:placeholder text:placeholder-type="text">&lt;/choose&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P47"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P47"><text:soft-page-break/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P58"/>
    <text:p text:style-name="P59">La direction</text:p>
    <text:p text:style-name="P60"/>
