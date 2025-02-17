@@ -809,6 +809,7 @@ class Invoice(metaclass=PoolMeta):
                 montant_f = invoice.montant_recu(record)[-1]
                 if invoice.montant_assurance > montant_f :
                     total_amount2[invoice.id] = montant_f
+                    montant_assurance[invoice.id] = montant_f
             # <record.format_nombre(record.montant_recu(record)[-1])>
         else : 
             total_amount2[invoice.id] = total_amount[invoice.id]
@@ -817,6 +818,7 @@ class Invoice(metaclass=PoolMeta):
                 if invoice.health_service.insurance_plan != None:
                     if invoice.health_service.insurance_plan.z_couverture == 100 and invoice.health_service.insurance_plan.plafond == None :
                         total_amount2[invoice.id] = invoice.montant_assurance
+                        montant_assurance[invoice.id] = invoice.montant_assurance
             
         result = {
             'untaxed_amount': untaxed_amount,
