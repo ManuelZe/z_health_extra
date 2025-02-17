@@ -843,8 +843,20 @@ class PatientLabTestRequest(metaclass=PoolMeta):
         return self.service.requestor
 
 
-
 class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
 
     signature2 = fields.Binary("Picture of Signature") 
+
+
+class ImagingTestResult(metaclass=PoolMeta):
+    'Imaging Test Result'
+    __name__ = 'gnuhealth.imaging.test.result'
+
+    @staticmethod
+    def prescriptor_name(id):
+
+        pool = Pool()
+        Result = pool.get('gnuhealth.imaging.test.request')
+        Results = Result.search([('request', '=', id)], limit=1)
+        return Results[0].service.requestor.name.name+" "+Results[0].service.requestor.name.lastname
