@@ -238,7 +238,6 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
 
                         if plafond != Decimal(0) :
-                            print("Le dernier des cas")
                             montant_ass = service.insurance_plan.plafond
                             montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                             if discount :
@@ -250,6 +249,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                 if Decimal(amount) < Decimal(plafond) :
                                     unit_price = Decimal('0.1')
                                     plafond -= Decimal(amount)
+                                    print("Plafond ", plafond, "------------- montant produit", unit_price)
                                 elif Decimal(amount) > Decimal(plafond):
                                     amount = amount - plafond
                                     if amount == Decimal(0) :
@@ -257,6 +257,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                     else :
                                         unit_price = amount/line.qty
                                     plafond = Decimal(0)
+                                    print("Plafond 2", plafond, "------------- montant produit 2", unit_price)
 
 
                     elif service.z_remise2 :
