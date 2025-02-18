@@ -287,7 +287,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                         total_assurance = service.insurance_plan.plafond
                     elif plafond != 0:
                         total_assurance = service.insurance_plan.plafond - plafond
-                else:
+                elif service.insurance_plan and not service.insurance_plan.plafond:
                     total_assurance += montant_ass
 
             total_assurance = total_assurance.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
