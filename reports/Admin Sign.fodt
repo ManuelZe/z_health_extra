@@ -719,6 +719,7 @@
         <text:p text:style-name="Frame_20_contents"/>
         </draw:text-box>
     </draw:frame></text:p>
+    <text:p text:style-name="P15"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
   </office:text>
  </office:body>
 </office:document>
