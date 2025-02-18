@@ -279,10 +279,10 @@
    <style:text-properties style:font-name="StarSymbol" fo:font-family="StarSymbol" fo:font-size="9pt" style:font-name-asian="StarSymbol" style:font-family-asian="StarSymbol" style:font-size-asian="9pt" style:font-name-complex="StarSymbol" style:font-family-complex="StarSymbol" style:font-size-complex="9pt"/>
   </style:style>
   <style:style style:name="Graphics" style:family="graphic">
-   <style:graphic-properties text:anchor-type="paragraph" svg:x="0in" svg:y="0in" style:wrap="dynamic" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph" fo:background-color="transparent" draw:fill="none" draw:fill-color="#99ccff"/>
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0in" svg:y="0in" style:wrap="dynamic" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph" style:horizontal-pos="right" style:horizontal-rel="paragraph" fo:background-color="transparent" draw:fill="none" draw:fill-color="#99ccff"/>
   </style:style>
   <style:style style:name="Frame" style:family="graphic">
-   <style:graphic-properties text:anchor-type="paragraph" svg:x="0in" svg:y="0in" fo:margin-left="0.0791in" fo:margin-right="0.0791in" fo:margin-top="0.0791in" fo:margin-bottom="0.0791in" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:background-color="transparent" draw:fill="none" draw:fill-color="#99ccff" fo:padding="0.0591in" fo:border="0.06pt solid #000000"/>
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0in" svg:y="0in" fo:margin-left="0.0791in" fo:margin-right="0.0791in" fo:margin-top="0.0791in" fo:margin-bottom="0.0791in" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="right" style:horizontal-rel="paragraph-content" fo:background-color="transparent" draw:fill="none" draw:fill-color="#99ccff" fo:padding="0.0591in" fo:border="0.06pt solid #000000"/>
   </style:style>
   <text:outline-style style:name="Outline">
    <text:outline-level-style text:level="1" loext:num-list-format="%1%" style:num-format="">
@@ -630,7 +630,7 @@
    <style:text-properties fo:font-size="10pt" fo:font-weight="bold" officeooo:rsid="00d4adf3" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
-   <style:graphic-properties style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content"/>
+   <style:graphic-properties style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="right" style:horizontal-rel="paragraph-content"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="8.5in" fo:page-height="11in" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="44" style:layout-grid-base-height="0.2165in" style:layout-grid-ruby-height="0in" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="true" style:layout-grid-display="true" style:footnote-max-height="0in" loext:margin-gutter="0in">
@@ -781,13 +781,13 @@
    <text:p text:style-name="P26">Confraternellement</text:p>
    <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.realisateur&quot;&gt;</text:placeholder></text:p>
    <text:p text:style-name="P33"><text:placeholder text:placeholder-type="text">&lt;interpretation.validated_by.rec_name&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.validated_by.name.signature2&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P19"><draw:frame draw:style-name="fr1" draw:name="image: (interpretation.validated_by.name.signature2, &apos;image/png&apos;,&apos;5cm&apos;,&apos;3cm&apos;)" text:anchor-type="paragraph" svg:width="20in" svg:height="20in" draw:z-index="0">
-     <draw:text-box>
-      <text:p text:style-name="Frame_20_contents"/>
-     </draw:text-box>
-    </draw:frame><text:soft-page-break/></text:p>
-   <text:p text:style-name="P15"><text:soft-page-break/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;records[0].validated_by.name.signature2&quot;&gt;</text:placeholder></text:p>
+    <text:p text:style-name="P19"><draw:frame draw:style-name="fr2" draw:name="image: (records[0].validated_by.name.signature2, &apos;image/png&apos;,&apos;5cm&apos;,&apos;3cm&apos;)" text:anchor-type="paragraph" svg:x="" svg:y="" svg:width="20in" svg:height="20in" draw:z-index="0"> 
+        <draw:text-box>
+        <text:p text:style-name="Frame_20_contents"/>
+        </draw:text-box>
+    </draw:frame></text:p>
+   <text:p text:style-name="P15"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P25"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
    <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
