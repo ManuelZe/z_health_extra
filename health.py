@@ -275,6 +275,32 @@ class Invoice(metaclass=PoolMeta):
     
     montant_en_lettre = fields.Char('Lettre')
 
+    @classmethod
+    def _post(cls, invoices):
+        # Create commission only the first time the invoice is posted
+        Invoice = Pool().get('account.invoice')
+        paid_invoices = Invoice.search([('state', '=', 'paid')])
+        to_commission = [i for i in paid_invoices
+            if i.state in ['posted', 'paid']]
+        # super()._post(invoices)
+        cls.create_commissions(to_commission)
+
+    @classmethod
+    def create_commissions(cls, invoices):
+        pool = Pool()
+        Commission = pool.get('commission')
+        # Enlever ceci après la fin des travaux
+        all_commissions = []
+        for invoice in invoices:
+            for line in invoice.lines:
+                commissions = line.get_commissions()
+                print("ce qu'il faut davoir -------- ", commissions)
+                if commissions:
+                    all_commissions.extend(commissions)
+
+        Commission.save(all_commissions)
+        return all_commissions
+
     @staticmethod
     def lab_requests2(reference):
         LabTest = Pool().get('gnuhealth.patient.lab.test')
