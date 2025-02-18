@@ -2,7 +2,7 @@
 # this repository contains the full copyright notices and license terms.
 
 from trytond.pool import Pool
-from .import health_services
+from . import health_services
 from . import health
 from .wizard import wizard_health_insurance
 
@@ -23,6 +23,7 @@ def register():
         health.PatientLabTestRequest,
         health.Party,
         health.ImagingTestResult,
+        health.InvoiceLine,
         module='z_health_extra', type_='model')
     Pool.register(
         health.PayInvoice,

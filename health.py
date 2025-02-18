@@ -839,6 +839,65 @@ class Invoice(metaclass=PoolMeta):
                 del result[key]
         return result
 
+class InvoiceLine(metaclass=PoolMeta):
+    __name__ = 'account.invoice.line'
+    
+    def montant_produit(self):
+        # Record corespond au recu
+        # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
+
+        sale_price_list = None
+        if hasattr(self.invoice.party, 'sale_price_list'):
+            sale_price_list = self.invoice.party.sale_price_list
+
+        unit_price = Decimal(0)
+        if sale_price_list : 
+            unit_price = sale_price_list.compute(
+                            self.invoice.party,
+                            self.product, self.product.list_price,
+                            self.quantity, self.product.default_uom)
+            
+        return unit_price
+    
+    def get_commissions(self):
+        pool = Pool()
+        Commission = pool.get('commission')
+        Currency = pool.get('currency.currency')
+        Date = pool.get('ir.date')
+
+        if self.type != 'line':
+            return []
+
+        today = Date.today()
+        commissions = []
+        for agent, plan in self.agent_plans_used:
+            if not plan:
+                continue
+            with Transaction().set_context(date=self.invoice.currency_date):
+                amount2 = self.montant_produit()
+                amount = Currency.compute(self.invoice.currency,
+                    amount2, agent.currency, round=False)
+            amount = self._get_commission_amount(amount, plan)
+            if amount:
+                amount = round_price(amount)
+            if not amount:
+                continue
+
+            commission = Commission()
+            commission.origin = self
+            if plan.commission_method == 'posting':
+                commission.date = self.invoice.invoice_date or today
+            elif (plan.commission_method == 'payment'
+                    and self.invoice.state == 'paid'):
+                commission.date = self.invoice.reconciled or today
+            commission.agent = agent
+            commission.product = plan.commission_product
+            commission.amount = amount
+            commissions.append(commission)
+        return commissions
+
+    def _get_commission_amount(self, amount, plan, pattern=None):
+        return plan.compute(amount, self.product, pattern=pattern)
 
 
 class ImagingTestRequest(metaclass=PoolMeta):
