@@ -53,6 +53,7 @@ from trytond.pool import Pool
 from trytond.rpc import RPC
 from trytond.config import config
 from num2words import num2words
+from trytond.modules.product import round_price
 
 import psycopg2
 import string
