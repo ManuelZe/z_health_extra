@@ -40,48 +40,6 @@ from ..exceptions import (
 
 __all__ = ['CreateServiceInvoice']
 
-
-class GenerateResultsCommissionInit(ModelView):
-    'Generate Result Bordearux Init'
-    __name__ = 'results.com.init'
-
-
-class GenerateResultsCommission(Wizard):
-    'Generate Results Bord'
-    __name__ = 'results.com.create'
-
-    start = StateView('results.com.init',
-        'z_Bordereau_De_Transmission.view_generate_results_bordereaux', [
-            Button('Cancel', 'end', 'tryton-cancel'),
-            Button('Generate Commission', 'generate_results_com', 'tryton-ok',
-                True),
-            ])
-    generate_results_com = StateTransition()
-
-    def transition_generate_results_com(cls):
-            # Create commission only the first time the invoice is posted
-            Invoice = Pool().get('account.invoice')
-            paid_invoices = Invoice.search([('state', '=', 'paid')])
-            to_commission = [i for i in paid_invoices
-                if i.state in ['posted', 'paid']]
-            # super()._post(invoices)
-            cls.create_commissions(to_commission)
-
-    @classmethod
-    def create_commissions(cls, invoices):
-        pool = Pool()
-        Commission = pool.get('commission')
-        # Enlever ceci après la fin des travaux
-        all_commissions = []
-        for invoice in invoices:
-            for line in invoice.lines:
-                commissions = line.get_commissions()
-                if commissions:
-                    all_commissions.extend(commissions)
-
-        Commission.save(all_commissions)
-        return all_commissions
-
 class CreateServiceInvoice(metaclass=PoolMeta):
     __name__ = 'gnuhealth.service.invoice.create'
 

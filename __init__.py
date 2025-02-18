@@ -24,12 +24,10 @@ def register():
         health.Party,
         health.ImagingTestResult,
         health.InvoiceLine,
-        wizard_health_insurance.GenerateResultsCommissionInit,
         module='z_health_extra', type_='model')
     Pool.register(
         health.PayInvoice,
         wizard_health_insurance.CreateServiceInvoice,
-        wizard_health_insurance.GenerateResultsCommission,
         module='z_health_extra', type_='wizard')
     Pool.register(
         module='z_health_extra', type_='report')
