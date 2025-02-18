@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2025-01-06T12:41:04.451253073</meta:creation-date><meta:generator>LibreOffice/24.8.4.2$Linux_X86_64 LibreOffice_project/480$Build-2</meta:generator><dc:date>2025-01-06T12:42:12.829493753</dc:date><meta:editing-duration>PT1M8S</meta:editing-duration><meta:editing-cycles>1</meta:editing-cycles><meta:document-statistic meta:table-count="8" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="66" meta:word-count="140" meta:character-count="1730" meta:non-whitespace-character-count="1648"/></office:meta>
+ <office:meta><meta:creation-date>2025-01-06T12:41:04.451253073</meta:creation-date><meta:generator>LibreOffice/24.2.7.2$Linux_X86_64 LibreOffice_project/420$Build-2</meta:generator><dc:date>2025-02-10T12:57:59.707176769</dc:date><meta:editing-duration>PT2M29S</meta:editing-duration><meta:editing-cycles>2</meta:editing-cycles><meta:document-statistic meta:table-count="8" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="63" meta:word-count="133" meta:character-count="1596" meta:non-whitespace-character-count="1518"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">21</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">35078</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">18371</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">34567</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">15556</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">25943</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">5316</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">8782</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">93571</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">35077</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">18369</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">21</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">34565</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">15575</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -41,8 +41,6 @@
    <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
    <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintEmptyPages" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PaintHellOverHeaderFooter" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ApplyParagraphMarkFormatToEmptyLineAtEndOfParagraph" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
    <config:config-item config:name="NoNumberingShowFollowBy" config:type="boolean">false</config:config-item>
    <config:config-item config:name="HyphenateURLs" config:type="boolean">false</config:config-item>
@@ -67,7 +65,6 @@
    <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">false</config:config-item>
    <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
    <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
    <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ProtectBookmarks" config:type="boolean">false</config:config-item>
@@ -105,7 +102,11 @@
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="HeaderSpacingBelowLastPara" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
    <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterName" config:type="string"/>
    <config:config-item config:name="AddParaLineSpacingToTableCells" config:type="boolean">true</config:config-item>
    <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
@@ -132,19 +133,16 @@
    <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
    <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
    <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="IgnoreHiddenCharsForLineCalculation" config:type="boolean">true</config:config-item>
    <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
    <config:config-item config:name="DropCapPunctuation" config:type="boolean">true</config:config-item>
    <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">765384</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">773891</config:config-item>
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
    <config:config-item config:name="MsWordCompMinLineHeightByFly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
   </config:config-item-set>
  </office:settings>
  <office:scripts>
@@ -165,13 +163,13 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:writing-mode="lr-tb" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0in" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0in" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans2" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
   </style:default-style>
   <style:default-style style:family="paragraph">
-   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" fo:hyphenation-keep="auto" loext:hyphenation-keep-type="column" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="0.4925in" style:writing-mode="page"/>
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="0.4925in" style:writing-mode="page"/>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans2" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2" loext:hyphenation-no-caps="false" loext:hyphenation-no-last-word="false" loext:hyphenation-word-char-count="5" loext:hyphenation-zone="no-limit"/>
   </style:default-style>
   <style:default-style style:family="table">
@@ -224,8 +222,12 @@
    </style:paragraph-properties>
    <style:text-properties fo:font-size="9pt" style:font-size-asian="10.5pt"/>
   </style:style>
+  <style:style style:name="Frame_20_contents" style:display-name="Frame contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra"/>
   <style:style style:name="Placeholder" style:family="text">
    <style:text-properties fo:font-variant="small-caps" fo:color="#008080" loext:opacity="100%" style:text-underline-style="dotted" style:text-underline-width="auto" style:text-underline-color="font-color"/>
+  </style:style>
+  <style:style style:name="Frame" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0in" svg:y="0in" fo:margin-left="0.0791in" fo:margin-right="0.0791in" fo:margin-top="0.0791in" fo:margin-bottom="0.0791in" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" draw:fill="none" fo:padding="0.0591in" fo:border="0.06pt solid #000000"/>
   </style:style>
   <text:outline-style style:name="Outline">
    <text:outline-level-style text:level="1" loext:num-list-format="%1%" style:num-format="">
@@ -370,35 +372,35 @@
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties style:font-name="FreeSans1" officeooo:paragraph-rsid="0009d4c6"/>
   </style:style>
-  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="0.25in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
+   <style:text-properties style:font-name="FreeSans1" officeooo:paragraph-rsid="0009d4c6"/>
   </style:style>
-  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="8pt" fo:font-weight="normal" officeooo:rsid="0091e790" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="8pt" style:font-weight-asian="normal" style:font-size-complex="8pt" style:font-weight-complex="normal"/>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
+   <style:text-properties style:font-name="FreeSans1" officeooo:paragraph-rsid="0009d4c6"/>
   </style:style>
   <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="9pt" fo:font-weight="normal" officeooo:rsid="00d4adf3" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-weight-complex="normal"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" officeooo:paragraph-rsid="0009d4c6"/>
-  </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="9pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-weight-complex="normal"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:rsid="00d4adf3" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="bold" officeooo:rsid="0091e790" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
   </style:style>
@@ -407,73 +409,73 @@
    <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="bold" officeooo:rsid="00c9e1e0" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
   </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="8pt" fo:font-weight="normal" officeooo:rsid="0091e790" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="8pt" style:font-weight-asian="normal" style:font-size-complex="8pt" style:font-weight-complex="normal"/>
+  </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:rsid="00d4adf3" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Header">
-   <style:text-properties style:font-name="Cantarell" fo:font-size="9pt" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
-  </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="">
-   <loext:graphic-properties draw:fill="none"/>
-   <style:paragraph-properties fo:margin-left="0.25in" fo:margin-right="0in" fo:text-indent="0in" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
-   <style:text-properties style:font-name="FreeSans1" officeooo:paragraph-rsid="0009d4c6"/>
-  </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="justify" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="9pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="9pt" fo:font-weight="normal" officeooo:rsid="0091e790" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="9pt" fo:font-weight="normal" officeooo:rsid="00d4adf3" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="9pt" fo:font-weight="normal" officeooo:rsid="00d4adf3" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="9pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="9pt" fo:font-weight="normal" officeooo:rsid="0091e790" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" officeooo:paragraph-rsid="0009d4c6"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000080" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Header">
+   <style:text-properties style:font-name="Cantarell" fo:font-size="9pt" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+  </style:style>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties fo:color="#ff0000" loext:opacity="100%" style:font-name="FreeSans1" fo:font-size="10pt" fo:font-weight="normal" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="10pt" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
    <style:text-properties fo:font-size="9pt" fo:font-weight="bold" officeooo:rsid="0091e790" officeooo:paragraph-rsid="0009d4c6" style:font-size-asian="9pt" style:font-weight-asian="bold" style:font-size-complex="9pt" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Preformatted_20_Text">
-   <style:text-properties style:font-name="FreeSans1" officeooo:paragraph-rsid="0009d4c6"/>
-  </style:style>
   <style:style style:name="T1" style:family="text">
-   <style:text-properties fo:font-weight="bold" officeooo:rsid="00892188" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T2" style:family="text">
-   <style:text-properties fo:font-size="9pt" officeooo:rsid="009d4bd6" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="00892188" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T3" style:family="text">
-   <style:text-properties fo:font-size="9pt" officeooo:rsid="0091e790" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+   <style:text-properties fo:font-size="9pt" officeooo:rsid="009d4bd6" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
   </style:style>
   <style:style style:name="T4" style:family="text">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" officeooo:rsid="0091e790"/>
+   <style:text-properties fo:font-size="9pt" officeooo:rsid="0091e790" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
   </style:style>
   <style:style style:name="T5" style:family="text">
    <style:text-properties fo:color="#000000" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="T6" style:family="text">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" style:font-size-asian="6pt" style:font-size-complex="6pt"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" officeooo:rsid="0091e790"/>
   </style:style>
   <style:style style:name="T7" style:family="text">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" fo:font-weight="normal" style:font-size-asian="6pt" style:font-weight-asian="normal" style:font-size-complex="6pt" style:font-weight-complex="normal"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" style:font-size-asian="6pt" style:font-size-complex="6pt"/>
   </style:style>
   <style:style style:name="T8" style:family="text">
-   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" fo:font-weight="normal" style:font-size-asian="6pt" style:font-weight-asian="normal" style:font-size-complex="6pt" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T9" style:family="text">
    <style:text-properties fo:color="#000000" loext:opacity="100%" officeooo:rsid="00892188"/>
@@ -495,6 +497,9 @@
   </style:style>
   <style:style style:name="T15" style:family="text">
    <style:text-properties fo:font-size="10pt" fo:font-weight="bold" officeooo:rsid="00d4adf3" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
+   <style:graphic-properties style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="8.2681in" fo:page-height="11.6929in" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.278in" style:layout-grid-ruby-height="0.139in" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0in" loext:margin-gutter="0in">
@@ -520,168 +525,165 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
    <text:p text:style-name="P1"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;interpretation in records&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P2"/>
-   <text:p text:style-name="P2"/>
-   <text:p text:style-name="P2"/>
-   <text:p text:style-name="P2"/>
+   <text:p text:style-name="P4"/>
+   <text:p text:style-name="P4"/>
+   <text:p text:style-name="P4"/>
+   <text:p text:style-name="P4"/>
    <table:table table:name="Tabla1" table:style-name="Tabla1">
     <table:table-column table:style-name="Tabla1.A"/>
     <table:table-column table:style-name="Tabla1.B"/>
     <table:table-column table:style-name="Tabla1.C"/>
     <table:table-row>
      <table:table-cell table:style-name="Tabla1.A1" table:number-columns-spanned="3" office:value-type="string">
-      <text:p text:style-name="P2"><text:span text:style-name="T1"><text:s/></text:span><text:span text:style-name="T2">D</text:span><text:span text:style-name="T3">ate: </text:span><text:placeholder text:placeholder-type="text">&lt;datetime.date.today()&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P3"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.requestor&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P4"><text:span text:style-name="T4">Prescripteur</text:span><text:span text:style-name="T5">: </text:span><text:span text:style-name="T4"><text:placeholder text:placeholder-type="text">&lt;interpretation.requestor.rec_name&gt;</text:placeholder></text:span></text:p>
-      <text:p text:style-name="P3"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P5"><text:span text:style-name="T6">Imprimé le: </text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;datetime.date.today()&gt;</text:placeholder></text:span><text:span text:style-name="T7">, </text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;datetime.datetime.now().strftime(&apos;%H:%M:%S&apos;)&gt;</text:placeholder></text:span></text:p>
+      <text:p text:style-name="P4"><text:span text:style-name="T2"><text:s/></text:span><text:span text:style-name="T3">D</text:span><text:span text:style-name="T4">ate: </text:span><text:placeholder text:placeholder-type="text">&lt;datetime.date.today()&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.requestor&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P15"><text:span text:style-name="T6">Prescripteur</text:span><text:span text:style-name="T5">: </text:span><text:span text:style-name="T6"><text:placeholder text:placeholder-type="text">&lt;interpretation.requestor.rec_name&gt;</text:placeholder></text:span></text:p>
+      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P18"><text:span text:style-name="T7">Imprimé le: </text:span><text:span text:style-name="T8"><text:placeholder text:placeholder-type="text">&lt;datetime.date.today()&gt;</text:placeholder></text:span><text:span text:style-name="T8">, </text:span><text:span text:style-name="T8"><text:placeholder text:placeholder-type="text">&lt;datetime.datetime.now().strftime(&apos;%H:%M:%S&apos;)&gt;</text:placeholder></text:span></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tabla1.A2" office:value-type="string">
-      <text:p text:style-name="P6"><text:span text:style-name="T8">Patient</text:span> : <text:span text:style-name="T8"><text:placeholder text:placeholder-type="text">&lt;interpretation.patient.rec_name&gt;</text:placeholder></text:span></text:p>
-      <text:p text:style-name="P7"><text:span text:style-name="T9">PUID</text:span><text:span text:style-name="T10"> :</text:span><text:span text:style-name="T5"> </text:span><text:span text:style-name="T5"><text:placeholder text:placeholder-type="text">&lt;interpretation.patient.name.ref&gt;</text:placeholder></text:span></text:p>
-      <text:p text:style-name="P8"/>
+      <text:p text:style-name="P5"><text:span text:style-name="T1">Patient</text:span> : <text:span text:style-name="T1"><text:placeholder text:placeholder-type="text">&lt;interpretation.patient.rec_name&gt;</text:placeholder></text:span></text:p>
+      <text:p text:style-name="P16"><text:span text:style-name="T9">PUID</text:span><text:span text:style-name="T10"> :</text:span><text:span text:style-name="T5"> </text:span><text:span text:style-name="T5"><text:placeholder text:placeholder-type="text">&lt;interpretation.patient.name.ref&gt;</text:placeholder></text:span></text:p>
+      <text:p text:style-name="P7"/>
      </table:table-cell>
      <table:table-cell table:style-name="Tabla1.A2" office:value-type="string">
-      <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.patient.dob&quot;&gt;</text:placeholder><text:span text:style-name="T11"><text:s text:c="4"/></text:span></text:p>
-      <text:p text:style-name="P9"><text:span text:style-name="T12">Date de naissance:</text:span><text:placeholder text:placeholder-type="text">&lt;format_date(interpretation.patient.name.dob, user.language)&gt;</text:placeholder><text:span text:style-name="T11"> <text:s text:c="2"/></text:span></text:p>
+      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.patient.dob&quot;&gt;</text:placeholder><text:span text:style-name="T11"><text:s text:c="4"/></text:span></text:p>
+      <text:p text:style-name="P8"><text:span text:style-name="T12">Date de naissance:</text:span><text:placeholder text:placeholder-type="text">&lt;format_date(interpretation.patient.name.dob, user.language)&gt;</text:placeholder><text:span text:style-name="T11"> <text:s text:c="2"/></text:span></text:p>
       <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;interpretation.patient.age&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P2"/>
+      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P4"/>
      </table:table-cell>
      <table:table-cell table:style-name="Tabla1.C2" office:value-type="string">
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.patient.name.gender == &apos;f&apos;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P12">Sexe: <text:span text:style-name="T13">Féminin</text:span></text:p>
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.patient.name.gender == &apos;m&apos;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P12">Sexe: <text:span text:style-name="T11">Masculin</text:span></text:p>
-      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P19"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.patient.name.gender == &apos;f&apos;&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P9">Sexe: <text:span text:style-name="T13">Féminin</text:span></text:p>
+      <text:p text:style-name="P19"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P19"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.patient.name.gender == &apos;m&apos;&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P9">Sexe: <text:span text:style-name="T11">Masculin</text:span></text:p>
+      <text:p text:style-name="P19"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tabla1.C2" table:number-columns-spanned="3" office:value-type="string">
-      <text:p text:style-name="P13"><text:span text:style-name="T8">Examen</text:span>: <text:placeholder text:placeholder-type="text">&lt;interpretation.test.rec_name&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:span text:style-name="T1">Examen</text:span>: <text:placeholder text:placeholder-type="text">&lt;interpretation.test.rec_name&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
     </table:table-row>
    </table:table>
    <text:p text:style-name="P1"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.indication&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P15"><text:span text:style-name="T15">Indication</text:span><text:span text:style-name="T14">:</text:span></text:p>
+   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.indication&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T15">Indication</text:span><text:span text:style-name="T14">:</text:span></text:p>
    <table:table table:name="Table1" table:style-name="Table1">
     <table:table-column table:style-name="Table1.A"/>
     <table:table-row>
      <table:table-cell office:value-type="string">
-      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.indication or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.indication or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P1"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.technique&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P15"><text:span text:style-name="T15">Technique</text:span><text:span text:style-name="T14">:</text:span></text:p>
+   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.technique&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T15">Technique</text:span><text:span text:style-name="T14">:</text:span></text:p>
    <table:table table:name="Table1_1" table:style-name="Table1_5f_1">
     <table:table-column table:style-name="Table1_5f_1.A"/>
     <table:table-row>
      <table:table-cell office:value-type="string">
-      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.technique or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.technique or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P1"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.resultat&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P15"><text:span text:style-name="T15">Résultat</text:span><text:span text:style-name="T14">:</text:span></text:p>
+   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.resultat&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T15">Résultat</text:span><text:span text:style-name="T14">:</text:span></text:p>
    <table:table table:name="Table1_2" table:style-name="Table1_5f_2">
     <table:table-column table:style-name="Table1_5f_2.A"/>
     <table:table-row>
      <table:table-cell office:value-type="string">
-      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.resultat or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.resultat or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P1"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.commentaire&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P15"><text:span text:style-name="T15">Commentaire</text:span><text:span text:style-name="T14">:</text:span></text:p>
+   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.commentaire&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T15">Commentaire</text:span><text:span text:style-name="T14">:</text:span></text:p>
    <table:table table:name="Table1_3" table:style-name="Table1_5f_3">
     <table:table-column table:style-name="Table1_5f_3.A"/>
     <table:table-row>
      <table:table-cell office:value-type="string">
-      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.commentaire or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.commentaire or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P1"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.diagnosis&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P15"><text:span text:style-name="T15">CONCLUSION</text:span><text:span text:style-name="T14">:</text:span></text:p>
+   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.diagnosis&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T15">CONCLUSION</text:span><text:span text:style-name="T14">:</text:span></text:p>
    <table:table table:name="Table1_4" table:style-name="Table1_5f_4">
     <table:table-column table:style-name="Table1_5f_4.A"/>
     <table:table-row>
      <table:table-cell office:value-type="string">
-      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.diagnosis or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P18"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.diagnosis or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P1"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.results&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P15"><text:span text:style-name="T15">Mots Clés</text:span><text:span text:style-name="T14">:</text:span></text:p>
+   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.results&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T15">Mots Clés</text:span><text:span text:style-name="T14">:</text:span></text:p>
    <table:table table:name="Table1_5" table:style-name="Table1_5f_5">
     <table:table-column table:style-name="Table1_5f_5.A"/>
     <table:table-row>
      <table:table-cell office:value-type="string">
-      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.results or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.results or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P1"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.traitement&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P15"><text:span text:style-name="T15">Traitement Proposé</text:span><text:span text:style-name="T14">:</text:span></text:p>
+   <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.traitement&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T15">Traitement Proposé</text:span><text:span text:style-name="T14">:</text:span></text:p>
    <table:table table:name="Table1_6" table:style-name="Table1_5f_6">
     <table:table-column table:style-name="Table1_5f_6.A"/>
+    <text:soft-page-break/>
     <table:table-row>
      <table:table-cell office:value-type="string">
-      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.traitement or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:soft-page-break/><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in (interpretation.traitement or &quot;&quot;).split(&apos;\n&apos;)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;line&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P19"/>
-   <text:p text:style-name="P19"/>
-   <text:p text:style-name="P19"/>
-   <text:p text:style-name="P20">Confraternellement</text:p>
-   <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.realisateur&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;interpretation.realisateur.rec_name&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P17"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;interpretation.validated_by.name.signature2&quot;&gt;</text:placeholder></text:p>
-    <text:p text:style-name="P19"><draw:frame draw:style-name="fr2" draw:name="image: (interpretation.validated_by.name.signature2, &apos;image/png&apos;,&apos;5cm&apos;,&apos;3cm&apos;)" text:anchor-type="paragraph" svg:x="" svg:y="" svg:width="20in" svg:height="20in" draw:z-index="0"> 
-        <draw:text-box>
-        <text:p text:style-name="Frame_20_contents"/>
-        </draw:text-box>
-    </draw:frame></text:p>
-   <text:p text:style-name="P15"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P22"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P17"/>
+   <text:p text:style-name="P17"/>
+   <text:p text:style-name="P17"/>
+   <text:p text:style-name="P14">Confraternellement</text:p>
+   <text:p text:style-name="P20"/>
+   <text:p text:style-name="P22"/>
+   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P21"/>
+
+   <text:p text:style-name="P2"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P3"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
   </office:text>
  </office:body>
 </office:document>
