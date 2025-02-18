@@ -36,6 +36,7 @@ class Invoice(metaclass=PoolMeta):
         # for invoice in invoices:
             for line in invoice.lines:
                 commissions = line.get_commissions()
+                print("ce qu'il faut davoir -------- ", commissions)
                 if commissions:
                     all_commissions.extend(commissions)
 
