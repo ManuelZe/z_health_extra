@@ -28,8 +28,12 @@ class Invoice(metaclass=PoolMeta):
     def create_commissions(cls, invoices):
         pool = Pool()
         Commission = pool.get('commission')
+        # Enlever ceci après la fin des travaux
+        Invoice = Pool().get('account.invoice')
+        paid_invoices = Invoice.search([('state', '=', 'paid')])
         all_commissions = []
-        for invoice in invoices:
+        for invoice in paid_invoices:
+        # for invoice in invoices:
             for line in invoice.lines:
                 commissions = line.get_commissions()
                 if commissions:
