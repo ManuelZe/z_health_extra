@@ -275,7 +275,15 @@ class Invoice(metaclass=PoolMeta):
     
     montant_en_lettre = fields.Char('Lettre')
 
-   
+    @classmethod
+    def _post(cls, invoices):
+        # Create commission only the first time the invoice is posted
+        Invoice = Pool().get('account.invoice')
+        paid_invoices = Invoice.search([('state', '=', 'paid')])
+        to_commission = [i for i in paid_invoices
+            if i.state in ['posted', 'paid']]
+        # super()._post(invoices)
+        cls.create_commissions(to_commission)
 
     @classmethod
     def create_commissions(cls, invoices):
