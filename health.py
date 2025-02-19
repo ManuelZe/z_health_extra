@@ -857,8 +857,9 @@ class Invoice(metaclass=PoolMeta):
             for invoice in invoices :
                 record = invoice
                 montant_f = invoice.montant_recu(record)[-1]
-                if invoice.montant_assurance > montant_f :
-                    total_amount2[invoice.id] = montant_f
+                if invoice.montant_assurance :
+                    if invoice.montant_assurance > montant_f :
+                        total_amount2[invoice.id] = montant_f
                     # with Transaction().new_transaction():
                     #     invoice.montant_assurance = montant_f
                     #     invoice.save()
