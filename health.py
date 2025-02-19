@@ -276,6 +276,30 @@ class Invoice(metaclass=PoolMeta):
     montant_en_lettre = fields.Char('Lettre')
 
     @classmethod
+    def credit(cls, invoices, refund=False, **values):
+        '''
+        Credit invoices and return ids of new invoices.
+        Return the list of new invoice
+        '''
+        new_invoices = [i._credit(**values) for i in invoices]
+        new_invoices = [i._credit(**{**values, 'montant_assurance': -(i.montant_assurance)}) for i in invoices]
+        print("------------ Le Invoice au niveau de Invoice ----- ", new_invoices[0].montant_assurance)
+        cls.save(new_invoices)
+        cls.update_taxes(new_invoices)
+        if refund:
+            cls.post(new_invoices)
+            for invoice, new_invoice in zip(invoices, new_invoices):
+                if invoice.state != 'posted':
+                    raise AccessError(
+                        gettext('account_invoice'
+                            '.msg_invoice_credit_refund_not_posted',
+                            invoice=invoice.rec_name))
+                invoice.cancel_move = new_invoice.move
+            cls.save(invoices)
+            cls.cancel(invoices)
+        return new_invoices
+
+    @classmethod
     def _post(cls, invoices):
         # Create commission only the first time the invoice is posted
         to_commission = [i for i in invoices
