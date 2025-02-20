@@ -302,12 +302,9 @@ class Invoice(metaclass=PoolMeta):
     @classmethod
     def _post(cls, invoices):
         # Create commission only the first time the invoice is posted
-        # On efface tout ceci après la fin de la mise en place de l'algorithme
-        Invoices = Pool().get("account.invoice")
-        Invoices = Invoices.search([('state', 'in', ['posted', 'paid'])])
-        to_commission = [i for i in Invoices
-            if i.state in ['posted', 'paid']]
-        # super()._post(invoices)
+        to_commission = [i for i in invoices
+            if i.state not in ['posted', 'paid']]
+        super()._post(invoices)
         cls.create_commissions(to_commission)
 
     @classmethod
