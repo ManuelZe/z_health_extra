@@ -282,8 +282,8 @@ class Invoice(metaclass=PoolMeta):
         Return the list of new invoice
         '''
         new_invoices = [i._credit(**values) for i in invoices]
-        new_invoices = [i._credit(**{**values, 'montant_assurance': -(i.montant_assurance)}) for i in invoices]
-        print("------------ Le Invoice au niveau de Invoice ----- ", new_invoices)
+        new_invoices = [i._credit(**{**values, 'montant_assurance': -(i.montant_assurance), 'reference': i.number}) for i in invoices]
+        print("------------ Le Invoice au niveau de Invoice ----- ", new_invoices[0].reference)
         cls.save(new_invoices)
         cls.update_taxes(new_invoices)
         if refund:
