@@ -306,8 +306,8 @@ class Invoice(metaclass=PoolMeta):
         Invoices = Pool().get("account.invoice")
         Invoices = Invoices.search([('state', 'in', ['posted', 'paid'])])
         to_commission = [i for i in Invoices
-            if i.state not in ['posted', 'paid']]
-        super()._post(invoices)
+            if i.state in ['posted', 'paid']]
+        # super()._post(invoices)
         cls.create_commissions(to_commission)
 
     @classmethod
