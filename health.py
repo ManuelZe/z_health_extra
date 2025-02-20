@@ -609,12 +609,14 @@ class Invoice(metaclass=PoolMeta):
                              record.party,
                              line.product, line.product.list_price,
                              line.quantity, line.product.default_uom)
-                
-                liste_montants.append(unit_price)
+
+                liste_montants.append(float(unit_price)*line.quantity)
         
         total_recu = sum(liste_montants)
 
         liste_montants.append(total_recu)
+
+        print("liste montant --- ", liste_montants)
 
         return liste_montants
     
