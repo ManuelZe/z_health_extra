@@ -876,24 +876,17 @@ class Invoice(metaclass=PoolMeta):
                     if invoice.health_service.insurance_plan.z_couverture == 100 and invoice.health_service.insurance_plan.plafond == None :
                         total_amount2[invoice.id] = invoice.montant_assurance
 
-        for invoice in invoices:
-            if invoice.state == 'draft':
-                result = {
-                    'untaxed_amount': untaxed_amount,
-                    'tax_amount': tax_amount,
-                    'total_amount': total_amount,
-                    'total_amount2': total_amount2,
-                    'montant_patient' : montant_patient,
-                    'dernier_versement' : dernier_versement,
-                    'montant_verse' : montant_verse,
-                    'remboursement' : remboursement,
-                    }
-            else :
-                result = {
-                    'dernier_versement' : dernier_versement,
-                    'montant_verse' : montant_verse,
-                    'remboursement' : remboursement,
-                    }
+
+        result = {
+            'untaxed_amount': untaxed_amount,
+            'tax_amount': tax_amount,
+            'total_amount': total_amount,
+            'total_amount2': total_amount2,
+            'montant_patient' : montant_patient,
+            'dernier_versement' : dernier_versement,
+            'montant_verse' : montant_verse,
+            'remboursement' : remboursement,
+            }
         for key in list(result.keys()):
             if key not in names:
                 del result[key]
