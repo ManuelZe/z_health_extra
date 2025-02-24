@@ -24,6 +24,7 @@ def register():
         health.Party,
         health.ImagingTestResult,
         health.InvoiceLine,
+        health.Agent,
         module='z_health_extra', type_='model')
     Pool.register(
         health.PayInvoice,
