@@ -275,6 +275,8 @@ class Invoice(metaclass=PoolMeta):
     
     montant_en_lettre = fields.Char('Lettre')
 
+    tarifaire = fields.Many2One('product.price_list','Tarifaire', required=False, select=True)
+
     @classmethod
     def credit(cls, invoices, refund=False, **values):
         '''
@@ -598,8 +600,11 @@ class Invoice(metaclass=PoolMeta):
         # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
 
         sale_price_list = None
-        if hasattr(record.party, 'sale_price_list'):
-            sale_price_list = record.party.sale_price_list
+        # if hasattr(record.party, 'sale_price_list'):
+        #     sale_price_list = record.party.sale_price_list
+
+        if hasattr(record, 'tarifaire'):
+            sale_price_list = record.tarifaire
 
         liste_montants = []
         for line in record.lines:

@@ -40,8 +40,15 @@ class HealthService(metaclass=PoolMeta):
         help="Médécin prescripteur", select=True, required=True)
     agent = fields.Many2One('commission.agent', 'Agent de Commission',select=True, required=True)
     z_remise2 = fields.Numeric("Remise", digits=(3, 2), help="La Remise à appliquer sur la facture", required=False)
+    tarifaire = fields.Many2One('product.price_list','Tarifaire', required=False, select=True)
 
     @fields.depends('z_remise2')
     def on_change_with_z_remise2(self):
         if self.z_remise2 :
             return Decimal(10)
+    
+    @fields.depends('patient')
+    def on_change_with_tarifaire(self):
+        tarifaire = self.patient.name.sale_price_list
+
+        return tarifaire

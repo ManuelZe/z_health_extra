@@ -79,6 +79,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             invoice_data['invoice_date'] = datetime.date.today()
             invoice_data['company'] = service.company.id
             invoice_data['agent'] = service.agent.id
+            invoice_data['tarifaire'] = service.tarifaire
 
             """ Look for the AR account in the following order:
                 * Party
