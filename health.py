@@ -900,6 +900,20 @@ class Invoice(metaclass=PoolMeta):
 class InvoiceLine(metaclass=PoolMeta):
     __name__ = 'account.invoice.line'
     
+
+    @property
+    def agent_plans_used(self):
+        "List of agent, plan tuple"
+        used = []
+        if self.invoice.agent:
+            used.append((self.invoice.agent, self.invoice.agent.plan))
+            if self.invoice.agent.plan2:
+                used.append((self.invoice.agent, self.invoice.agent.plan2))
+        if self.principal:
+            used.append((self.principal, self.principal.plan))
+        return used
+    
+
     def montant_produit(self):
         # Record corespond au recu
         # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
@@ -996,3 +1010,11 @@ class ImagingTestResult(metaclass=PoolMeta):
         Result = pool.get('gnuhealth.imaging.test.request')
         Results = Result.search([('request', '=', id)], limit=1)
         return Results[0].service.requestor.name.name+" "+Results[0].service.requestor.name.lastname
+
+
+class Agent(metaclass=PoolMeta):
+    'Commission Agent'
+    __name__ = 'commission.agent'
+
+    plan2 = fields.Many2One('commission.plan', "Plan Réalisations",
+        help="The plan used to calculate the commission for realisator.")
