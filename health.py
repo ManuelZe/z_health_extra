@@ -601,11 +601,11 @@ class Invoice(metaclass=PoolMeta):
         # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
 
         sale_price_list = None
-        # if hasattr(record.party, 'sale_price_list'):
-        #     sale_price_list = record.party.sale_price_list
-
         if hasattr(record, 'tarifaire'):
             sale_price_list = record.tarifaire
+
+        elif hasattr(record.party, 'sale_price_list'):
+            sale_price_list = record.party.sale_price_list
 
         liste_montants = []
         for line in record.lines:
