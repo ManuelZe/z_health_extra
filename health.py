@@ -301,13 +301,13 @@ class Invoice(metaclass=PoolMeta):
             cls.cancel(invoices)
         return new_invoices
 
-    @classmethod
-    def _post(cls, invoices):
-        # Create commission only the first time the invoice is posted
-        to_commission = [i for i in invoices
-            if i.state not in ['posted', 'paid']]
-        super()._post(invoices)
-        cls.create_commissions(to_commission)
+    # @classmethod
+    # def _post(cls, invoices):
+    #     # Create commission only the first time the invoice is posted
+    #     to_commission = [i for i in invoices
+    #         if i.state not in ['posted', 'paid']]
+    #     super()._post(invoices)
+    #     cls.create_commissions(to_commission)
 
     @classmethod
     def create_commissions(cls, invoices):
