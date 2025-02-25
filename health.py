@@ -724,7 +724,7 @@ class Invoice(metaclass=PoolMeta):
         self.total_amount = self.montant_patient
         if self.currency:
             self.total_amount2 = self.currency.round(self.total_amount)
-            self.total_amount = self.currency_round(self.montant_patient)
+            self.total_amount = self.currency.round(self.montant_patient)
 
     @classmethod
     def get_amount_with_insurance(cls, invoices, names):
