@@ -920,11 +920,12 @@ class InvoiceLine(metaclass=PoolMeta):
         # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
 
         sale_price_list = None
-        if hasattr(self.invoice.party, 'sale_price_list'):
-            sale_price_list = self.invoice.party.sale_price_list
-        
+
         if hasattr(self.invoice, 'tarifaire'):
             sale_price_list = self.invoice.tarifaire
+
+        elif hasattr(self.invoice.party, 'sale_price_list'):
+            sale_price_list = self.invoice.party.sale_price_list
 
         unit_price = Decimal(0)
         if sale_price_list : 
