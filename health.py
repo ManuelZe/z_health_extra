@@ -956,7 +956,7 @@ class InvoiceLine(metaclass=PoolMeta):
                 amount2 = float(self.montant_produit())*self.quantity
                 amount = Currency.compute(self.invoice.currency,
                     amount2, agent.currency, round=False)
-            amount = self._get_commission_amount(amount, plan)
+            amount = self._get_commission_amount(Decimal(amount), plan)
             if amount:
                 amount = round_price(amount)
             if not amount:
