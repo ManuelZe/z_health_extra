@@ -601,11 +601,12 @@ class Invoice(metaclass=PoolMeta):
         # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
 
         sale_price_list = None
-        # if hasattr(record, 'tarifaire'):
-        #     sale_price_list = record.tarifaire
+        
+        if hasattr(self.invoice, 'tarifaire'):
+            sale_price_list = self.invoice.tarifaire
 
-        if hasattr(record.party, 'sale_price_list'):
-            sale_price_list = record.party.sale_price_list
+        if  sale_price_list == None and hasattr(self.invoice.party, 'sale_price_list'):
+            sale_price_list = self.invoice.party.sale_price_list
 
         liste_montants = []
         for line in record.lines:
@@ -924,7 +925,7 @@ class InvoiceLine(metaclass=PoolMeta):
         if hasattr(self.invoice, 'tarifaire'):
             sale_price_list = self.invoice.tarifaire
 
-        elif hasattr(self.invoice.party, 'sale_price_list'):
+        if  sale_price_list == None and hasattr(self.invoice.party, 'sale_price_list'):
             sale_price_list = self.invoice.party.sale_price_list
 
         unit_price = Decimal(0)
