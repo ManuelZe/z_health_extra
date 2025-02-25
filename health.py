@@ -921,6 +921,9 @@ class InvoiceLine(metaclass=PoolMeta):
         sale_price_list = None
         if hasattr(self.invoice.party, 'sale_price_list'):
             sale_price_list = self.invoice.party.sale_price_list
+        
+        if hasattr(self.invoice, 'tarifaire'):
+            sale_price_list = self.invoice.tarifaire
 
         unit_price = Decimal(0)
         if sale_price_list : 
