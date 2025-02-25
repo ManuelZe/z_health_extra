@@ -500,16 +500,17 @@ class Invoice(metaclass=PoolMeta):
         elements.append(total_amount2)
         
         return elements
-    
+        
     def total_facture_par_produits(self, records):
         # Exemplaire de sortie de liste 
         # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
 
         elements = []
         for record in records :
-            unit_price = sum(line.unit_price for line in record.lines)
+            unit_price = sum(line.montant_produit() for line in record.lines)
+            print('Le unit_price --- ', unit_price)
             elements.append(unit_price)
-            amount = sum(line.amount for line in record.lines)
+            amount = sum(float(line.montant_produit())*line.quantity for line in record.lines)
             elements.append(amount)
             quantity = sum(line.quantity for line in record.lines)
             elements.append(quantity)
@@ -933,9 +934,9 @@ class InvoiceLine(metaclass=PoolMeta):
                             self.quantity, self.product.default_uom)
         
         if self.quantity < 0:
-            return -unit_price
+            return -(unit_price)
         else:
-            return unit_price
+            return (unit_price)
     
     def get_commissions(self):
         pool = Pool()
@@ -952,7 +953,7 @@ class InvoiceLine(metaclass=PoolMeta):
             if not plan:
                 continue
             with Transaction().set_context(date=self.invoice.currency_date):
-                amount2 = self.montant_produit()
+                amount2 = float(self.montant_produit())*self.quantity
                 amount = Currency.compute(self.invoice.currency,
                     amount2, agent.currency, round=False)
             amount = self._get_commission_amount(amount, plan)
