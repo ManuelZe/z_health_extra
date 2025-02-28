@@ -901,7 +901,7 @@ class Invoice(metaclass=PoolMeta):
 class InvoiceLine(metaclass=PoolMeta):
     __name__ = 'account.invoice.line'
     
-    agent2 = fields.Many2One('commission.agent', 'Agent de Réalisation',select=True, required=True)
+    agent2 = fields.Many2One('commission.agent', 'Agent de Réalisation', select=True)
 
     @property
     def agent_plans_used(self):
