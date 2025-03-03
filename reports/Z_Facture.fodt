@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2024-12-20T12:30:44.865851787</meta:creation-date><dc:date>2025-03-03T12:48:46.981563884</dc:date><meta:editing-duration>PT21H25M12S</meta:editing-duration><meta:editing-cycles>69</meta:editing-cycles><meta:generator>LibreOffice/24.8.4.2$Linux_X86_64 LibreOffice_project/480$Build-2</meta:generator><meta:document-statistic meta:table-count="4" meta:image-count="0" meta:object-count="0" meta:page-count="3" meta:paragraph-count="138" meta:word-count="336" meta:character-count="4573" meta:non-whitespace-character-count="4346"/></office:meta>
+ <office:meta><meta:creation-date>2024-12-20T12:30:44.865851787</meta:creation-date><dc:date>2025-03-03T12:48:33.297056067</dc:date><meta:editing-duration>PT21H39M59S</meta:editing-duration><meta:editing-cycles>74</meta:editing-cycles><meta:generator>LibreOffice/24.2.7.2$Linux_X86_64 LibreOffice_project/420$Build-2</meta:generator><meta:document-statistic meta:table-count="4" meta:image-count="0" meta:object-count="0" meta:page-count="3" meta:paragraph-count="138" meta:word-count="336" meta:character-count="4573" meta:non-whitespace-character-count="4346"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">57753</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">2</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">35078</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">18371</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">33849</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">15556</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">20556</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">66054</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">16925</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">2501</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">57753</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">35077</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">76122</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">2</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">33847</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">15556</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -41,8 +41,6 @@
    <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
    <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintEmptyPages" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PaintHellOverHeaderFooter" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ApplyParagraphMarkFormatToEmptyLineAtEndOfParagraph" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
    <config:config-item config:name="NoNumberingShowFollowBy" config:type="boolean">false</config:config-item>
    <config:config-item config:name="HyphenateURLs" config:type="boolean">false</config:config-item>
@@ -67,7 +65,6 @@
    <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">false</config:config-item>
    <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
    <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
    <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ProtectBookmarks" config:type="boolean">false</config:config-item>
@@ -105,7 +102,11 @@
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="HeaderSpacingBelowLastPara" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
    <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterName" config:type="string"/>
    <config:config-item config:name="AddParaLineSpacingToTableCells" config:type="boolean">true</config:config-item>
    <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
@@ -132,19 +133,16 @@
    <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
    <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
    <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="IgnoreHiddenCharsForLineCalculation" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
    <config:config-item config:name="DropCapPunctuation" config:type="boolean">true</config:config-item>
    <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">2902715</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2982454</config:config-item>
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
    <config:config-item config:name="MsWordCompMinLineHeightByFly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
   </config:config-item-set>
  </office:settings>
  <office:scripts>
@@ -170,7 +168,7 @@
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
   </style:default-style>
   <style:default-style style:family="paragraph">
-   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" fo:hyphenation-keep="auto" loext:hyphenation-keep-type="column" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="0.4925in" style:writing-mode="page"/>
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="0.4925in" style:writing-mode="page"/>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2" loext:hyphenation-no-caps="false" loext:hyphenation-no-last-word="false" loext:hyphenation-word-char-count="5" loext:hyphenation-zone="no-limit"/>
   </style:default-style>
   <style:default-style style:family="table">
@@ -455,6 +453,80 @@
     <style:background-image/>
    </style:table-cell-properties>
   </style:style>
+  <style:style style:name="Table1" style:family="table">
+   <style:table-properties style:width="3.5938in" table:align="left" fo:background-color="#b2b2b2" style:may-break-between-rows="true" table:border-model="collapsing">
+    <style:background-image/>
+   </style:table-properties>
+  </style:style>
+  <style:style style:name="Table1.A" style:family="table-column">
+   <style:table-column-properties style:column-width="1.1632in"/>
+  </style:style>
+  <style:style style:name="Table1.B" style:family="table-column">
+   <style:table-column-properties style:column-width="0.8076in"/>
+  </style:style>
+  <style:style style:name="Table1.C" style:family="table-column">
+   <style:table-column-properties style:column-width="0.625in"/>
+  </style:style>
+  <style:style style:name="Table1.D" style:family="table-column">
+   <style:table-column-properties style:column-width="0.9979in"/>
+  </style:style>
+  <style:style style:name="Table1.1" style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:style>
+  <style:style style:name="Table1.A1" style:family="table-cell">
+   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border="0.5pt solid #000000" style:writing-mode="page">
+    <style:background-image/>
+   </style:table-cell-properties>
+  </style:style>
+  <style:style style:name="Table1.A2" style:family="table-cell">
+   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="page">
+    <style:background-image/>
+   </style:table-cell-properties>
+  </style:style>
+  <style:style style:name="Table1.B2" style:family="table-cell">
+   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border-left="0.5pt solid #000000" fo:border-right="0.5pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="page">
+    <style:background-image/>
+   </style:table-cell-properties>
+  </style:style>
+  <style:style style:name="Table1.3" style:family="table-row">
+   <style:table-row-properties style:min-row-height="0.2021in"/>
+  </style:style>
+  <style:style style:name="Table1.A5" style:family="table-cell">
+   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="0.5pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="page">
+    <style:background-image/>
+   </style:table-cell-properties>
+  </style:style>
+  <style:style style:name="Table3" style:family="table">
+   <style:table-properties style:width="3.0042in" table:align="margins" fo:background-color="#999999">
+    <style:background-image/>
+   </style:table-properties>
+  </style:style>
+  <style:style style:name="Table3.A" style:family="table-column">
+   <style:table-column-properties style:column-width="1.0035in" style:rel-column-width="21895*"/>
+  </style:style>
+  <style:style style:name="Table3.B" style:family="table-column">
+   <style:table-column-properties style:column-width="2.0007in" style:rel-column-width="43640*"/>
+  </style:style>
+  <style:style style:name="Table3.A1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:background-color="transparent" fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="0.05pt solid #000000" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page">
+    <style:background-image/>
+   </style:table-cell-properties>
+  </style:style>
+  <style:style style:name="Table3.B1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:background-color="transparent" fo:padding="0.0201in" fo:border="0.05pt solid #000000" style:writing-mode="page">
+    <style:background-image/>
+   </style:table-cell-properties>
+  </style:style>
+  <style:style style:name="Table3.A2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:background-color="transparent" fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page">
+    <style:background-image/>
+   </style:table-cell-properties>
+  </style:style>
+  <style:style style:name="Table3.B2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:background-color="transparent" fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page">
+    <style:background-image/>
+   </style:table-cell-properties>
+  </style:style>
   <style:style style:name="Table4" style:family="table">
    <style:table-properties style:width="6.6931in" table:align="margins" fo:background-color="transparent">
     <style:background-image/>
@@ -519,7 +591,7 @@
    <style:table-cell-properties fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page"/>
   </style:style>
   <style:style style:name="Table4.9" style:family="table-row">
-   <style:table-row-properties style:min-row-height="0.9597in"/>
+   <style:table-row-properties style:min-row-height="0.3736in"/>
   </style:style>
   <style:style style:name="Table4.A9" style:family="table-cell">
    <style:table-cell-properties fo:background-color="#999999" fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page">
@@ -531,12 +603,6 @@
     <style:background-image/>
    </style:table-cell-properties>
   </style:style>
-  <style:style style:name="Table4.10" style:family="table-row">
-   <style:table-row-properties style:min-row-height="1.0194in"/>
-  </style:style>
-  <style:style style:name="Table4.11" style:family="table-row">
-   <style:table-row-properties style:min-row-height="1.2924in"/>
-  </style:style>
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
   </style:style>
@@ -546,215 +612,229 @@
   </style:style>
   <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="14pt" fo:font-weight="bold" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0010582b" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties officeooo:rsid="0010582b" officeooo:paragraph-rsid="00286f1c"/>
   </style:style>
-  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="14pt" fo:font-weight="bold" officeooo:rsid="0010582b" officeooo:paragraph-rsid="00286f1c" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="8pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0010582b" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:rsid="00112516" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00112516" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="italic" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:paragraph-rsid="002a690b" style:font-size-asian="9pt" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-size-complex="9pt" style:font-style-complex="italic" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="italic" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-size-complex="9pt" style:font-style-complex="italic" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00185df2" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00182fe4" officeooo:paragraph-rsid="00182fe4" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="002a690b" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="001b9324" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="001758ca" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" officeooo:rsid="00125616" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
-  </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
-  </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" fo:font-style="italic" fo:font-weight="bold" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-style-asian="italic" style:font-size-complex="9pt" style:font-style-complex="italic"/>
-  </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
-  </style:style>
-  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
-  </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
-  </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00144b32"/>
-  </style:style>
-  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="8pt" fo:font-weight="bold" officeooo:rsid="00144b32" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-weight-asian="bold" style:font-size-complex="8pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="00144b32" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties fo:font-size="8pt" style:text-underline-style="none" officeooo:paragraph-rsid="001a23f5" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="8pt" officeooo:rsid="00144b32" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" officeooo:paragraph-rsid="002b2936" style:font-size-asian="6pt" style:font-size-complex="6pt"/>
-  </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="0020411c" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Table_20_Heading">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="Liberation Serif" fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" officeooo:rsid="00280277" officeooo:paragraph-rsid="00280277" style:font-size-asian="6pt" style:font-size-complex="6pt"/>
-  </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" officeooo:rsid="00280277" officeooo:paragraph-rsid="002b2936" style:font-size-asian="6pt" style:font-size-complex="6pt"/>
-  </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00156e88" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Table_20_Heading">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="Liberation Serif" fo:font-size="8pt" officeooo:paragraph-rsid="00156e88" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00156e88" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="8pt" officeooo:rsid="00144b32" officeooo:paragraph-rsid="00156e88" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" officeooo:paragraph-rsid="002b65a7" style:font-size-asian="6pt" style:font-size-complex="6pt"/>
-  </style:style>
-  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="6pt" officeooo:paragraph-rsid="002bb2f2" style:font-size-asian="6pt" style:font-size-complex="6pt"/>
-  </style:style>
-  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="00156e88" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:font-size="10pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="00156e88" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:font-size="10pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="00156e88" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties style:font-name="Liberation Serif" fo:font-size="10pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties style:font-name="Liberation Serif" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0017fc0c" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties style:font-name="Liberation Serif" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="00156e88"/>
-  </style:style>
-  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties fo:font-weight="bold" officeooo:rsid="00173a0d" officeooo:paragraph-rsid="00173a0d" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties officeooo:rsid="0010582b" officeooo:paragraph-rsid="0010582b"/>
   </style:style>
-  <style:style style:name="P57" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="14pt" fo:font-weight="bold" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0010582b" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="14pt" fo:font-weight="bold" officeooo:rsid="0010582b" officeooo:paragraph-rsid="00286f1c" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="8pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0010582b" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="001758ca" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="0020411c" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00156e88" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00156e88" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00144b32"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties fo:font-size="8pt" style:text-underline-style="none" officeooo:paragraph-rsid="001a23f5" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:rsid="00112516" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00112516" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="002a690b" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="001b9324" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00185df2" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00182fe4" officeooo:paragraph-rsid="00182fe4" style:font-size-asian="9pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="9pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="italic" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:paragraph-rsid="002a690b" style:font-size-asian="9pt" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-size-complex="9pt" style:font-style-complex="italic" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="9pt" fo:font-style="italic" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:paragraph-rsid="0018dd4f" style:font-size-asian="9pt" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-size-complex="9pt" style:font-style-complex="italic" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" officeooo:rsid="00125616" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+  </style:style>
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+  </style:style>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="9pt" fo:font-style="italic" fo:font-weight="bold" officeooo:paragraph-rsid="00125616" style:font-size-asian="9pt" style:font-style-asian="italic" style:font-size-complex="9pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="8pt" fo:font-weight="bold" officeooo:rsid="00144b32" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-weight-asian="bold" style:font-size-complex="8pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="8pt" officeooo:rsid="00144b32" officeooo:paragraph-rsid="00144b32" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="8pt" officeooo:rsid="00144b32" officeooo:paragraph-rsid="00156e88" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="8pt" officeooo:paragraph-rsid="002b2936" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="10pt" officeooo:paragraph-rsid="002b2936" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="10pt" officeooo:paragraph-rsid="002b65a7" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="10pt" officeooo:paragraph-rsid="002bb2f2" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="10pt" officeooo:rsid="00280277" officeooo:paragraph-rsid="00280277" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" fo:font-size="10pt" officeooo:rsid="00280277" officeooo:paragraph-rsid="002b2936" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="Liberation Serif" fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="Liberation Serif" fo:font-size="8pt" officeooo:paragraph-rsid="00156e88" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+  </style:style>
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="00144b32" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="00156e88" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-size="10pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="00156e88" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-size="10pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:font-size="10pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0010582b" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="00156e88" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:font-name="Liberation Serif" fo:font-size="10pt" officeooo:rsid="0010582b" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:font-name="Liberation Serif" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0017fc0c" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:font-name="Liberation Serif" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P57" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="00156e88"/>
+  </style:style>
+  <style:style style:name="P58" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="00173a0d" officeooo:paragraph-rsid="00173a0d" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P59" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:font-name="Liberation Serif" fo:font-size="10pt" fo:font-weight="bold" officeooo:paragraph-rsid="0017d4fe" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P60" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+  </style:style>
+  <style:style style:name="P61" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:rsid="0010582b" officeooo:paragraph-rsid="0010582b"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties style:text-underline-style="none"/>
   </style:style>
   <style:style style:name="T2" style:family="text">
-   <style:text-properties officeooo:rsid="0010582b"/>
+   <style:text-properties style:text-underline-style="none" fo:font-weight="bold" officeooo:rsid="0010582b" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T3" style:family="text">
-   <style:text-properties fo:font-style="italic" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
+   <style:text-properties officeooo:rsid="0010582b"/>
   </style:style>
   <style:style style:name="T4" style:family="text">
-   <style:text-properties style:text-underline-style="none" fo:font-weight="bold" officeooo:rsid="0010582b" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-style="italic" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T5" style:family="text">
    <style:text-properties style:text-underline-style="solid" style:text-underline-type="double" style:text-underline-width="auto" style:text-underline-color="font-color"/>
@@ -801,28 +881,25 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
    <text:p text:style-name="P1"/>
-   <text:p text:style-name="P1"/>
-   <text:p text:style-name="P1"/>
-   <text:p text:style-name="P1"/>
    <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.type == &apos;out&apos;&quot;&gt;</text:placeholder></text:p>
    <text:p text:style-name="P2"/>
    <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.state == &apos;draft&apos;&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P3">DEVIS DE SOINS</text:p>
+   <text:p text:style-name="P5">DEVIS DE SOINS</text:p>
    <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.state == &apos;validated&apos;&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P3">FACTURE PRO FORMA</text:p>
+   <text:p text:style-name="P5">FACTURE PRO FORMA</text:p>
    <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P2"/>
    <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.state == &apos;paid&apos;&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P3">FACTURE <text:span text:style-name="T1">N°</text:span> : <text:placeholder text:placeholder-type="text">&lt;record.number and &apos; &apos; + record.number or &apos; &apos;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P5">FACTURE <text:span text:style-name="T1">N°</text:span> : <text:placeholder text:placeholder-type="text">&lt;record.number and &apos; &apos; + record.number or &apos; &apos;&gt;</text:placeholder></text:p>
    <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P2"/>
-   <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.state == &apos;posted&apos;&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P5">FACTURE <text:span text:style-name="T1">N°</text:span> : <text:placeholder text:placeholder-type="text">&lt;record.number and &apos; &apos; + record.number or &apos; &apos;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P3"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.state == &apos;posted&apos;&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P6">FACTURE <text:span text:style-name="T1">N°</text:span> : <text:placeholder text:placeholder-type="text">&lt;record.number and &apos; &apos; + record.number or &apos; &apos;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P3"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <text:p text:style-name="P2"/>
-   <text:p text:style-name="P6">Date : <text:placeholder text:placeholder-type="text">&lt;format_date(record.invoice_date or today, record.party.lang)&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P6"/>
+   <text:p text:style-name="P7">Date : <text:placeholder text:placeholder-type="text">&lt;format_date(record.invoice_date or today, record.party.lang)&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P7"/>
    <table:table table:name="Table2" table:style-name="Table2">
     <table:table-column table:style-name="Table2.A"/>
     <table:table-column table:style-name="Table2.B"/>
@@ -836,7 +913,7 @@
        <table:table-column table:style-name="Table1.D"/>
        <table:table-row table:style-name="Table1.1">
         <table:table-cell table:style-name="Table1.A1" table:number-columns-spanned="4" office:value-type="string">
-         <text:p text:style-name="P7">PATIENT</text:p>
+         <text:p text:style-name="P19">PATIENT</text:p>
         </table:table-cell>
         <table:covered-table-cell/>
         <table:covered-table-cell/>
@@ -844,72 +921,72 @@
        </table:table-row>
        <table:table-row>
         <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-         <text:p text:style-name="P8">Nom(s) et Prénom(s)</text:p>
+         <text:p text:style-name="P20">Nom(s) et Prénom(s)</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table1.B2" table:number-columns-spanned="3" office:value-type="string">
-         <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party and record.party.name&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.party.name+ &apos; &apos; + record.party.lastname&gt;</text:placeholder><text:span text:style-name="T2"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span><text:span text:style-name="T2"><text:s/></text:span></text:p>
+         <text:p text:style-name="P27"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party and record.party.name&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.party.name+ &apos; &apos; + record.party.lastname&gt;</text:placeholder><text:span text:style-name="T3"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span><text:span text:style-name="T3"><text:s/></text:span></text:p>
         </table:table-cell>
         <table:covered-table-cell/>
         <table:covered-table-cell/>
        </table:table-row>
        <table:table-row table:style-name="Table1.3">
         <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-         <text:p text:style-name="P8">Age</text:p>
+         <text:p text:style-name="P20">Age</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-         <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service and record.health_service.patient&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.health_service.patient.age&gt;</text:placeholder><text:span text:style-name="T2"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
+         <text:p text:style-name="P27"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service and record.health_service.patient&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.health_service.patient.age&gt;</text:placeholder><text:span text:style-name="T3"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-         <text:p text:style-name="P8">Sexe</text:p>
+         <text:p text:style-name="P20">Sexe</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table1.B2" office:value-type="string">
-         <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;choose test=&quot;&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;records[0].party.gender == &apos;f&apos;&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P11">F</text:p>
-         <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;records[0].party.gender == &apos;m&apos;&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P11">M</text:p>
-         <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P10"/>
-         <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;/choose&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;choose test=&quot;&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;records[0].party.gender == &apos;f&apos;&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P28">F</text:p>
+         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;records[0].party.gender == &apos;m&apos;&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P28">M</text:p>
+         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P21"/>
+         <text:p text:style-name="P25"><text:placeholder text:placeholder-type="text">&lt;/choose&gt;</text:placeholder></text:p>
         </table:table-cell>
        </table:table-row>
        <table:table-row table:style-name="Table1.1">
         <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-         <text:p text:style-name="P13">Assurance/Société</text:p>
+         <text:p text:style-name="P26">Assurance/Société</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table1.B2" table:number-columns-spanned="3" office:value-type="string">
-         <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party and record.party.sale_price_list&quot;&gt;</text:placeholder><text:span text:style-name="T3"><text:placeholder text:placeholder-type="text">&lt;record.party.sale_price_list.name&gt;</text:placeholder></text:span><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P23"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party and record.party.sale_price_list&quot;&gt;</text:placeholder><text:span text:style-name="T4"><text:placeholder text:placeholder-type="text">&lt;record.party.sale_price_list.name&gt;</text:placeholder></text:span><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
         <table:covered-table-cell/>
         <table:covered-table-cell/>
        </table:table-row>
        <table:table-row table:style-name="Table1.1">
         <table:table-cell table:style-name="Table1.A5" office:value-type="string">
-         <text:p text:style-name="P8">Assuré Principal</text:p>
+         <text:p text:style-name="P20">Assuré Principal</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table1.A1" table:number-columns-spanned="3" office:value-type="string">
-         <text:p text:style-name="P15"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_holder&quot;&gt;</text:placeholder><text:span text:style-name="T3"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_holder.name+&apos; &apos;+record.health_service.insurance_holder.lastname&gt;</text:placeholder></text:span><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P22"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_holder&quot;&gt;</text:placeholder><text:span text:style-name="T4"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_holder.name+&apos; &apos;+record.health_service.insurance_holder.lastname&gt;</text:placeholder></text:span><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
         <table:covered-table-cell/>
         <table:covered-table-cell/>
        </table:table-row>
        <table:table-row>
         <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-         <text:p text:style-name="P8">Employeur</text:p>
+         <text:p text:style-name="P20">Employeur</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table1.B2" table:number-columns-spanned="3" office:value-type="string">
-         <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan.employeur&quot;&gt;</text:placeholder><text:soft-page-break/><text:span text:style-name="T3"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.employeur.name&gt;</text:placeholder></text:span><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P24"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan.employeur&quot;&gt;</text:placeholder><text:span text:style-name="T4"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.employeur.name&gt;</text:placeholder></text:span><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:soft-page-break/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
         <table:covered-table-cell/>
         <table:covered-table-cell/>
        </table:table-row>
       </table:table>
       <text:p text:style-name="Standard"/>
-      <text:p text:style-name="P17"/>
+      <text:p text:style-name="P8"/>
      </table:table-cell>
      <table:table-cell table:style-name="Table2.A1" office:value-type="string">
-      <text:p text:style-name="P18"/>
+      <text:p text:style-name="P9"/>
      </table:table-cell>
      <table:table-cell table:style-name="Table2.C1" office:value-type="string">
       <table:table table:name="Table3" table:style-name="Table3">
@@ -917,83 +994,83 @@
        <table:table-column table:style-name="Table3.B"/>
        <table:table-row>
         <table:table-cell table:style-name="Table3.A1" office:value-type="string">
-         <text:p text:style-name="P19">Carte Santé N<text:span text:style-name="T4">°</text:span></text:p>
+         <text:p text:style-name="P29">Carte Santé N<text:span text:style-name="T2">°</text:span></text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table3.B1" office:value-type="string">
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.number&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P22"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P23"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.number&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P31"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P32"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
        </table:table-row>
        <table:table-row>
         <table:table-cell table:style-name="Table3.A2" office:value-type="string">
-         <text:p text:style-name="P19">BPC N<text:span text:style-name="T4">°</text:span></text:p>
+         <text:p text:style-name="P29">BPC N<text:span text:style-name="T2">°</text:span></text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table3.B2" office:value-type="string">
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.bpc&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P22"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P23"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.bpc&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P31"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P32"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
        </table:table-row>
        <table:table-row>
         <table:table-cell table:style-name="Table3.A2" office:value-type="string">
-         <text:p text:style-name="P19">Date D’émission</text:p>
+         <text:p text:style-name="P29">Date D’émission</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table3.B2" office:value-type="string">
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.date_em&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P22"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P23"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.date_em&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P31"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P32"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
        </table:table-row>
        <table:table-row>
         <table:table-cell table:style-name="Table3.A2" office:value-type="string">
-         <text:p text:style-name="P19">Validité</text:p>
+         <text:p text:style-name="P29">Validité</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table3.B2" office:value-type="string">
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder><text:soft-page-break/></text:p>
-         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.member_since&gt;</text:placeholder>à<text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.member_exp&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P22"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P23"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.member_since&gt;</text:placeholder>à<text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.member_exp&gt;</text:placeholder><text:soft-page-break/></text:p>
+         <text:p text:style-name="P31"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P32"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
        </table:table-row>
        <table:table-row>
         <table:table-cell table:style-name="Table3.A2" office:value-type="string">
-         <text:p text:style-name="P19">Couverture</text:p>
+         <text:p text:style-name="P29">Couverture</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table3.B2" office:value-type="string">
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.z_couverture&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P22"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P23"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.z_couverture&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P31"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P32"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
        </table:table-row>
        <table:table-row>
         <table:table-cell table:style-name="Table3.A2" office:value-type="string">
-         <text:p text:style-name="P19">Plafond</text:p>
+         <text:p text:style-name="P29">Plafond</text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table3.B2" office:value-type="string">
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P20"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P21"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.plafond&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P22"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-         <text:p text:style-name="P24"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.plafond&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P31"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P33"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
         </table:table-cell>
        </table:table-row>
       </table:table>
-      <text:p text:style-name="P17"/>
+      <text:p text:style-name="P8"/>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P6"/>
-   <text:p text:style-name="P25">Cotation N°: <text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.health_service.name&gt;</text:placeholder><text:s text:c="11"/><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.company.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:s text:c="11"/>Enregistré par: <text:placeholder text:placeholder-type="text">&lt;record.health_service.create_uid.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P7"/>
+   <text:p text:style-name="P17">Cotation N°: <text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.health_service.name&gt;</text:placeholder><text:s text:c="11"/><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service.insurance_plan&quot;&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;record.health_service.insurance_plan.company.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:s text:c="11"/>Enregistré par: <text:placeholder text:placeholder-type="text">&lt;record.health_service.create_uid.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
    <table:table table:name="Table4" table:style-name="Table4">
     <table:table-column table:style-name="Table4.A"/>
     <table:table-column table:style-name="Table4.B"/>
@@ -1002,24 +1079,24 @@
     <table:table-column table:style-name="Table4.E"/>
     <table:table-row>
      <table:table-cell table:style-name="Table4.A1" office:value-type="string">
-      <text:p text:style-name="P26">Libellé</text:p>
+      <text:p text:style-name="P35">Libellé</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table4.A1" office:value-type="string">
-      <text:p text:style-name="P26">Code</text:p>
+      <text:p text:style-name="P35">Code</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table4.A1" office:value-type="string">
-      <text:p text:style-name="P26">Quantité</text:p>
+      <text:p text:style-name="P35">Quantité</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table4.A1" office:value-type="string">
-      <text:p text:style-name="P26">Indice</text:p>
+      <text:p text:style-name="P35">Indice</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table4.E1" office:value-type="string">
-      <text:p text:style-name="P26">Montant</text:p>
+      <text:p text:style-name="P35">Montant</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table4.A2" table:number-columns-spanned="5" office:value-type="string">
-      <text:p text:style-name="P27"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;index, line in enumerate(record.lines)&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;index, line in enumerate(record.lines)&quot;&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -1028,7 +1105,7 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table4.A3" table:number-columns-spanned="5" office:value-type="string">
-      <text:p text:style-name="P28"><text:placeholder text:placeholder-type="text">&lt;choose test=&quot;&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P47"><text:placeholder text:placeholder-type="text">&lt;choose test=&quot;&quot;&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -1037,7 +1114,7 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table4.A4" table:number-columns-spanned="5" office:value-type="string">
-      <text:p text:style-name="P28"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;line.type == &apos;line&apos;&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P47"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;line.type == &apos;line&apos;&quot;&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -1046,30 +1123,30 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table4.A5" office:value-type="string">
-      <text:p text:style-name="P29"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;line.product&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P29"><text:span text:style-name="T5"><text:placeholder text:placeholder-type="text">&lt;line.product.template.name&gt;</text:placeholder></text:span><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P30"><text:placeholder text:placeholder-type="text">&lt;line.description&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;line.product&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P10"><text:span text:style-name="T5"><text:placeholder text:placeholder-type="text">&lt;line.product.template.name&gt;</text:placeholder></text:span><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P18"><text:placeholder text:placeholder-type="text">&lt;line.description&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table4.B5" office:value-type="string">
-      <text:p text:style-name="P29"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;line.product&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P29"><text:placeholder text:placeholder-type="text">&lt;line.product.code&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P31"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;line.product&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;line.product.code&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table4.C5" office:value-type="string">
-      <text:p text:style-name="P32"><text:placeholder text:placeholder-type="text">&lt;(format_number(line.quantity,record.party.lang, digits=line.unit_digits) + (line.unit and (&apos; &apos; + line.unit.symbol) or &apos;&apos;)) or &apos;&apos;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;(format_number(line.quantity,record.party.lang, digits=line.unit_digits) + (line.unit and (&apos; &apos; + line.unit.symbol) or &apos;&apos;)) or &apos;&apos;&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table4.D5" office:value-type="string">
-      <text:p text:style-name="P29"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;line.product&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P32"><text:placeholder text:placeholder-type="text">&lt;line.product.list_price,&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P31"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;line.product&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;line.product.list_price,&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P11"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table4.E5" office:value-type="string">
-      <text:p text:style-name="P32"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.montant_recu(record)[index])&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P12"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.montant_recu(record)[index])&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table4.A6" table:number-columns-spanned="5" office:value-type="string">
-      <text:p text:style-name="P27"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -1078,7 +1155,7 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table4.A7" table:number-columns-spanned="5" office:value-type="string">
-      <text:p text:style-name="P27"><text:placeholder text:placeholder-type="text">&lt;/choose&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;/choose&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -1087,7 +1164,7 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table4.A8" table:number-columns-spanned="5" office:value-type="string">
-      <text:p text:style-name="P27"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -1096,84 +1173,84 @@
     </table:table-row>
     <table:table-row table:style-name="Table4.9">
      <table:table-cell table:style-name="Table4.A9" table:number-columns-spanned="4" office:value-type="string">
-      <text:p text:style-name="P33"><text:span text:style-name="T6">TOTAL :</text:span> </text:p>
+      <text:p text:style-name="P36"><text:span text:style-name="T6">TOTAL :</text:span> </text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:table-cell table:style-name="Table4.E9" office:value-type="string">
-      <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.total_amount2)&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;not record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.total_amount2&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P39"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.total_amount2)&gt;</text:placeholder><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
+      <text:p text:style-name="P39"><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;not record.health_service&quot;&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;record.total_amount2&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="Table4.10">
+    <table:table-row table:style-name="Table4.9">
      <table:table-cell table:style-name="Table4.A9" table:number-columns-spanned="4" office:value-type="string">
-      <text:p text:style-name="P35"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P35"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list.name == &apos;MSH&apos;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P36">TIERS PAYANT : </text:p>
-      <text:p text:style-name="P37"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P35"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list.name != &apos;MSH&apos;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P36">PART PATIENT : </text:p>
-      <text:p text:style-name="P37"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list.name == &apos;MSH&apos;&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P44">TIERS PAYANT : </text:p>
+      <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P13"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list.name != &apos;MSH&apos;&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P44">PART PATIENT : </text:p>
+      <text:p text:style-name="P14"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
       <text:p text:style-name="Standard"><text:soft-page-break/><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span>if test=&quot;record.healthservice&quot;</text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:table-cell table:style-name="Table4.E9" office:value-type="string">
-      <text:p text:style-name="P38"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P39"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.affichage_assurance(record.montant_patient))&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P34"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;not record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.affichage_assurance(record.montant_patient)&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P42"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P43"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.affichage_assurance(record.montant_patient))&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P38"><text:soft-page-break/><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P39"><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;not record.health_service&quot;&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;record.affichage_assurance(record.montant_patient)&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="Table4.11">
+    <table:table-row table:style-name="Table4.9">
      <table:table-cell table:style-name="Table4.A9" table:number-columns-spanned="4" office:value-type="string">
-      <text:p text:style-name="P40"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P40"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list.name == &apos;MSH&apos;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P41">PART MSH : </text:p>
-      <text:p text:style-name="P42"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P40"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list.name != &apos;MSH&apos;&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P41">PART ASSURANCE : </text:p>
-      <text:p text:style-name="P42"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P42"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P43"/>
+      <text:p text:style-name="P15"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P15"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list.name == &apos;MSH&apos;&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P45">PART MSH : </text:p>
+      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P15"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.party.sale_price_list.name != &apos;MSH&apos;&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P45">PART ASSURANCE : </text:p>
+      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P16"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P37"/>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:table-cell table:style-name="Table4.E9" office:value-type="string">
-      <text:p text:style-name="P44"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P45"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.montant_assurance_facture(record.montant_assurance, record.total_amount2))&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P45"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;if test=&quot;not record.health_service&quot;&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;record.montant_assurance&gt;</text:placeholder><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P40"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.health_service&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P41"><text:placeholder text:placeholder-type="text">&lt;record.format_nombre(record.montant_assurance_facture(record.montant_assurance, record.total_amount2))&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P41"><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;not record.health_service&quot;&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;record.montant_assurance&gt;</text:placeholder></text:span><text:span text:style-name="T7"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:span></text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
    <text:p text:style-name="P2"/>
-   <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.type == &apos;out&apos;&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;choose test=&quot;&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P47"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;record.state == &apos;draft&apos;&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P48"/>
-   <text:p text:style-name="P49"><text:span text:style-name="T8">Devis arreté à la somme de: </text:span><text:span text:style-name="T8"><text:placeholder text:placeholder-type="text">&lt;record.convert_letter(record.total_amount2)&gt;</text:placeholder></text:span><text:span text:style-name="T8"><text:s/>F</text:span><text:span text:style-name="T9">rancs </text:span><text:span text:style-name="T8">CFA.</text:span></text:p>
+   <text:p text:style-name="P48"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.type == &apos;out&apos;&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P48"><text:placeholder text:placeholder-type="text">&lt;choose test=&quot;&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P49"><text:placeholder text:placeholder-type="text">&lt;when test=&quot;record.state == &apos;draft&apos;&quot;&gt;</text:placeholder></text:p>
    <text:p text:style-name="P50"/>
-   <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;otherwise test=&quot;&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P51"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.montant_assurance&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P51"/>
-   <text:p text:style-name="P52">Arreté la présente facture à la somme de:</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T10"><text:s/></text:span><text:span text:style-name="T10"><text:placeholder text:placeholder-type="text">&lt;record.convert_letter(record.montant_assurance_facture(record.montant_assurance, record.total_amount2))&gt;</text:placeholder></text:span><text:span text:style-name="T10"><text:s/>F</text:span><text:span text:style-name="T11">rancs </text:span><text:span text:style-name="T10">CFA</text:span></text:p>
-   <text:p text:style-name="P52"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P52"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.montant_assurance==0&quot;&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P52">Arreté la présente facture à la somme de:</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T10"><text:s/></text:span><text:span text:style-name="T10"><text:placeholder text:placeholder-type="text">&lt;record.convert_letter(record.total_amount)&gt;</text:placeholder></text:span><text:span text:style-name="T10"><text:s/>F</text:span><text:span text:style-name="T11">rancs </text:span><text:span text:style-name="T10">CFA. </text:span></text:p>
-   <text:p text:style-name="P52"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;/otherwise&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;/choose&gt;</text:placeholder></text:p>
-   <text:p text:style-name="P46"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P53"><text:span text:style-name="T8">Devis arreté à la somme de: </text:span><text:span text:style-name="T8"><text:placeholder text:placeholder-type="text">&lt;record.convert_letter(record.total_amount2)&gt;</text:placeholder></text:span><text:span text:style-name="T8"><text:s/>F</text:span><text:span text:style-name="T9">rancs </text:span><text:span text:style-name="T8">CFA.</text:span></text:p>
    <text:p text:style-name="P54"/>
-   <text:p text:style-name="P55">La direction</text:p>
-   <text:p text:style-name="P56"/>
-   <text:p text:style-name="P57"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P48"><text:placeholder text:placeholder-type="text">&lt;/when&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P48"><text:placeholder text:placeholder-type="text">&lt;otherwise test=&quot;&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P55"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.montant_assurance&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P55"/>
+   <text:p text:style-name="P56">Arreté la présente facture à la somme de:</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T10"><text:s/></text:span><text:span text:style-name="T10"><text:placeholder text:placeholder-type="text">&lt;record.convert_letter(record.montant_assurance_facture(record.montant_assurance, record.total_amount2))&gt;</text:placeholder></text:span><text:span text:style-name="T10"><text:s/>F</text:span><text:span text:style-name="T11">rancs </text:span><text:span text:style-name="T10">CFA</text:span></text:p>
+   <text:p text:style-name="P56"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P56"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;record.montant_assurance==0&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P56">Arreté la présente facture à la somme de:</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T10"><text:s/></text:span><text:span text:style-name="T10"><text:placeholder text:placeholder-type="text">&lt;record.convert_letter(record.total_amount)&gt;</text:placeholder></text:span><text:span text:style-name="T10"><text:s/>F</text:span><text:span text:style-name="T11">rancs </text:span><text:span text:style-name="T10">CFA. </text:span></text:p>
+   <text:p text:style-name="P56"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P48"><text:placeholder text:placeholder-type="text">&lt;/otherwise&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P48"><text:placeholder text:placeholder-type="text">&lt;/choose&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P48"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P57"/>
+   <text:p text:style-name="P58">La direction</text:p>
+   <text:p text:style-name="P4"/>
+   <text:p text:style-name="P51"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
   </office:text>
  </office:body>
 </office:document>
