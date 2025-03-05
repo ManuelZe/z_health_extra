@@ -496,7 +496,7 @@ class Invoice(metaclass=PoolMeta):
         difference = sum(net_a_payer-amount_to_pay for record in records)
         elements.append(difference)
         elements.append(amount_to_pay)
-        total_amount2 = sum(record.total_amount2 for record in records)
+        total_amount2 = sum(float(record.total_amount2) for record in records)
         elements.append(total_amount2)
         
         return elements
