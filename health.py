@@ -901,22 +901,6 @@ class Invoice(metaclass=PoolMeta):
 class InvoiceLine(metaclass=PoolMeta):
     __name__ = 'account.invoice.line'
     
-    agent2 = fields.Many2One('commission.agent', 'Agent de Réalisation', select=True)
-
-    @property
-    def agent_plans_used(self):
-        "List of agent, plan tuple"
-        used = []
-        if self.invoice.agent:
-            used.append((self.invoice.agent, self.invoice.agent.plan))
-        if self.principal:
-            used.append((self.principal, self.principal.plan))
-        if self.agent2:
-            if self.agent2.plan2:
-                used.append((self.agent2, self.agent2.plan2))
-        return used
-    
-
     def montant_produit(self):
         # Record corespond au recu
         # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
