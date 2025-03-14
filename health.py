@@ -115,8 +115,7 @@ class Lab(metaclass=PoolMeta):
             if record.test.test_type.name :
                 if record.test.test_type.name not in liste_paillasse:
                     liste_paillasse.append(record.test.test_type.name)
-        
-        print("la liste des paillasses ---------- ", liste_paillasse)
+
         return liste_paillasse
 
     @staticmethod
@@ -285,7 +284,6 @@ class Invoice(metaclass=PoolMeta):
         '''
         new_invoices = [i._credit(**values) for i in invoices]
         new_invoices = [i._credit(**{**values, 'montant_assurance': -(i.montant_assurance), 'reference': i.number}) for i in invoices]
-        print("------------ Le Invoice au niveau de Invoice ----- ", new_invoices[0].reference)
         cls.save(new_invoices)
         cls.update_taxes(new_invoices)
         if refund:
@@ -508,7 +506,6 @@ class Invoice(metaclass=PoolMeta):
         elements = []
         for record in records :
             unit_price = sum(line.montant_produit() for line in record.lines)
-            print('Le unit_price --- ', unit_price)
             elements.append(unit_price)
             amount = sum(float(line.montant_produit())*line.quantity for line in record.lines)
             elements.append(amount)
@@ -621,8 +618,6 @@ class Invoice(metaclass=PoolMeta):
         total_recu = sum(liste_montants)
 
         liste_montants.append(total_recu)
-
-        print("liste montant --- ", liste_montants)
 
         return liste_montants
     
@@ -986,7 +981,6 @@ class ImagingTestRequest(metaclass=PoolMeta):
     @staticmethod
     def default_doctor(self):
         return self.service.requestor
-    
 
 class PatientLabTestRequest(metaclass=PoolMeta):
     'Lab Order'
