@@ -23,5 +23,11 @@
          <field name="inherit" ref="commission.agent_view_list"/>
          <field name="name">agent_tree</field>
       </record>
+
+      <record model="ir.ui.view" id="z_health_extra_view_invoice_line_view_form">
+         <field name="model">account.invoice.line</field>
+         <field name="inherit" ref="account_invoice.invoice_line_view_form"/>
+         <field name="name">invoice_line_form</field>
+      </record>
    </data>
 </tryton>
