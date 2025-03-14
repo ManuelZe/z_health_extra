@@ -936,10 +936,7 @@ class InvoiceLine(metaclass=PoolMeta):
                             self.product, self.product.list_price,
                             self.quantity, self.product.default_uom)
         
-        if self.quantity < 0:
-            return -(unit_price)
-        else:
-            return (unit_price)
+        return unit_price
     
     def get_commissions(self):
         pool = Pool()
