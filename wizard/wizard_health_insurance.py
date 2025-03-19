@@ -187,7 +187,6 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                 if 'value' in list(discount.keys()):
                                     if discount['value']:
                                         if (discount['type'] == 'pct'):
-                                            unit_price = Decimal('0.1')
                                             # Use price_decimal value from
                                             # system configuration to set
                                             # the number of decimals
@@ -247,12 +246,12 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                                 str(str_disc) + ")"
                             if Decimal(plafond) > Decimal(0) :
                                 if Decimal(amount) < Decimal(plafond) :
-                                    unit_price = Decimal('0.1')
+                                    unit_price = unit_price
                                     plafond -= Decimal(amount)
                                 elif Decimal(amount) >= Decimal(plafond):
                                     amount = amount - plafond
                                     if amount == Decimal(0) :
-                                        unit_price = Decimal('0.1')
+                                        unit_price = unit_price
                                     else :
                                         unit_price = amount/line.qty
                                     plafond = Decimal(0)
