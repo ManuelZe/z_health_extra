@@ -474,6 +474,16 @@ class Invoice(metaclass=PoolMeta):
             elt = cls.calcul_prix_MSH(record.party, line)
             total = total + elt[3]
         return total
+    
+    @classmethod
+    def calcul_prix_preferentiel_MSH(cls, total, record=None):
+
+        liste_prix = []
+        total_pref = float(0.9)*float(total)
+        liste_prix.append(total_pref)
+        montant_a_payer = total_pref - cls.affichage_assurance(record.montant_patient)
+        liste_prix.append(montant_a_payer)
+        return liste_prix
 
 
     def total_synth_facture(self, records):
