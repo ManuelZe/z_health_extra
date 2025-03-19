@@ -527,7 +527,7 @@ class Invoice(metaclass=PoolMeta):
     @staticmethod
     def affichage_assurance(n) :
 
-        if float(n) < float(3) :
+        if float(n) <= float(20) :
             return 0.0
         else :
             return n
