@@ -1,0 +1,5 @@
+<data>
+    <xpath expr="/tree/field[@name='invoice_state']" position="after">
+        <field name="is_validate"/>
+    </xpath>
+</data>
