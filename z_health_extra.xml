@@ -35,5 +35,10 @@
          <field name="inherit" ref="commission.commission_view_list"/>
          <field name="name">commission_tree</field>
       </record>
+      <record model="ir.ui.view" id="z_health_extra_view_commission_form">
+         <field name="model">commission</field>
+         <field name="inherit" ref="commission.commission_view_form"/>
+         <field name="name">commission_form</field>
+      </record>
    </data>
 </tryton>

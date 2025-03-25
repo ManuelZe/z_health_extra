@@ -1,0 +1,6 @@
+<data>
+    <xpath expr="/form/field[@name='origin']" position="after">
+        <label name="is_validate"/>
+        <field name="is_validate"/>
+    </xpath>
+</data>
