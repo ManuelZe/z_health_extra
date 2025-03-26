@@ -218,7 +218,7 @@ class LabTestType(ModelSQL, ModelView):
 class Commission(metaclass=PoolMeta):
     __name__ = "commission"
 
-    is_validate = fields.Boolean("Validé ", help="Cette case est coché si cette commission a été validé ou pas.", readonly=True)
+    is_validate = fields.Boolean("Validé ", help="Cette case est coché si cette commission a été validé ou pas.")
 
     def bordereau_commission(self, records):
         # exemplaire de sortie canevas
