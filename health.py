@@ -1006,7 +1006,9 @@ class PatientLabTestRequest(metaclass=PoolMeta):
 class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
 
-    signature2 = fields.Binary("Picture of Signature") 
+    signature2 = fields.Binary("Picture of Signature")
+    numero_carte = fields.Char("Numéro de Carte")
+    clef = fields.Char('Clef') 
 
 
 class ImagingTestResult(metaclass=PoolMeta):
