@@ -7,7 +7,7 @@
    </xpath>
 
    <xpath expr="/form/notebook/page[@name='signature2']" position="after">
-      <page name="Banque">
+      <page name="numero_carte">
          <label name="numero_carte"/>
          <field name="numero_carte"/>
          <label name="clef"/>
