@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:s="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2023-02-16T10:59:32.256922983</meta:creation-date><dc:date>2025-02-25T08:34:59.318691094</dc:date><meta:editing-duration>PT3H14M2S</meta:editing-duration><meta:editing-cycles>16</meta:editing-cycles><meta:generator>LibreOffice/24.8.4.2$Linux_X86_64 LibreOffice_project/480$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="48" meta:word-count="75" meta:character-count="1110" meta:non-whitespace-character-count="1079"/></office:meta>
+ <office:meta><meta:creation-date>2023-02-16T10:59:32.256922983</meta:creation-date><dc:date>2025-04-07T12:40:12.673895371</dc:date><meta:editing-duration>PT3H20M29S</meta:editing-duration><meta:editing-cycles>19</meta:editing-cycles><meta:generator>LibreOffice/24.8.4.2$Linux_X86_64 LibreOffice_project/480$Build-2</meta:generator><meta:document-statistic meta:table-count="2" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="50" meta:word-count="77" meta:character-count="1180" meta:non-whitespace-character-count="1149"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">5292</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">35078</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">18371</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">17785</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">20623</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">7650</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">19953</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">3962</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">5292</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">35077</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">23661</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">17784</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -141,7 +141,7 @@
    <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1164272</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1219476</config:config-item>
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
    <config:config-item config:name="MsWordCompMinLineHeightByFly" config:type="boolean">false</config:config-item>
@@ -165,7 +165,7 @@
  <office:styles>
   <s:default-style s:family="graphic">
    <s:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" s:writing-mode="lr-tb" s:flow-with-text="false"/>
-   <s:paragraph-properties s:text-autospace="ideograph-alpha" s:line-break="strict" loext:tab-stop-distance="0in" s:writing-mode="lr-tb" s:font-independent-line-spacing="false">
+   <s:paragraph-properties s:text-autospace="ideograph-alpha" s:line-break="strict" loext:tab-stop-distance="0in" s:font-independent-line-spacing="false">
     <s:tab-stops/>
    </s:paragraph-properties>
    <s:text-properties s:use-window-font-color="true" loext:opacity="0%" s:font-name="Liberation Serif" fo:font-size="12pt" fo:language="fr" fo:country="FR" s:letter-kerning="true" s:font-name-asian="Noto Serif CJK SC" s:font-size-asian="10.5pt" s:language-asian="zh" s:country-asian="CN" s:font-name-complex="Lohit Devanagari1" s:font-size-complex="12pt" s:language-complex="hi" s:country-complex="IN"/>
@@ -201,6 +201,10 @@
   </s:style>
   <s:style s:name="Table_20_Contents" s:display-name="Table Contents" s:family="paragraph" s:parent-style-name="Standard" s:class="extra">
    <s:paragraph-properties text:number-lines="false" text:line-number="0"/>
+  </s:style>
+  <s:style s:name="Table_20_Heading" s:display-name="Table Heading" s:family="paragraph" s:parent-style-name="Table_20_Contents" s:class="extra">
+   <s:paragraph-properties fo:text-align="center" s:justify-single-word="false" text:number-lines="false" text:line-number="0"/>
+   <s:text-properties fo:font-weight="bold" s:font-weight-asian="bold" s:font-weight-complex="bold"/>
   </s:style>
   <s:style s:name="Placeholder" s:family="text">
    <s:text-properties fo:font-variant="small-caps" fo:color="#008080" loext:opacity="100%" s:text-underline-style="dotted" s:text-underline-width="auto" s:text-underline-color="font-color"/>
@@ -282,119 +286,127 @@
    <s:table-properties s:width="7.9479in" fo:margin-left="-0.6208in" table:align="left"/>
   </s:style>
   <s:style s:name="Table1.A" s:family="table-column">
-   <s:table-column-properties s:column-width="0.2951in"/>
+   <s:table-column-properties s:column-width="0.2708in"/>
   </s:style>
   <s:style s:name="Table1.B" s:family="table-column">
-   <s:table-column-properties s:column-width="0.8285in"/>
+   <s:table-column-properties s:column-width="0.7625in"/>
   </s:style>
   <s:style s:name="Table1.C" s:family="table-column">
-   <s:table-column-properties s:column-width="0.6917in"/>
-  </s:style>
-  <s:style s:name="Table1.D" s:family="table-column">
-   <s:table-column-properties s:column-width="0.5583in"/>
+   <s:table-column-properties s:column-width="0.6361in"/>
   </s:style>
   <s:style s:name="Table1.E" s:family="table-column">
-   <s:table-column-properties s:column-width="0.766in"/>
+   <s:table-column-properties s:column-width="0.5139in"/>
   </s:style>
   <s:style s:name="Table1.F" s:family="table-column">
-   <s:table-column-properties s:column-width="0.541in"/>
+   <s:table-column-properties s:column-width="0.7049in"/>
   </s:style>
   <s:style s:name="Table1.G" s:family="table-column">
-   <s:table-column-properties s:column-width="0.4826in"/>
+   <s:table-column-properties s:column-width="0.3285in"/>
   </s:style>
   <s:style s:name="Table1.H" s:family="table-column">
-   <s:table-column-properties s:column-width="0.4979in"/>
+   <s:table-column-properties s:column-width="0.6132in"/>
+  </s:style>
+  <s:style s:name="Table1.I" s:family="table-column">
+   <s:table-column-properties s:column-width="0.4576in"/>
+  </s:style>
+  <s:style s:name="Table1.J" s:family="table-column">
+   <s:table-column-properties s:column-width="0.4444in"/>
   </s:style>
   <s:style s:name="Table1.K" s:family="table-column">
-   <s:table-column-properties s:column-width="0.4375in"/>
+   <s:table-column-properties s:column-width="0.4438in"/>
   </s:style>
   <s:style s:name="Table1.L" s:family="table-column">
-   <s:table-column-properties s:column-width="0.625in"/>
+   <s:table-column-properties s:column-width="0.4028in"/>
   </s:style>
   <s:style s:name="Table1.M" s:family="table-column">
-   <s:table-column-properties s:column-width="0.5778in"/>
+   <s:table-column-properties s:column-width="0.575in"/>
   </s:style>
   <s:style s:name="Table1.N" s:family="table-column">
-   <s:table-column-properties s:column-width="0.6813in"/>
+   <s:table-column-properties s:column-width="0.5313in"/>
+  </s:style>
+  <s:style s:name="Table1.O" s:family="table-column">
+   <s:table-column-properties s:column-width="0.6271in"/>
   </s:style>
   <s:style s:name="Table1.A1" s:family="table-cell">
    <s:table-cell-properties fo:background-color="#cccccc" fo:padding="0.0382in" fo:border="0.05pt solid #000000" s:writing-mode="page">
     <s:background-image/>
    </s:table-cell-properties>
   </s:style>
-  <s:style s:name="Table1.A2" s:family="table-cell">
+  <s:style s:name="Table1.C1" s:family="table-cell">
+   <s:table-cell-properties fo:background-color="#cccccc" fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="0.05pt solid #000000" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page">
+    <s:background-image/>
+   </s:table-cell-properties>
+  </s:style>
+  <s:style s:name="Table2" s:family="table">
+   <s:table-properties s:width="7.9479in" fo:margin-left="-0.6208in" table:align="left"/>
+  </s:style>
+  <s:style s:name="Table2.A" s:family="table-column">
+   <s:table-column-properties s:column-width="0.2903in"/>
+  </s:style>
+  <s:style s:name="Table2.B" s:family="table-column">
+   <s:table-column-properties s:column-width="0.7438in"/>
+  </s:style>
+  <s:style s:name="Table2.C" s:family="table-column">
+   <s:table-column-properties s:column-width="0.625in"/>
+  </s:style>
+  <s:style s:name="Table2.E" s:family="table-column">
+   <s:table-column-properties s:column-width="0.566in"/>
+  </s:style>
+  <s:style s:name="Table2.F" s:family="table-column">
+   <s:table-column-properties s:column-width="0.684in"/>
+  </s:style>
+  <s:style s:name="Table2.G" s:family="table-column">
+   <s:table-column-properties s:column-width="0.3125in"/>
+  </s:style>
+  <s:style s:name="Table2.H" s:family="table-column">
+   <s:table-column-properties s:column-width="0.6403in"/>
+  </s:style>
+  <s:style s:name="Table2.I" s:family="table-column">
+   <s:table-column-properties s:column-width="0.4757in"/>
+  </s:style>
+  <s:style s:name="Table2.J" s:family="table-column">
+   <s:table-column-properties s:column-width="0.3875in"/>
+  </s:style>
+  <s:style s:name="Table2.K" s:family="table-column">
+   <s:table-column-properties s:column-width="0.4979in"/>
+  </s:style>
+  <s:style s:name="Table2.L" s:family="table-column">
+   <s:table-column-properties s:column-width="0.3799in"/>
+  </s:style>
+  <s:style s:name="Table2.M" s:family="table-column">
+   <s:table-column-properties s:column-width="0.5576in"/>
+  </s:style>
+  <s:style s:name="Table2.O" s:family="table-column">
+   <s:table-column-properties s:column-width="0.5965in"/>
+  </s:style>
+  <s:style s:name="Table2.A1" s:family="table-cell">
    <s:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000" s:writing-mode="page"/>
   </s:style>
-  <s:style s:name="Table1.A3" s:family="table-cell">
+  <s:style s:name="Table2.A2" s:family="table-cell">
    <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
   </s:style>
-  <s:style s:name="Table1.A4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
+  <s:style s:name="Table2.B2" s:family="table-cell">
+   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
   </s:style>
-  <s:style s:name="Table1.B4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.C4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.D4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.E4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.F4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.G4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.H4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.I4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.J4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.K4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.L4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.M4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.N4" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.5" s:family="table-row">
+  <s:style s:name="Table2.3" s:family="table-row">
    <s:table-row-properties s:min-row-height="0.2611in"/>
   </s:style>
-  <s:style s:name="Table1.A5" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.A6" s:family="table-cell">
-   <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" s:writing-mode="page"/>
-  </s:style>
-  <s:style s:name="Table1.7" s:family="table-row">
+  <s:style s:name="Table2.4" s:family="table-row">
    <s:table-row-properties s:min-row-height="0.7285in" fo:keep-together="auto" s:max-row-height="0.625in"/>
   </s:style>
-  <s:style s:name="Table1.A7" s:family="table-cell">
+  <s:style s:name="Table2.A4" s:family="table-cell">
    <s:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="0.05pt solid #000000" fo:border-bottom="0.05pt solid #000000"/>
   </s:style>
-  <s:style s:name="Table1.H7" s:family="table-cell">
+  <s:style s:name="Table2.I4" s:family="table-cell">
    <s:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
   </s:style>
-  <s:style s:name="Table1.I7" s:family="table-cell">
+  <s:style s:name="Table2.J4" s:family="table-cell">
    <s:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
   </s:style>
-  <s:style s:name="Table1.J7" s:family="table-cell">
+  <s:style s:name="Table2.K4" s:family="table-cell">
    <s:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
   </s:style>
-  <s:style s:name="Table1.K7" s:family="table-cell">
+  <s:style s:name="Table2.L4" s:family="table-cell">
    <s:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
   </s:style>
   <s:style s:name="P1" s:family="paragraph" s:parent-style-name="Table_20_Contents">
@@ -404,33 +416,28 @@
   <s:style s:name="P2" s:family="paragraph" s:parent-style-name="Standard">
    <s:text-properties fo:font-size="8pt" fo:font-weight="bold" officeooo:rsid="000abc47" officeooo:paragraph-rsid="000abc47"/>
   </s:style>
-  <s:style s:name="P3" s:family="paragraph" s:parent-style-name="Table_20_Contents">
-   <s:paragraph-properties fo:text-align="center" s:justify-single-word="false"/>
-   <s:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="000c1fab" s:font-size-asian="8pt" s:font-size-complex="8pt"/>
+  <s:style s:name="P3" s:family="paragraph" s:parent-style-name="Standard">
+   <s:text-properties fo:font-size="8pt" fo:font-weight="bold" officeooo:rsid="00129b94" officeooo:paragraph-rsid="00129b94"/>
   </s:style>
   <s:style s:name="P4" s:family="paragraph" s:parent-style-name="Table_20_Contents">
    <s:paragraph-properties fo:text-align="center" s:justify-single-word="false"/>
-   <s:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="000e4b06" s:font-size-asian="8pt" s:font-size-complex="8pt"/>
+   <s:text-properties fo:font-size="8pt" officeooo:paragraph-rsid="00129b94" s:font-size-asian="8pt" s:font-size-complex="8pt"/>
   </s:style>
   <s:style s:name="P5" s:family="paragraph" s:parent-style-name="Table_20_Contents">
-   <s:text-properties fo:font-size="7pt" officeooo:rsid="000abc47" s:font-size-asian="7pt" s:font-size-complex="7pt"/>
+   <s:text-properties fo:font-size="7pt" officeooo:rsid="000abc47" officeooo:paragraph-rsid="00129b94" s:font-size-asian="7pt" s:font-size-complex="7pt"/>
   </s:style>
-  <s:style s:name="P6" s:family="paragraph" s:parent-style-name="Table_20_Contents">
-   <s:paragraph-properties fo:text-align="center" s:justify-single-word="false"/>
-   <s:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="000c1fab" s:font-size-asian="10pt" s:font-size-complex="10pt"/>
+  <s:style s:name="P6" s:family="paragraph" s:parent-style-name="Standard">
+   <s:text-properties officeooo:paragraph-rsid="00129b94"/>
   </s:style>
   <s:style s:name="P7" s:family="paragraph" s:parent-style-name="Table_20_Contents">
    <s:paragraph-properties fo:text-align="center" s:justify-single-word="false"/>
-   <s:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="000e4b06" s:font-size-asian="10pt" s:font-size-complex="10pt"/>
+   <s:text-properties fo:font-size="10pt" officeooo:paragraph-rsid="00129b94" s:font-size-asian="10pt" s:font-size-complex="10pt"/>
   </s:style>
-  <s:style s:name="P8" s:family="paragraph" s:parent-style-name="Table_20_Contents">
-   <s:text-properties fo:font-size="7pt" officeooo:rsid="000c1fab" officeooo:paragraph-rsid="000e58f9" s:font-size-asian="7pt" s:font-size-complex="7pt"/>
+  <s:style s:name="P8" s:family="paragraph" s:parent-style-name="Standard">
+   <s:text-properties fo:font-size="8pt" fo:font-weight="bold" officeooo:rsid="000abc47" officeooo:paragraph-rsid="00129b94"/>
   </s:style>
   <s:style s:name="P9" s:family="paragraph" s:parent-style-name="Table_20_Contents">
-   <s:text-properties fo:font-size="7pt" officeooo:rsid="000c1fab" officeooo:paragraph-rsid="000c1fab" s:font-size-asian="7pt" s:font-size-complex="7pt"/>
-  </s:style>
-  <s:style s:name="P10" s:family="paragraph" s:parent-style-name="Table_20_Contents">
-   <s:text-properties fo:font-size="7pt" officeooo:rsid="000c1fab" officeooo:paragraph-rsid="000e4b06" s:font-size-asian="7pt" s:font-size-complex="7pt"/>
+   <s:text-properties fo:font-size="7pt" officeooo:rsid="000c1fab" officeooo:paragraph-rsid="00129b94" s:font-size-asian="7pt" s:font-size-complex="7pt"/>
   </s:style>
   <s:style s:name="T1" s:family="text">
    <s:text-properties officeooo:rsid="000c1fab"/>
@@ -468,17 +475,18 @@
    <table:table table:name="Table1" table:style-name="Table1">
     <table:table-column table:style-name="Table1.A"/>
     <table:table-column table:style-name="Table1.B"/>
-    <table:table-column table:style-name="Table1.C"/>
-    <table:table-column table:style-name="Table1.D"/>
+    <table:table-column table:style-name="Table1.C" table:number-columns-repeated="2"/>
     <table:table-column table:style-name="Table1.E"/>
     <table:table-column table:style-name="Table1.F"/>
     <table:table-column table:style-name="Table1.G"/>
     <table:table-column table:style-name="Table1.H"/>
-    <table:table-column table:style-name="Table1.G" table:number-columns-repeated="2"/>
+    <table:table-column table:style-name="Table1.I"/>
+    <table:table-column table:style-name="Table1.J"/>
     <table:table-column table:style-name="Table1.K"/>
     <table:table-column table:style-name="Table1.L"/>
     <table:table-column table:style-name="Table1.M"/>
     <table:table-column table:style-name="Table1.N"/>
+    <table:table-column table:style-name="Table1.O"/>
     <table:table-header-rows>
      <table:table-row>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
@@ -486,6 +494,9 @@
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
        <text:p text:style-name="P2">N Facture</text:p>
+      </table:table-cell>
+      <table:table-cell table:style-name="Table1.C1" office:value-type="string">
+       <text:p text:style-name="P3">Référence</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Table1.A1" office:value-type="string">
        <text:p text:style-name="P2">Date facture</text:p>
@@ -525,117 +536,105 @@
       </table:table-cell>
      </table:table-row>
     </table:table-header-rows>
+   </table:table>
+   <table:table table:name="Table2" table:style-name="Table2">
+    <table:table-column table:style-name="Table2.A"/>
+    <table:table-column table:style-name="Table2.B"/>
+    <table:table-column table:style-name="Table2.C" table:number-columns-repeated="2"/>
+    <table:table-column table:style-name="Table2.E"/>
+    <table:table-column table:style-name="Table2.F"/>
+    <table:table-column table:style-name="Table2.G"/>
+    <table:table-column table:style-name="Table2.H"/>
+    <table:table-column table:style-name="Table2.I"/>
+    <table:table-column table:style-name="Table2.J"/>
+    <table:table-column table:style-name="Table2.K"/>
+    <table:table-column table:style-name="Table2.L"/>
+    <table:table-column table:style-name="Table2.M"/>
+    <table:table-column table:style-name="Table2.E"/>
+    <table:table-column table:style-name="Table2.O"/>
+    <table:table-header-rows>
+     <table:table-row>
+      <table:table-cell table:style-name="Table2.A1" table:number-columns-spanned="15" office:value-type="string">
+       <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;i, invoice in enumerate(records, start=1)&quot;&gt;</text:placeholder></text:p>
+       <text:p text:style-name="P4"/>
+       <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in invoice.lines&quot;&gt;</text:placeholder></text:p>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+     </table:table-row>
+    </table:table-header-rows>
     <table:table-row>
-     <table:table-cell table:style-name="Table1.A2" table:number-columns-spanned="14" office:value-type="string">
-      <text:p text:style-name="P3"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;i, invoice in enumerate(records, start=1)&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="P4"/>
-     </table:table-cell>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-    </table:table-row>
-    <table:table-row>
-     <table:table-cell table:style-name="Table1.A3" table:number-columns-spanned="14" office:value-type="string">
-      <text:p text:style-name="P4"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;line in invoice.lines&quot;&gt;</text:placeholder></text:p>
-     </table:table-cell>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-    </table:table-row>
-    <table:table-row>
-     <table:table-cell table:style-name="Table1.A4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:s/><text:placeholder text:placeholder-type="text">&lt;i&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.B4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.B2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;invoice.number&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.C4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
+      <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;invoice.reference&gt;</text:placeholder></text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;invoice.invoice_date&gt;</text:placeholder><text:s/></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.D4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;line.product.account_category.name&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.E4" office:value-type="string">
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.patient&quot;&gt;</text:placeholder></text:p>
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.patient&quot;&gt;</text:placeholder></text:p>
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;invoice.patient.name.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;invoice.patient.name.lastname&gt;</text:placeholder></text:p>
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.F4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;line.product.code&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.G4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;line.product.name&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.H4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;line.quantity&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.I4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;line.montant_produit()&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.J4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;float(line.montant_produit())*line.quantity&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.K4" office:value-type="string">
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;invoice.state&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.L4" office:value-type="string">
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.party.sale_price_list&quot;&gt;</text:placeholder></text:p>
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.party.sale_price_list&quot;&gt;</text:placeholder></text:p>
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;invoice.party.sale_price_list.name&gt;</text:placeholder></text:p>
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.M4" office:value-type="string">
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.payment_lines&quot;&gt;</text:placeholder></text:p>
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.payment_lines&quot;&gt;</text:placeholder></text:p>
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;invoice.payment_lines[len(invoice.payment_lines) - 1].create_uid.name&gt;</text:placeholder></text:p>
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.N4" office:value-type="string">
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.health_service&quot;&gt;</text:placeholder></text:p>
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.health_service.requestor&quot;&gt;</text:placeholder></text:p>
+     <table:table-cell table:style-name="Table2.A2" office:value-type="string">
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.health_service&quot;&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;if test=&quot;invoice.health_service.requestor&quot;&gt;</text:placeholder></text:p>
       <text:p text:style-name="P5"><text:placeholder text:placeholder-type="text">&lt;invoice.health_service.requestor.name.name&gt;</text:placeholder><text:s/><text:placeholder text:placeholder-type="text">&lt;invoice.health_service.requestor.name.lastname&gt;</text:placeholder><text:s/></text:p>
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
-      <text:p text:style-name="Standard"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;/if&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="Table1.5">
-     <table:table-cell table:style-name="Table1.A5" table:number-columns-spanned="14" office:value-type="string">
-      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
-     </table:table-cell>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-     <table:covered-table-cell/>
-    </table:table-row>
-    <table:table-row>
-     <table:table-cell table:style-name="Table1.A6" table:number-columns-spanned="14" office:value-type="string">
+    <table:table-row table:style-name="Table2.3">
+     <table:table-cell table:style-name="Table2.A2" table:number-columns-spanned="15" office:value-type="string">
+      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
       <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:covered-table-cell/>
@@ -651,10 +650,11 @@
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
+     <table:covered-table-cell/>
     </table:table-row>
-    <table:table-row table:style-name="Table1.7">
-     <table:table-cell table:style-name="Table1.A7" table:number-columns-spanned="7" office:value-type="string">
-      <text:p text:style-name="P2">TOTAUX</text:p>
+    <table:table-row table:style-name="Table2.4">
+     <table:table-cell table:style-name="Table2.A4" table:number-columns-spanned="8" office:value-type="string">
+      <text:p text:style-name="P8">TOTAUX</text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -662,24 +662,25 @@
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
-     <table:table-cell table:style-name="Table1.H7" office:value-type="string">
-      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;records[0].total_facture_par_produits(records)[2]&gt;</text:placeholder></text:p>
+     <table:covered-table-cell/>
+     <table:table-cell table:style-name="Table2.I4" office:value-type="string">
+      <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;records[0].total_facture_par_produits(records)[2]&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.I7" office:value-type="string">
+     <table:table-cell table:style-name="Table2.J4" office:value-type="string">
       <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;records[0].total_facture_par_produits(records)[0]&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.I7" office:value-type="string">
-      <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;records[0].total_facture_par_produits(records)[1]&gt;</text:placeholder></text:p>
+     <table:table-cell table:style-name="Table2.K4" office:value-type="string">
+      <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;records[0].total_facture_par_produits(records)[1]&gt;</text:placeholder></text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.K7" table:number-columns-spanned="4" office:value-type="string">
-      <text:p text:style-name="Standard"/>
+     <table:table-cell table:style-name="Table2.L4" table:number-columns-spanned="4" office:value-type="string">
+      <text:p text:style-name="P6"/>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="P6"/>
   </office:text>
  </office:body>
 </office:document>
