@@ -554,11 +554,11 @@ class Invoice(metaclass=PoolMeta):
             for line in record.lines:
                 if docteur in liste_docteurs.keys():
                     liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + line.unit_price
-                    liste_docteurs[docteur][1] = liste_docteurs[docteur][1] + (0.055*float(line.unit_price))
+                    liste_docteurs[docteur][1] = liste_docteurs[docteur][1] + (0.11*float(line.unit_price))
                     liste_docteurs[docteur][2] = liste_docteurs[docteur][2] + line.amount
                 else:
                     list_element.append(line.unit_price)
-                    list_element.append(0.055*float(line.unit_price))
+                    list_element.append(0.11*float(line.unit_price))
                     list_element.append(line.amount)
                     liste_docteurs[docteur] = list_element
             
