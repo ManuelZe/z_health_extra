@@ -613,7 +613,7 @@ class Invoice(metaclass=PoolMeta):
 
         # Calcul des totaux
         for valeurs in liste_docteurs.values():
-            for i in range(len(valeurs)):
+            for i in range(len(valeurs)-1):
                 totaux[i] += valeurs[i]
 
         # Ajouter le total au dictionnaire
