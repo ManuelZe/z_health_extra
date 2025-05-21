@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.4" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2025-01-20T11:38:56.277190187</meta:creation-date><meta:editing-duration>PT1H4M25S</meta:editing-duration><meta:editing-cycles>5</meta:editing-cycles><meta:generator>LibreOffice/25.2.2.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><dc:date>2025-01-20T13:15:50.312587507</dc:date><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="13" meta:word-count="24" meta:character-count="229" meta:non-whitespace-character-count="218"/></office:meta>
+ <office:meta><meta:creation-date>2025-01-20T11:38:56.277190187</meta:creation-date><meta:editing-duration>PT1H5M17S</meta:editing-duration><meta:editing-cycles>6</meta:editing-cycles><meta:generator>LibreOffice/25.2.2.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><dc:date>2025-05-21T19:18:28.751238330</dc:date><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="15" meta:word-count="26" meta:character-count="252" meta:non-whitespace-character-count="241"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">49108</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">24899</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">43737</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">22438</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">17249</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">5172</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">21287</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">6840</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
      <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">49107</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">24897</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">43736</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">22437</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -144,7 +144,7 @@
    <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">2357995</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2479874</config:config-item>
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
    <config:config-item config:name="MsWordCompMinLineHeightByFly" config:type="boolean">false</config:config-item>
@@ -167,7 +167,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:writing-mode="lr-tb" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0in" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0in" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -288,26 +288,29 @@
    <style:table-properties style:width="6.6771in" fo:margin-left="0.025in" table:align="left"/>
   </style:style>
   <style:style style:name="Table1.A" style:family="table-column">
-   <style:table-column-properties style:column-width="0.3333in"/>
+   <style:table-column-properties style:column-width="0.209in"/>
   </style:style>
   <style:style style:name="Table1.B" style:family="table-column">
-   <style:table-column-properties style:column-width="2.875in"/>
+   <style:table-column-properties style:column-width="1.8069in"/>
   </style:style>
   <style:style style:name="Table1.C" style:family="table-column">
-   <style:table-column-properties style:column-width="1.1875in"/>
+   <style:table-column-properties style:column-width="0.8799in"/>
   </style:style>
   <style:style style:name="Table1.D" style:family="table-column">
-   <style:table-column-properties style:column-width="1.0625in"/>
+   <style:table-column-properties style:column-width="0.6875in"/>
   </style:style>
   <style:style style:name="Table1.E" style:family="table-column">
-   <style:table-column-properties style:column-width="1.2188in"/>
+   <style:table-column-properties style:column-width="1.375in"/>
+  </style:style>
+  <style:style style:name="Table1.F" style:family="table-column">
+   <style:table-column-properties style:column-width="1.7188in"/>
   </style:style>
   <style:style style:name="Table1.A1" style:family="table-cell">
    <style:table-cell-properties fo:background-color="#666666" fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page">
     <style:background-image/>
    </style:table-cell-properties>
   </style:style>
-  <style:style style:name="Table1.E1" style:family="table-cell">
+  <style:style style:name="Table1.F1" style:family="table-cell">
    <style:table-cell-properties fo:background-color="#666666" fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page">
     <style:background-image/>
    </style:table-cell-properties>
@@ -328,7 +331,13 @@
    <style:table-cell-properties fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page"/>
   </style:style>
   <style:style style:name="Table1.E3" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page"/>
+  </style:style>
+  <style:style style:name="Table1.F3" style:family="table-cell">
    <style:table-cell-properties fo:padding="0.0201in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000" style:writing-mode="page"/>
+  </style:style>
+  <style:style style:name="Table1.4" style:family="table-row">
+   <style:table-row-properties style:min-row-height="0.2569in"/>
   </style:style>
   <style:style style:name="Table1.A4" style:family="table-cell">
    <style:table-cell-properties fo:padding="0.0201in" fo:border="0.05pt solid #000000" style:writing-mode="page"/>
@@ -354,12 +363,20 @@
   </style:style>
   <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties officeooo:paragraph-rsid="00206fa7"/>
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="0025d702" officeooo:paragraph-rsid="0025d702" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00206fa7"/>
   </style:style>
   <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="0025d702"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties officeooo:paragraph-rsid="001f6d2b"/>
   </style:style>
@@ -405,6 +422,7 @@
     <table:table-column table:style-name="Table1.C"/>
     <table:table-column table:style-name="Table1.D"/>
     <table:table-column table:style-name="Table1.E"/>
+    <table:table-column table:style-name="Table1.F"/>
     <table:table-row>
      <table:table-cell table:style-name="Table1.A1" office:value-type="string">
       <text:p text:style-name="P4">N</text:p>
@@ -418,14 +436,18 @@
      <table:table-cell table:style-name="Table1.A1" office:value-type="string">
       <text:p text:style-name="P5">Impôt</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="Table1.E1" office:value-type="string">
+     <table:table-cell table:style-name="Table1.A1" office:value-type="string">
       <text:p text:style-name="P5">Net à Payer</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="Table1.F1" office:value-type="string">
+      <text:p text:style-name="P6">Téléphone</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
-     <table:table-cell table:style-name="Table1.A2" table:number-columns-spanned="5" office:value-type="string">
-      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;key, value in records[0].commission_docteur(records).items()&quot;&gt;</text:placeholder></text:p>
+     <table:table-cell table:style-name="Table1.A2" table:number-columns-spanned="6" office:value-type="string">
+      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;key, value in records[0].commission_docteur(records).items()&quot;&gt;</text:placeholder></text:p>
      </table:table-cell>
+     <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
@@ -433,25 +455,29 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Table1.A3" office:value-type="string">
-      <text:p text:style-name="P7"/>
+      <text:p text:style-name="P8"/>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B3" office:value-type="string">
-      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;key&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;key&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.C3" office:value-type="string">
-      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;value[0]&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;value[0]&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.D3" office:value-type="string">
-      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;value[1]&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;value[1]&gt;</text:placeholder></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.E3" office:value-type="string">
-      <text:p text:style-name="P6"><text:placeholder text:placeholder-type="text">&lt;value[2]&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P7"><text:placeholder text:placeholder-type="text">&lt;value[2]&gt;</text:placeholder></text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="Table1.F3" office:value-type="string">
+      <text:p text:style-name="P9"><text:placeholder text:placeholder-type="text">&lt;value[3]&gt;</text:placeholder></text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row>
-     <table:table-cell table:style-name="Table1.A4" table:number-columns-spanned="5" office:value-type="string">
-      <text:p text:style-name="P8"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+    <table:table-row table:style-name="Table1.4">
+     <table:table-cell table:style-name="Table1.A4" table:number-columns-spanned="6" office:value-type="string">
+      <text:p text:style-name="P10"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
      </table:table-cell>
+     <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>
      <table:covered-table-cell/>

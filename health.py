@@ -310,6 +310,51 @@ class Invoice(metaclass=PoolMeta):
     #     cls.create_commissions(to_commission)
 
     @classmethod
+    def contact(self, id):
+
+        transaction = Transaction()
+        cursor = transaction.connection.cursor()
+        #cursor = conn2.cursor()
+        f = cursor.execute("SELECT current_database()")
+        database_name = cursor.fetchone()[0]
+        #sql = "SELECT type, value FROM party_contact_mechanism JOIN party_party ON party_contact_mechanism.party = party_party.id JOIN gnuhealth_patient ON {} = gnuhealth_patient.id".format(id)
+        sql1 = "SELECT name FROM gnuhealth_patient where gnuhealth_patient.id = {}".format(id)
+        cursor.execute(sql1)
+        data1 = cursor.fetchone()
+        sql2 = "SELECT type, value FROM party_contact_mechanism WHERE party = {}".format(data1[0])
+        cursor.execute(sql2)
+        data2 = cursor.fetchall()
+        #print("Les différentes données ", data2[0][0])
+
+        list_phone = []
+        for item in data2 :
+            if item[0] == "phone" :
+                list_phone.append(item[1])
+
+        return ("/ ".join(list_phone))
+    
+    @classmethod
+    def contact2(self, id):
+
+        transaction = Transaction()
+        cursor = transaction.connection.cursor()
+        #cursor = conn2.cursor()
+        f = cursor.execute("SELECT current_database()")
+        database_name = cursor.fetchone()[0]
+        #sql = "SELECT type, value FROM party_contact_mechanism JOIN party_party ON party_contact_mechanism.party = party_party.id JOIN gnuhealth_patient ON {} = gnuhealth_patient.id".format(id)
+        sql2 = "SELECT type, value FROM party_contact_mechanism WHERE id = {}".format(id)
+        cursor.execute(sql2)
+        data2 = cursor.fetchall()
+        #print("Les différentes données ", data2[0][0])
+
+        list_phone = []
+        for item in data2 :
+            if item[0] == "phone" :
+                list_phone.append(item[1])
+
+        return ("/ ".join(list_phone))
+
+    @classmethod
     def create_commissions(cls, invoices):
         pool = Pool()
         Commission = pool.get('commission')
@@ -556,6 +601,7 @@ class Invoice(metaclass=PoolMeta):
                     liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + line.unit_price
                     liste_docteurs[docteur][1] = liste_docteurs[docteur][1] + (0.11*float(line.unit_price))
                     liste_docteurs[docteur][2] = liste_docteurs[docteur][2] + line.amount
+                    liste_docteurs[docteur][3] = self.contact2(id=record.party.id)
                 else:
                     list_element.append(line.unit_price)
                     list_element.append(0.11*float(line.unit_price))
