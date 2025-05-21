@@ -606,6 +606,7 @@ class Invoice(metaclass=PoolMeta):
                     list_element.append(line.unit_price)
                     list_element.append(0.11*float(line.unit_price))
                     list_element.append(line.amount)
+                    list_element.append(self.contact2(id=record.party.id))
                     liste_docteurs[docteur] = list_element
             
         totaux = [0] * len(next(iter(liste_docteurs.values())))  # Crée une liste de zéros de la même longueur que les listes
