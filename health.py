@@ -594,20 +594,21 @@ class Invoice(metaclass=PoolMeta):
         # {"JUDITH": (montant, impot, net_a_payer), "FRED": (montant, impot, net_a_payer), "MARINA": (montant, impot, net_a_payer)}
         liste_docteurs = {}
         for record in records:
-            docteur = record.party.name+" "+record.party.lastname
-            list_element = []
-            for line in record.lines:
-                if docteur in liste_docteurs.keys():
-                    liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + line.unit_price
-                    liste_docteurs[docteur][1] = liste_docteurs[docteur][1] + (0.11*float(line.unit_price))
-                    liste_docteurs[docteur][2] = liste_docteurs[docteur][2] + line.amount
-                    liste_docteurs[docteur][3] = self.contact2(id=record.party.id)
-                else:
-                    list_element.append(line.unit_price)
-                    list_element.append(0.11*float(line.unit_price))
-                    list_element.append(line.amount)
-                    list_element.append(self.contact2(id=record.party.id))
-                    liste_docteurs[docteur] = list_element
+            if record.party.clef == None :
+                docteur = record.party.name+" "+record.party.lastname
+                list_element = []
+                for line in record.lines:
+                    if docteur in liste_docteurs.keys():
+                        liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + line.unit_price
+                        liste_docteurs[docteur][1] = liste_docteurs[docteur][1] + (0.11*float(line.unit_price))
+                        liste_docteurs[docteur][2] = liste_docteurs[docteur][2] + line.amount
+                        liste_docteurs[docteur][3] = self.contact2(id=record.party.id)
+                    else:
+                        list_element.append(line.unit_price)
+                        list_element.append(0.11*float(line.unit_price))
+                        list_element.append(line.amount)
+                        list_element.append(self.contact2(id=record.party.id))
+                        liste_docteurs[docteur] = list_element
             
         totaux = [0] * len(next(iter(liste_docteurs.values())))  # Crée une liste de zéros de la même longueur que les listes
 
