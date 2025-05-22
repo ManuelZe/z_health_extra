@@ -593,8 +593,7 @@ class Invoice(metaclass=PoolMeta):
 
         liste_docteurs = {}
         for record in records:
-            print("------",record.party.clef)
-            if record.party.clef != None or record.party.clef != "":
+            if record.party.clef != None or len(record.party.clef) != 0:
                 docteur = record.party.name+" "+record.party.lastname
                 list_element = []
                 for line in record.lines:
@@ -616,7 +615,7 @@ class Invoice(metaclass=PoolMeta):
         # {"JUDITH": (montant, impot, net_a_payer), "FRED": (montant, impot, net_a_payer), "MARINA": (montant, impot, net_a_payer)}
         liste_docteurs = {}
         for record in records:
-            if record.party.clef == None or record.party.clef != "":
+            if record.party.clef == None or len(record.party.clef) != 0:
                 docteur = record.party.name+" "+record.party.lastname
                 list_element = []
                 for line in record.lines:
