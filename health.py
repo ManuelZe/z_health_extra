@@ -593,20 +593,19 @@ class Invoice(metaclass=PoolMeta):
 
         liste_docteurs = {}
         for record in records:
-            if record.party.clef != None:
-                print("------------ ", len(record.party.clef))
-                # docteur = record.party.name+" "+record.party.lastname
-                # list_element = []
-                # for line in record.lines:
-                #     if docteur in liste_docteurs.keys():
-                #         liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + record.total_amount
-                #         liste_docteurs[docteur][1] = record.party.numero_carte
-                #         liste_docteurs[docteur][2] = record.party.clef
-                #     else:
-                #         list_element.append(record.total_amount)
-                #         list_element.append(record.party.numero_carte)
-                #         list_element.append(record.party.clef)
-                #         liste_docteurs[docteur] = list_element
+            if len(record.party.clef) != 0:
+                docteur = record.party.name+" "+record.party.lastname
+                list_element = []
+                for line in record.lines:
+                    if docteur in liste_docteurs.keys():
+                        liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + record.total_amount
+                        liste_docteurs[docteur][1] = record.party.numero_carte
+                        liste_docteurs[docteur][2] = record.party.clef
+                    else:
+                        list_element.append(record.total_amount)
+                        list_element.append(record.party.numero_carte)
+                        list_element.append(record.party.clef)
+                        liste_docteurs[docteur] = list_element
 
         return liste_docteurs
         
@@ -616,7 +615,7 @@ class Invoice(metaclass=PoolMeta):
         # {"JUDITH": (montant, impot, net_a_payer), "FRED": (montant, impot, net_a_payer), "MARINA": (montant, impot, net_a_payer)}
         liste_docteurs = {}
         for record in records:
-            if record.party.clef == None :
+            if len(record.party.clef) == 0 :
                 docteur = record.party.name+" "+record.party.lastname
                 list_element = []
                 for line in record.lines:
