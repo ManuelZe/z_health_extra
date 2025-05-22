@@ -598,7 +598,7 @@ class Invoice(metaclass=PoolMeta):
                 list_element = []
                 for line in record.lines:
                     if docteur in liste_docteurs.keys():
-                        liste_docteurs[docteur][0] = record.total_amount
+                        liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + record.total_amount
                         liste_docteurs[docteur][1] = record.party.numero_carte
                         liste_docteurs[docteur][2] = record.party.clef
                     else:
