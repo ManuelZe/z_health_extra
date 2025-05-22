@@ -593,7 +593,7 @@ class Invoice(metaclass=PoolMeta):
 
         liste_docteurs = {}
         for record in records:
-            if record.party.clef != "":
+            if record.party.clef != None:
                 print("------",record.party.clef)
                 docteur = record.party.name+" "+record.party.lastname
                 list_element = []
