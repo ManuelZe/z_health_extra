@@ -593,7 +593,7 @@ class Invoice(metaclass=PoolMeta):
 
         liste_docteurs = {}
         for record in records:
-            if record.party.clef != None:
+            if record.party.numero_carte != None:
                 docteur = record.party.name+" "+record.party.lastname
                 list_element = []
                 for line in record.lines:
@@ -606,7 +606,6 @@ class Invoice(metaclass=PoolMeta):
                         list_element.append(record.party.numero_carte)
                         list_element.append(record.party.clef)
                         liste_docteurs[docteur] = list_element
-        print("-------",len(liste_docteurs))
 
         return liste_docteurs
         
@@ -616,7 +615,7 @@ class Invoice(metaclass=PoolMeta):
         # {"JUDITH": (montant, impot, net_a_payer), "FRED": (montant, impot, net_a_payer), "MARINA": (montant, impot, net_a_payer)}
         liste_docteurs = {}
         for record in records:
-            if record.party.clef == None :
+            if record.party.numero_carte == None :
                 docteur = record.party.name+" "+record.party.lastname
                 list_element = []
                 for line in record.lines:
