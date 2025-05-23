@@ -595,7 +595,7 @@ class Invoice(metaclass=PoolMeta):
         for record in records:
             if record.party.clef:
                 if len(record.party.clef) != 0 :
-                    docteur = record.party.name+" "+record.party.lastname
+                    docteur = record.party.lastname+" "+record.party.name
                     list_element = []
                     for line in record.lines:
                         if docteur in liste_docteurs.keys():
