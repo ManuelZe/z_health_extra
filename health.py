@@ -676,7 +676,7 @@ class Invoice(metaclass=PoolMeta):
             for i in range(len(valeurs)-1):
                 totaux[i] += valeurs[i]
 
-        print('-------- ', liste_docteurs[:3])
+        print('-------- ', liste_docteurs)
         sorted_data = sorted(liste_docteurs, key=lambda d: list(d.keys())[0])
 
         # Ajouter le total au dictionnaire
