@@ -641,13 +641,14 @@ class Invoice(metaclass=PoolMeta):
             for i in range(len(valeurs)-1):
                 totaux[i] += valeurs[i]
 
-        sorted_data = sorted(liste_docteurs, key=lambda d: list(d.keys())[0])
-
+        sorted_items = sorted(liste_docteurs.items(), key=lambda x: x[0])
+        dict_trie = dict(sorted_items)
         # Ajouter le total au dictionnaire
         liste_docteurs["TOTAL"] = totaux
         cle, valeur = list(liste_docteurs.items())[-1]
+        dict_trie["TOTAL"] = totaux
 
-        return sorted_data
+        return dict_trie
     
     def all_commission_docteur(self, records):
         # Le modèle de sortie de la liste des docteurs : 
@@ -676,14 +677,14 @@ class Invoice(metaclass=PoolMeta):
             for i in range(len(valeurs)-1):
                 totaux[i] += valeurs[i]
 
-        print('-------- ', liste_docteurs)
-        sorted_data = sorted(liste_docteurs, key=lambda d: list(d.keys())[0])
-
+        sorted_items = sorted(liste_docteurs.items(), key=lambda x: x[0])
+        dict_trie = dict(sorted_items)
         # Ajouter le total au dictionnaire
         liste_docteurs["TOTAL"] = totaux
         cle, valeur = list(liste_docteurs.items())[-1]
+        dict_trie["TOTAL"] = totaux
 
-        return sorted_data
+        return dict_trie
 
 
     def total_medecin(self, records):
