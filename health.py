@@ -595,20 +595,22 @@ class Invoice(metaclass=PoolMeta):
         for record in records:
             if record.party.clef:
                 if len(record.party.clef) != 0 :
-                    docteur = record.party.lastname+" "+record.party.name
+                    docteur = record.party.name+" "+record.party.lastname
                     list_element = []
                     for line in record.lines:
                         if docteur in liste_docteurs.keys():
-                            liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + record.total_amount
+                            liste_docteurs[docteur][0] = int(liste_docteurs[docteur][0] + record.total_amount)
                             liste_docteurs[docteur][1] = record.party.numero_carte
                             liste_docteurs[docteur][2] = record.party.clef
                         else:
-                            list_element.append(record.total_amount)
+                            list_element.append(int(record.total_amount))
                             list_element.append(record.party.numero_carte)
                             list_element.append(record.party.clef)
                             liste_docteurs[docteur] = list_element
 
-        return liste_docteurs
+        sorted_data = sorted(liste_docteurs, key=lambda d: list(d.keys())[0].lower())
+
+        return sorted_data
         
 
     def commission_docteur(self, records):
@@ -617,18 +619,18 @@ class Invoice(metaclass=PoolMeta):
         liste_docteurs = {}
         for record in records:
             if record.party.clef == None or record.party.clef == "":
-                docteur = record.party.lastname+" "+record.party.name
+                docteur = record.party.name+" "+record.party.lastname
                 list_element = []
                 for line in record.lines:
                     if docteur in liste_docteurs.keys():
-                        liste_docteurs[docteur][0] = liste_docteurs[docteur][0] + line.unit_price
-                        liste_docteurs[docteur][1] = liste_docteurs[docteur][1] + (0.11*float(line.unit_price))
-                        liste_docteurs[docteur][2] = liste_docteurs[docteur][2] + line.amount
+                        liste_docteurs[docteur][0] = int(liste_docteurs[docteur][0] + line.unit_price)
+                        liste_docteurs[docteur][1] = int(liste_docteurs[docteur][1] + (0.11*float(line.unit_price)))
+                        liste_docteurs[docteur][2] = int(liste_docteurs[docteur][2] + line.amount)
                         liste_docteurs[docteur][3] = self.contact2(id=record.party.id)
                     else:
-                        list_element.append(line.unit_price)
-                        list_element.append(0.11*float(line.unit_price))
-                        list_element.append(line.amount)
+                        list_element.append(int(line.unit_price))
+                        list_element.append(int(0.11*float(line.unit_price)))
+                        list_element.append(int(line.amount))
                         list_element.append(self.contact2(id=record.party.id))
                         liste_docteurs[docteur] = list_element
             
@@ -639,11 +641,48 @@ class Invoice(metaclass=PoolMeta):
             for i in range(len(valeurs)-1):
                 totaux[i] += valeurs[i]
 
+        sorted_data = sorted(liste_docteurs, key=lambda d: list(d.keys())[0])
+
         # Ajouter le total au dictionnaire
         liste_docteurs["TOTAL"] = totaux
         cle, valeur = list(liste_docteurs.items())[-1]
 
-        return liste_docteurs
+        return sorted_data
+    
+    def all_commission_docteur(self, records):
+        # Le modèle de sortie de la liste des docteurs : 
+        # {"JUDITH": (montant, impot, net_a_payer), "FRED": (montant, impot, net_a_payer), "MARINA": (montant, impot, net_a_payer)}
+        liste_docteurs = {}
+        for record in records:
+            docteur = record.party.name+" "+record.party.lastname
+            list_element = []
+            for line in record.lines:
+                if docteur in liste_docteurs.keys():
+                    liste_docteurs[docteur][0] = int(liste_docteurs[docteur][0] + line.unit_price)
+                    liste_docteurs[docteur][1] = int(liste_docteurs[docteur][1] + (0.11*float(line.unit_price)))
+                    liste_docteurs[docteur][2] = int(liste_docteurs[docteur][2] + line.amount)
+                    liste_docteurs[docteur][3] = self.contact2(id=record.party.id)
+                else:
+                    list_element.append(int(line.unit_price))
+                    list_element.append(int(0.11*float(line.unit_price)))
+                    list_element.append(int(line.amount))
+                    list_element.append(self.contact2(id=record.party.id))
+                    liste_docteurs[docteur] = list_element
+            
+        totaux = [0] * len(next(iter(liste_docteurs.values())))  # Crée une liste de zéros de la même longueur que les listes
+
+        # Calcul des totaux
+        for valeurs in liste_docteurs.values():
+            for i in range(len(valeurs)-1):
+                totaux[i] += valeurs[i]
+
+        sorted_data = sorted(liste_docteurs, key=lambda d: list(d.keys())[0])
+
+        # Ajouter le total au dictionnaire
+        liste_docteurs["TOTAL"] = totaux
+        cle, valeur = list(liste_docteurs.items())[-1]
+
+        return sorted_data
 
 
     def total_medecin(self, records):
