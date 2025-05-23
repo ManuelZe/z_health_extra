@@ -608,9 +608,9 @@ class Invoice(metaclass=PoolMeta):
                             list_element.append(record.party.clef)
                             liste_docteurs[docteur] = list_element
 
-        sorted_data = sorted(liste_docteurs, key=lambda d: list(d.keys())[0].lower())
+        sorted_items = sorted(liste_docteurs.items(), key=lambda x: x[0])
 
-        return sorted_data
+        return dict(sorted_items)
         
 
     def commission_docteur(self, records):
