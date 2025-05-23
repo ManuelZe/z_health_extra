@@ -342,7 +342,7 @@ class Invoice(metaclass=PoolMeta):
         f = cursor.execute("SELECT current_database()")
         database_name = cursor.fetchone()[0]
         #sql = "SELECT type, value FROM party_contact_mechanism JOIN party_party ON party_contact_mechanism.party = party_party.id JOIN gnuhealth_patient ON {} = gnuhealth_patient.id".format(id)
-        sql2 = "SELECT type, value FROM party_contact_mechanism WHERE id = {}".format(id)
+        sql2 = "SELECT type, value FROM party_contact_mechanism WHERE party = {}".format(id)
         cursor.execute(sql2)
         data2 = cursor.fetchall()
         #print("Les différentes données ", data2[0][0])
@@ -629,7 +629,7 @@ class Invoice(metaclass=PoolMeta):
                         list_element.append(line.unit_price)
                         list_element.append(0.11*float(line.unit_price))
                         list_element.append(line.amount)
-                        list_element.append(self.contact2(party=record.party.id))
+                        list_element.append(self.contact2(id=record.party.id))
                         liste_docteurs[docteur] = list_element
             
         totaux = [0] * len(next(iter(liste_docteurs.values())))  # Crée une liste de zéros de la même longueur que les listes
