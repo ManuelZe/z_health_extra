@@ -539,26 +539,34 @@ class Invoice(metaclass=PoolMeta):
         # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
 
         elements = []
-        for record in records :
+        total_amount = Decimal(0)
+        montant_assurance = Decimal(0)
+        z_remise2 = Decimal(0)
+        net_a_payer = Decimal(0)
+        amount_to_pay = Decimal(0)
+        difference = Decimal(0)
+        total_amount2 = Decimal(0)
+
+        for record in records:
             if bool(record.health_service.insurance_plan) == insurance:
-                total_amount = sum(record.untaxed_amount)
-                if record.montant_assurance :
-                    montant_assurance = sum(record.montant_assurance)
-                if record.health_service.z_remise2:
-                    z_remise2 = sum(record.health_service.z_remise2)
-                net_a_payer = sum(record.montant_patient)
-                amount_to_pay = sum(record.amount_to_pay)
-                difference = sum(net_a_payer-amount_to_pay)
-                total_amount2 = sum(float(record.total_amount2))
-                elements.extend([
-                    total_amount,
-                    montant_assurance,
-                    z_remise2,
-                    net_a_payer,
-                    difference,
-                    amount_to_pay,
-                    total_amount2
-                ])
+                total_amount += record.untaxed_amount or Decimal(0)
+                montant_assurance += record.montant_assurance or Decimal(0)
+                z_remise2 += record.health_service.z_remise2 or Decimal(0)
+                net_a_payer += record.montant_patient or Decimal(0)
+                amount_to_pay += record.amount_to_pay or Decimal(0)
+                total_amount2 += Decimal(record.total_amount2 or 0)
+        
+        difference = net_a_payer - amount_to_pay
+        
+        elements.extend([
+            total_amount,
+            montant_assurance,
+            z_remise2,
+            net_a_payer,
+            difference,
+            amount_to_pay,
+            total_amount2
+        ])
         
         return elements
         
