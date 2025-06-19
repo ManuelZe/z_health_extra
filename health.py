@@ -533,7 +533,46 @@ class Invoice(metaclass=PoolMeta):
         return liste_prix
 
 
-    def total_synth_facture(self, records, insurance=True, credit=True):
+    def total_synth_facture_assurance(self, records):
+        return self._total_synth_facture_filtered(records, insurance=True)
+
+    def total_synth_facture_pdmd(self, records):
+        return self._total_synth_facture_filtered(records, insurance=False)
+    
+    def total_synth_facture_credit(self, records):
+        elements = []
+        total_amount = Decimal(0)
+        montant_assurance = Decimal(0)
+        z_remise2 = Decimal(0)
+        net_a_payer = Decimal(0)
+        amount_to_pay = Decimal(0)
+        difference = Decimal(0)
+        total_amount2 = Decimal(0)
+
+        for record in records:
+            if record.health_service :
+                continue
+            total_amount += record.untaxed_amount or Decimal(0)
+            montant_assurance += record.montant_assurance or Decimal(0)
+            net_a_payer += record.montant_patient or Decimal(0)
+            amount_to_pay += record.amount_to_pay or Decimal(0)
+            total_amount2 += Decimal(record.untaxed_amount or 0) + Decimal(record.montant_assurance or 0)
+        
+        difference = net_a_payer - amount_to_pay
+        
+        elements.extend([
+            total_amount,
+            montant_assurance,
+            z_remise2,
+            net_a_payer,
+            difference,
+            amount_to_pay,
+            total_amount2
+        ])
+        
+        return elements
+
+    def _total_synth_facture_filtered(self, records, insurance=True):
         # Exemplaire de sortie de liste 
         # elements2 = ["total_amount", "montant_assurance", "Remise",  "montant_patient-amount_to_pay", "montant_patient", "amount_to_pay"]
         # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
@@ -549,16 +588,11 @@ class Invoice(metaclass=PoolMeta):
 
         for record in records:
             if record.health_service :
-                if bool(record.health_service.insurance_plan) == insurance:
-                    total_amount += record.untaxed_amount or Decimal(0)
-                    montant_assurance += record.montant_assurance or Decimal(0)
-                    z_remise2 += record.health_service.z_remise2 or Decimal(0)
-                    net_a_payer += record.montant_patient or Decimal(0)
-                    amount_to_pay += record.amount_to_pay or Decimal(0)
-                    total_amount2 += Decimal(record.untaxed_amount or 0) + Decimal(record.montant_assurance or 0)
-            else :
+                if bool(record.health_service.insurance_plan) != insurance:
+                    continue
                 total_amount += record.untaxed_amount or Decimal(0)
                 montant_assurance += record.montant_assurance or Decimal(0)
+                z_remise2 += record.health_service.z_remise2 or Decimal(0)
                 net_a_payer += record.montant_patient or Decimal(0)
                 amount_to_pay += record.amount_to_pay or Decimal(0)
                 total_amount2 += Decimal(record.untaxed_amount or 0) + Decimal(record.montant_assurance or 0)
