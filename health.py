@@ -559,7 +559,6 @@ class Invoice(metaclass=PoolMeta):
             else :
                 total_amount += record.untaxed_amount or Decimal(0)
                 montant_assurance += record.montant_assurance or Decimal(0)
-                z_remise2 += record.health_service.z_remise2 or Decimal(0)
                 net_a_payer += record.montant_patient or Decimal(0)
                 amount_to_pay += record.amount_to_pay or Decimal(0)
                 total_amount2 += Decimal(record.untaxed_amount or 0) + Decimal(record.montant_assurance or 0)
