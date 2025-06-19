@@ -554,7 +554,7 @@ class Invoice(metaclass=PoolMeta):
                 z_remise2 += record.health_service.z_remise2 or Decimal(0)
                 net_a_payer += record.montant_patient or Decimal(0)
                 amount_to_pay += record.amount_to_pay or Decimal(0)
-                total_amount2 += Decimal(record.total_amount2 or 0)
+                total_amount2 += Decimal(record.untaxed_amount or 0) + Decimal(record.montant_assurance or 0)
         
         difference = net_a_payer - amount_to_pay
         
