@@ -610,7 +610,27 @@ class Invoice(metaclass=PoolMeta):
         ])
         
         return elements
+    
+    def facture_reelles(self, records):
+        list_of_save_elements = []
+        listes_factures = []
+        for Facture in records:
+            if Facture.number not in listes_factures:
+                listes_factures.append(Facture.number)
         
+        for Facture in records:
+            if Facture.reference in listes_factures:
+                listes_factures.remove(Facture.reference)
+                listes_factures.remove(Facture.number)
+
+        for elt in listes_factures:
+            Invoices = Pool().get("account.invoice")
+            facture = Invoices.search([('number', '=', elt)], limit=1)
+            list_of_save_elements.append(facture[0])
+
+        return list_of_save_elements
+    
+
     def total_facture_par_produits(self, records):
         # Exemplaire de sortie de liste 
         # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
