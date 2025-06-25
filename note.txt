@@ -1,0 +1,1 @@
+cookiecutter hg+https://code.tryton.org/tryton --directory cookiecutter-module --checkout 7.4
