@@ -644,6 +644,8 @@ class Invoice(metaclass=PoolMeta):
                 unit_price += float(line.montant_produit())
                 amount += float(line.montant_produit())*line.quantity
         
+        elements.extend([unit_price, amount, quantity])
+        
         return elements
 
     @staticmethod
