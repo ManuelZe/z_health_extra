@@ -642,9 +642,7 @@ class Invoice(metaclass=PoolMeta):
             for line in record.lines :
                 quantity += float(line.quantity)
                 unit_price += float(line.montant_produit())
-                amount += quantity*unit_price
-        
-        elements.extend([unit_price, amount, quantity])
+                amount += float(line.montant_produit())*line.quantity
         
         return elements
 
