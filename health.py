@@ -634,15 +634,17 @@ class Invoice(metaclass=PoolMeta):
     def total_facture_par_produits(self, records):
         # Exemplaire de sortie de liste 
         # elements = ["total_amount" , "montant_assurance", "montant_patient", "montant_patient-amount_to_pay", "amount_to_pay"]
-
+        quantity = float(0)
+        unit_price = float(0)
+        amount = float(0)
         elements = []
         for record in records :
-            unit_price = sum(line.montant_produit() for line in record.lines)
-            elements.append(unit_price)
-            amount = sum(float(line.montant_produit())*line.quantity for line in record.lines)
-            elements.append(amount)
-            quantity = sum(line.quantity for line in record.lines)
-            elements.append(quantity)
+            for line in record.lines :
+                quantity += float(line.quantity)
+                unit_price += float(line.montant_produit())
+                amount += quantity*unit_price
+        
+        elements.extend([unit_price, amount, quantity])
         
         return elements
 
