@@ -255,6 +255,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                         unit_price = Decimal('0.1')
                                     else :
                                         unit_price = amount/line.qty
+                                        unit_price = unit_price.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)
                                     plafond = Decimal(0)
 
                     elif service.z_remise2 :
@@ -264,6 +265,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             amount *= decimal.Decimal(1 - remise / 100)
 
                             unit_price = amount/line.qty
+                            unit_price = unit_price.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)
 
                     invoice_lines.append(('create', [{
                             'origin': str(line),
