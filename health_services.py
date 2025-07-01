@@ -50,4 +50,6 @@ class HealthService(metaclass=PoolMeta):
             # except InvalidOperation :
             #     return Decimal(10)
             if Decimal(self.z_remise2) <= Decimal(10):
-                    return Decimal(self.z_remise2)
+                return Decimal(self.z_remise2)
+            else :
+                return Decimal(10)
