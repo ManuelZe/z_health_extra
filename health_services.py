@@ -45,7 +45,7 @@ class HealthService(metaclass=PoolMeta):
     def on_change_with_z_remise2(self):
         if self.z_remise2 :
             try :
-                if Decimal(self.z_remise2) < Decimal(10):
+                if Decimal(self.z_remise2) <= Decimal(10):
                     return Decimal(self.z_remise2)
             except InvalidOperation :
                 return Decimal(10)
