@@ -677,7 +677,7 @@ class Invoice(metaclass=PoolMeta):
         total_part_patient = float(0)
         elt = []
         for record in records:
-            for line in records.lines:
+            for line in record.lines:
                 total_part_assurance += self.part_patient_assurance(record=record, line=line)[0]
                 total_part_patient += self.part_patient_assurance(record=record, line=line)[1]
 
