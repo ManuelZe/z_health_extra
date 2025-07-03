@@ -610,7 +610,81 @@ class Invoice(metaclass=PoolMeta):
         ])
         
         return elements
+
+    def get_category_one_before_root(category):
+        """Remonte jusqu'à la catégorie dont le parent est racine (parent.parent is None)."""
+        if not category or not category.parent:
+            return category  # Déjà racine ou sans parent
+        while category.parent and category.parent.parent:
+            category = category.parent
+        return category
+
+
+    def get_sales_by_root_category(self, records, start_date=None, end_date=None):
+
+        pool = Pool()
+        Invoices = pool.get('account.invoice')
+
+        listes_factures = []
+        for Facture in records:
+            if Facture.number not in listes_factures:
+                listes_factures.append(Facture.number)
+        
+        for Facture in records:
+            if Facture.reference in listes_factures:
+                listes_factures.remove(Facture.reference)
+                listes_factures.remove(Facture.number)
+
+        category_totals = defaultdict(Decimal)
+
+        for number in listes_factures:
+            facture = Invoices.search([('number', '=', number)], limit=1)
+            for line in facture.lines:
+                product = line.product
+                if not product:
+                    continue  # Ignore les lignes sans produit
+                category = product.category
+                if not category:
+                    continue  # Ignore les produits sans catégorie
+                root_category = self.get_category_one_before_root(category)
+                amount = line.amount or Decimal(0)
+                category_totals[root_category.name] += amount
+
+        # Convertit en liste de dictionnaires
+        result = [{k: v} for k, v in category_totals.items()]
+        return result 
     
+
+    def part_patient_assurance(self, records=None, record=None, line=None) :
+
+        montant_total = float(record.untaxed_amount) + float(record.montant_assurance)
+        pourcentage_patient = float(record.untaxed_amount) / montant_total
+        pourcentage_assurance = float(record.montant_assurance) / montant_total
+
+        montant_produit_patient = float(0)
+        montant_produit_assurance = float(0)
+
+        elt = []
+        montant_produit_patient = float(line.montant_produit()) * pourcentage_patient
+        montant_produit_assurance = float(line.montant_produit()) * pourcentage_assurance
+        elt.extend([montant_produit_assurance, montant_produit_patient])
+        
+        return elt
+    
+    def total_part_patient_assurance(self, records=None):
+
+        total_part_assurance = float(0)
+        total_part_patient = float(0)
+        elt = []
+        for record in records:
+            for line in records.lines:
+                total_part_assurance += self.part_patient_assurance(record=record, line=line)[0]
+                total_part_patient += self.part_patient_assurance(record=record, line=line)[1]
+
+        elt.extend([total_part_assurance, total_part_patient])
+
+        return elt 
+
     def facture_reelles(self, records):
         list_of_save_elements = []
         listes_factures = []
@@ -687,8 +761,7 @@ class Invoice(metaclass=PoolMeta):
 
         sorted_items = sorted(liste_docteurs.items(), key=lambda x: x[0])
 
-        return dict(sorted_items)
-        
+        return dict(sorted_items)     
 
     def commission_docteur(self, records):
         # Le modèle de sortie de la liste des docteurs : 
