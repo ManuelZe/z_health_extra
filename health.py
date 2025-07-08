@@ -665,14 +665,14 @@ class Invoice(metaclass=PoolMeta):
         if float(record.untaxed_amount) <= float(2):
             montant_total = float(record.montant_assurance)
             montant_produit_patient = float(0)
-            montant_produit_assurance = float(line.montant_produit())
+            montant_produit_assurance = float(line.montant_produit())*float(line.quantity)
         else :
             montant_total = float(record.untaxed_amount) + float(record.montant_assurance)
             pourcentage_patient = float(record.untaxed_amount) / montant_total
             pourcentage_assurance = float(record.montant_assurance) / montant_total
 
-            montant_produit_patient = float(line.montant_produit()) * pourcentage_patient
-            montant_produit_assurance = float(line.montant_produit()) * pourcentage_assurance
+            montant_produit_patient = (float(line.montant_produit()) * pourcentage_patient)*float(line.quantity)
+            montant_produit_assurance = (float(line.montant_produit()) * pourcentage_assurance)*float(line.quantity)
             
         elt.extend([montant_produit_assurance, montant_produit_patient])
         
