@@ -528,7 +528,7 @@ class Invoice(metaclass=PoolMeta):
         liste_prix = []
         total_pref = float(0.9)*float(total)
         liste_prix.append(total_pref)
-        montant_a_payer = total_pref - cls.affichage_assurance(record.montant_patient)
+        montant_a_payer = total_pref - float(cls.affichage_assurance(record.montant_patient))
         liste_prix.append(montant_a_payer)
         return liste_prix
 
