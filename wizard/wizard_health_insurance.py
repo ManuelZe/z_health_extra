@@ -93,7 +93,11 @@ ophtalmologie = [
                 "POPH4",
                 "OPHTALMOLOGIE"]
 
-kinesitherapie = ["KINESITHERAPIE"]
+kinesitherapie = ["KINESITHERAPIE",
+                  "K1",
+                  "K2",
+                  "K3",
+                  "K4"]
 
 
 
