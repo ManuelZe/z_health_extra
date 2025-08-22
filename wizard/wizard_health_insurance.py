@@ -343,6 +343,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                     if agent_realisation :
                         realisateur = agent_realisation[0].id
+                    else :
+                        realisateur = None
 
                     
                     invoice_lines.append(('create', [{
