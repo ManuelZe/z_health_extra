@@ -329,6 +329,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             unit_price = amount/line.qty
                             unit_price = unit_price.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)
                     
+                    agent_realisation = None
                     if line.product.code in products_code or line.product.account_category.name in products_code:
                         agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXKNS238KWQ")])
                     elif line.product.code in infiltration or line.product.account_category.name in infiltration :
@@ -342,8 +343,6 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                     if agent_realisation :
                         realisateur = agent_realisation[0].id
-                    else :
-                        realisateur = None
 
                     
                     invoice_lines.append(('create', [{
