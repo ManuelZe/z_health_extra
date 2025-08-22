@@ -40,6 +40,63 @@ from ..exceptions import (
 
 __all__ = ['CreateServiceInvoice']
 
+products_code = ["PEF4",
+                "PEF10",
+                "PEF7",
+                "PEF9",
+                "PEF8",
+                "PEF18",
+                "PEF12",
+                "PEF5",
+                "PEF2",
+                "PEF11",
+                "PEF26",
+                "PEF13",
+                "PAM18",
+                "PEF16",
+                "PEF23",
+                "PCO15",
+                "PSY01",
+                "PSY02",
+                "PSY03",
+                "PSY04",
+                "PSY05",
+                "PLAC22",
+                "PLAC23",
+                "PLAC21",
+                "ACTES MEDICAUX TECHNIQUES"
+                ]
+
+infiltration = ["PAM34",
+                "PAM36",
+                "PAM61",
+                "PAM62",
+                "PAM60",
+                "PAM64",
+                "PAM65",
+                "PAM70",
+                "PAM71",
+                "PAM72",
+                "PAM47",
+                "PIE51"]
+
+anatomo = ["PLAC1",
+                "PLAC9",
+                "PLAC10",
+                "PLAC14",
+                "PLAC16",
+                "PLAC17",
+                "ANATOMO-CYTOPATHOLOGIE"]
+
+ophtalmologie = [
+                "PCO24",
+                "POPH4",
+                "OPHTALMOLOGIE"]
+
+kinesitherapie = ["KINESITHERAPIE"]
+
+
+
 class CreateServiceInvoice(metaclass=PoolMeta):
     __name__ = 'gnuhealth.service.invoice.create'
 
@@ -54,6 +111,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
         Party = pool.get('party.party')
         Journal = pool.get('account.journal')
         AcctConfig = pool.get('account.configuration')
+        Agent_Commission = pool.get('commission.agent')
         acct_config = AcctConfig(1)
 
         currency_id = Transaction().context.get('currency')
@@ -266,7 +324,24 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                             unit_price = amount/line.qty
                             unit_price = unit_price.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)
+                    
+                    if line.product.code in products_code or line.product.account_category.name in products_code:
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXKNS238KWQ")])
+                    elif line.product.code in infiltration or line.product.account_category.name in infiltration :
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXWWH987DMG")])
+                    elif line.product.code in anatomo or line.product.account_category.name in anatomo :
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXVYP466SBQ")])
+                    elif line.product.code in ophtalmologie or line.product.account_category.name in ophtalmologie :
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXXYP530SIH")])
+                    elif line.product.code in kinesitherapie or line.product.account_category.name in kinesitherapie :
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXSRS840ZWU")])
 
+                    if agent_realisation :
+                        realisateur = agent_realisation[0].id
+                    else :
+                        realisateur = None
+
+                    
                     invoice_lines.append(('create', [{
                             'origin': str(line),
                             'product': line.product.id,
@@ -275,6 +350,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             'account': account,
                             'unit': line.product.default_uom.id,
                             'unit_price': unit_price,
+                            'agent2' : realisateur,
                             'sequence': seq,
                             'taxes': [('add', taxes)],
                         }]))
