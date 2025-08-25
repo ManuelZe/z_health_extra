@@ -331,7 +331,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                     
                     agent_realisation = None
                     if line.product.code in products_code or line.product.account_category.name in products_code:
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXKNS238KWQ")])
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXKNS238KWQ"), ('plan2', '!=', None)])
                     elif line.product.code in infiltration or line.product.account_category.name in infiltration :
                         agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXWWH987DMG")])
                     elif line.product.code in anatomo or line.product.account_category.name in anatomo :
