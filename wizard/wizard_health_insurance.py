@@ -344,7 +344,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                     print(f"agent_realisation ------- {agent_realisation} ")
                     if agent_realisation :
-                        realisateur = agent_realisation[0].id
+                        realisateur = agent_realisation[0]
                     else :
                         realisateur = None
 
