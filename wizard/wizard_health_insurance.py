@@ -333,20 +333,18 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                     if line.product.code in products_code or line.product.account_category.name in products_code:
                         agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXKNS238KWQ"), ('plan2', '!=', None)])
                     elif line.product.code in infiltration or line.product.account_category.name in infiltration :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXWWH987DMG")])
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXWWH987DMG"), ('plan2', '!=', None)])
                     elif line.product.code in anatomo or line.product.account_category.name in anatomo :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXVYP466SBQ")])
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXVYP466SBQ"), ('plan2', '!=', None)])
                     elif line.product.code in ophtalmologie or line.product.account_category.name in ophtalmologie :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXXYP530SIH")])
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXXYP530SIH"), ('plan2', '!=', None)])
                     elif line.product.code in kinesitherapie or line.product.account_category.name in kinesitherapie :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXSRS840ZWU")])
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXSRS840ZWU"), ('plan2', '!=', None)])
 
                     if agent_realisation :
                         realisateur = agent_realisation[0]
                     else :
                         realisateur = None
-
-                    print(f"agent_realisation ------- {agent_realisation[0].party.name} ")
                     
                     invoice_lines.append(('create', [{
                             'origin': str(line),
