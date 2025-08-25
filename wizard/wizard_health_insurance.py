@@ -341,13 +341,12 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                     elif line.product.code in kinesitherapie or line.product.account_category.name in kinesitherapie :
                         agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXSRS840ZWU")])
 
-
-                    print(f"agent_realisation ------- {agent_realisation} ")
                     if agent_realisation :
                         realisateur = agent_realisation[0]
                     else :
                         realisateur = None
 
+                    print(f"agent_realisation ------- {agent_realisation[0].party.name} ")
                     
                     invoice_lines.append(('create', [{
                             'origin': str(line),
