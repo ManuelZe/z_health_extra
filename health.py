@@ -118,6 +118,14 @@ class Lab(metaclass=PoolMeta):
 
         return liste_paillasse
     
+    @staticmethod
+    def prescriptor_name(id):
+
+        pool = Pool()
+        Result = pool.get('gnuhealth.patient.lab.test')
+        Results = Result.search([('request', '=', id)], limit=1)
+        return Results[0].service.requestor.name.name+" "+Results[0].service.requestor.name.lastname
+    
 
 class Insurance(metaclass=PoolMeta):
     'Insurance'
