@@ -1232,6 +1232,9 @@ class InvoiceLine(metaclass=PoolMeta):
                 amount = Currency.compute(self.invoice.currency,
                     amount2, agent.currency, round=False)
             amount = self._get_commission_amount(Decimal(amount), plan)
+            if self.invoice.health_service.z_remise2:
+                amount = self._get_commission_amount(self.invoice.total_amount, plan)
+            print(f"Le Amount des Amounts -- ", amount)
             if amount:
                 amount = round_price(amount)
             if not amount:
