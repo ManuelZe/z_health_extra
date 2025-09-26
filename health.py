@@ -1191,7 +1191,26 @@ class InvoiceLine(metaclass=PoolMeta):
                 used.append((self.agent2, self.agent2.plan2))
         return used
     
+    def _credit(self):
+        '''
+        Return credit line.
+        '''
+        line = self.__class__()
+        line.origin = self
+        if self.quantity:
+            line.quantity = -self.quantity
+        else:
+            line.quantity = self.quantity
 
+        for field in [
+                'sequence', 'type', 'invoice_type', 'party', 'currency',
+                'company', 'unit_price', 'description', 'unit', 'product',
+                'account', 'taxes_deductible_rate', 'agent2']:
+            setattr(line, field, getattr(self, field))
+        line.taxes_date = self.tax_date
+        line.taxes = self.taxes
+        return line
+    
     def montant_produit(self):
         # Record corespond au recu
         # Format de la liste [prix1, prix2, prix3, prix4, prix5, total]
