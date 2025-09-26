@@ -1224,6 +1224,7 @@ class InvoiceLine(metaclass=PoolMeta):
 
         today = Date.today()
         commissions = []
+        print(f"Premier essaie realisateur crédité ---- {self.agent_plans_used}")
         for agent, plan in self.agent_plans_used:
             if not plan:
                 continue
