@@ -14,4 +14,14 @@
          <field name="clef"/>
       </page>
    </xpath>
+
+   <xpath expr="/form/notebook/page[@id='party_gnuhealth']/group[@id='person_details']/group[@id='person_demographics']" position="before">
+      <group  yfill="1" id="extra_details" string="Infos Pour Applications Docteur Patient">
+         <label name="result_online"/>
+         <field name="result_online"/>
+         <label name="home_doctor"/>
+         <field name="home_doctor"/>
+         <newline/>
+      </group>
+   </xpath>
 </data>

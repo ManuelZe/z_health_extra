@@ -1300,6 +1300,10 @@ class Party(metaclass=PoolMeta):
     numero_carte = fields.Char("Numéro de Carte")
     clef = fields.Char('Clef') 
 
+    # Identification pour Application du Docteur Patient
+    result_online = fields.Boolean("Résultats En Ligne?", help="Cocher si le patient peut voir ses résultats en ligne via lapplication.")
+    home_doctor = fields.Boolean("Médecin Maison", help="Cocher si le docteur est un docteur de la PDMD. ")
+
 
 class ImagingTestResult(metaclass=PoolMeta):
     'Imaging Test Result'
