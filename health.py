@@ -1250,7 +1250,6 @@ class InvoiceLine(metaclass=PoolMeta):
                 amount2 = float(self.montant_produit())*self.quantity
                 amount = Currency.compute(self.invoice.currency,
                     amount2, agent.currency, round=False)
-                print(f"{amount} -------- {amount2}")
             amount = self._get_commission_amount(Decimal(amount), plan)
             if self.invoice.health_service:
                 if self.invoice.health_service.z_remise2:
