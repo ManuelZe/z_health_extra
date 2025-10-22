@@ -1253,6 +1253,7 @@ class InvoiceLine(metaclass=PoolMeta):
                 print(f"{amount} -------- {amount2}")
             amount = self._get_commission_amount(Decimal(amount), plan)
             if self.invoice.health_service:
+                print(f"ttttt ---------- {amount} -------- {self.amount}")
                 if self.invoice.health_service.z_remise2:
                     print(f"rrrrrrrrrrrrrrrrrrrrrrrrrrrrr ---------- {amount} --------")
                     amount3 = amount * (1 - (Decimal(self.invoice.health_service.z_remise2) / Decimal(100)))
