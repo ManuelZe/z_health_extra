@@ -87,12 +87,7 @@ class InvoiceLine(metaclass=PoolMeta):
                 amount2 = self.montant_produit()
                 amount = Currency.compute(self.invoice.currency,
                     amount2, agent.currency, round=False)
-            amount = self._get_commission_amount(amount, plan)
-            if self.invoice.health_service.z_remise2:
-                amount3 = amount * (1 - (Decimal(self.invoice.health_service.z_remise2) / Decimal(100)))
-                amount = self._get_commission_amount(amount3, plan)
-                print(f"{amount3} ------ Le Amount apres remise -- ", amount)
-            print(f"Le Amount des Amounts -- ", amount)
+            
             if amount:
                 amount = round_price(amount)
             if not amount:
