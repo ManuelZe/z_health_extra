@@ -1255,7 +1255,7 @@ class InvoiceLine(metaclass=PoolMeta):
                 if self.invoice.health_service.z_remise2:
                     amount3 = amount * (1 - (Decimal(self.invoice.health_service.z_remise2) / Decimal(100)))
                     amount = self._get_commission_amount(amount3, plan)
-                    print(f"{amount} ----------- {amount3} ---------")
+                    print(f"{amount} ----------- {amount3} --------- {amount2}")
             if amount:
                 amount = round_price(amount)
             if not amount:
