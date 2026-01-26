@@ -70,6 +70,32 @@ products_code = ["PEF4",
                 "ACTES MEDICAUX TECHNIQUES"
                 ]
 
+psychiatrie = [
+                "ACE",
+                "BDI",
+                "BIG 5",
+                "CDI",
+                "DEP-ADO",
+                "DESSIN DE FAMILLE",
+                "ESP",
+                "FAT",
+                "FI",
+                "H & R",
+                "IPPA",
+                "ISP",
+                "LA",
+                "MBI",
+                "MMSE",
+                "PCL- 5",
+                "RCMAS",
+                "REY",
+                "SCL - 90",
+                "SEI",
+                "STAI Y-A et B",
+                "WLC"
+
+]
+
 infiltration = ["PAM34",
                 "PAM36",
                 "PAM61",
@@ -344,6 +370,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                         agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXXYP530SIH"), ('plan2', '!=', None)])
                     elif line.product.code in kinesitherapie or line.product.account_category.name in kinesitherapie :
                         agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXSRS840ZWU"), ('plan2', '!=', None)])
+                    elif line.product.code in psychiatrie or line.product.account_category.name in psychiatrie :
+                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXGHD415FDH"), ('plan2', '!=', None)])
 
                     if agent_realisation :
                         realisateur = agent_realisation[0]
