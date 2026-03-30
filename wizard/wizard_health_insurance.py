@@ -115,6 +115,7 @@ anatomo = ["PLAC1",
                 "PLAC14",
                 "PLAC16",
                 "PLAC17",
+                "PLAC23",
                 "ANATOMO-CYTOPATHOLOGIE"]
 
 ophtalmologie = [
