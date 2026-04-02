@@ -132,14 +132,14 @@ class Insurance(metaclass=PoolMeta):
     __name__ = 'gnuhealth.insurance'
     _rec_name = 'number'
 
-    employeur = fields.Many2One('party.party','Employeur', required=False, select=True,
+    employeur = fields.Many2One('party.party','Employeur', required=False,
         domain=[('is_institution', '=', True)])
     bpc = fields.Char('N BPC', required=False)
     plafond = fields.Numeric('Plafond', required=False)
 
     assureur = fields.Many2One(
         'party.party', 'Assureur(WTW)',
-        required=False, select=True,
+        required=False,
         domain=[('is_insurance_company', '=', True)])
     
     date_em = fields.Date("Date d'émmission")
@@ -276,7 +276,7 @@ class Invoice(metaclass=PoolMeta):
     
     montant_en_lettre = fields.Char('Lettre')
 
-    tarifaire = fields.Many2One('product.price_list','Tarifaire', required=False, select=True)
+    tarifaire = fields.Many2One('product.price_list','Tarifaire', required=False)
 
     @classmethod
     def credit(cls, invoices, refund=False, **values):
@@ -1176,7 +1176,7 @@ class Invoice(metaclass=PoolMeta):
 class InvoiceLine(metaclass=PoolMeta):
     __name__ = 'account.invoice.line'
     
-    agent2 = fields.Many2One('commission.agent', 'Agent de Réalisation', select=True)
+    agent2 = fields.Many2One('commission.agent', 'Agent de Réalisation')
 
     @property
     def agent_plans_used(self):
