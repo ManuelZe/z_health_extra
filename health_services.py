@@ -37,8 +37,8 @@ class HealthService(metaclass=PoolMeta):
 
     requestor = fields.Many2One(
         'gnuhealth.healthprofessional', 'Prescripteur',
-        help="Médécin prescripteur", select=True, required=True)
-    agent = fields.Many2One('commission.agent', 'Agent de Commission',select=True, required=True)
+        help="Médécin prescripteur" , required=True)
+    agent = fields.Many2One('commission.agent', 'Agent de Commission', required=True)
     z_remise2 = fields.Numeric("Remise", digits=(3, 2), help="La Remise à appliquer sur la facture", required=False)
 
     @fields.depends('z_remise2')
