@@ -889,8 +889,7 @@ class Invoice(metaclass=PoolMeta):
             unit_price = Decimal(0)
             if sale_price_list : 
                 unit_price = sale_price_list.compute(
-                             record.party,
-                             line.product, line.product.list_price,
+                             line.product,
                              line.quantity, line.product.default_uom)
 
                 liste_montants.append(float(unit_price)*line.quantity)
@@ -1226,8 +1225,7 @@ class InvoiceLine(metaclass=PoolMeta):
         unit_price = Decimal(0)
         if sale_price_list : 
             unit_price = sale_price_list.compute(
-                            self.invoice.party,
-                            self.product, self.product.list_price,
+                            self.product,
                             self.quantity, self.product.default_uom)
         
         return unit_price
