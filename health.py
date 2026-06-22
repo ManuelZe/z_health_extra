@@ -891,6 +891,8 @@ class Invoice(metaclass=PoolMeta):
                 unit_price = sale_price_list.compute(
                              line.product,
                              line.quantity, line.product.default_uom)
+                
+                print("Le prix unitaire calculé est : ", unit_price)
 
                 liste_montants.append(float(unit_price)*line.quantity)
         
