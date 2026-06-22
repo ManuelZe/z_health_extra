@@ -886,13 +886,13 @@ class Invoice(metaclass=PoolMeta):
 
         liste_montants = []
         for line in record.lines:
+            print(f"line.product {line.product} -- line.quantity {line.quantity} --- line.product.default_uom {line.product.default_uom} ")
+            print(f"sale_price_list {sale_price_list} ")
             unit_price = Decimal(0)
             if sale_price_list : 
                 unit_price = sale_price_list.compute(
                              line.product,
                              line.quantity, line.product.default_uom)
-                
-                print("Le prix unitaire calculé est : ", unit_price)
 
                 liste_montants.append(float(unit_price)*line.quantity)
         
