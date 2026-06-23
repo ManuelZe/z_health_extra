@@ -262,6 +262,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                     taxes = []
                     desc = line.desc
 
+                    print("5555555555555555555-- le prix unitaire 2 est : ", unit_price2, "le prix unitaire est : ", unit_price, "la quantité est : ", amount)
+
                     # Include taxes related to the product on the invoice line
                     for product_tax_line in line.product.customer_taxes_used:
                         taxes.append(product_tax_line.id)
