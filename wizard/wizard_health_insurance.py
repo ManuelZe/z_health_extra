@@ -256,6 +256,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                 
                 unit_price2 = unit_price
 
+                print("11111111111111111111111111-- le prix unitaire 2 est : ", unit_price2, "le prix unitaire est : ", unit_price, "la quantité est : ", line.qty)
+
                 if line.to_invoice:
                     taxes = []
                     desc = line.desc
@@ -271,6 +273,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                             line.product)
 
                         amount = unit_price * line.qty
+
+                        print("22222222222222 -- le prix unitaire  est : ", unit_price, "le amount est : ", amount, "la quantité est : ", line.qty)
 
 
                         if discount :                            
@@ -326,6 +330,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                                     montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
                                 unit_price = unit_price2
                                 amount = unit_price * line.qty
+
+                                print("3333333333-- le prix unitaire 2 est : ", unit_price2, "le prix unitaire est : ", unit_price, "la amount est : ", amount)
 
 
                         if plafond != Decimal(0) :
