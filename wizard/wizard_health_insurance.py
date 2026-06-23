@@ -164,7 +164,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             if service.invoice_to:
                 party = service.invoice_to
             else:
-                party = service.patient.name
+                party = service.patient.party
             invoice_data = {}
             invoice_data['description'] = service.desc
             invoice_data['party'] = party.id
