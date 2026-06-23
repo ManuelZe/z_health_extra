@@ -249,10 +249,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 
                 if sale_price_list:
                     with Transaction().set_context(ctx):
-                        unit_price = sale_price_list.compute(
-                            party,
-                            line.product, line.product.list_price,
-                            line.qty, line.product.default_uom)
+                        unit_price = sale_price_list.compute(line.product,
+                             line.quantity, line.product.default_uom)
                 else:
                     unit_price = line.product.list_price
                 
