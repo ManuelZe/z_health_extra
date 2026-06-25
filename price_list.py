@@ -27,6 +27,33 @@ class PriceList(DeactivableMixin, ModelSQL, ModelView):
     'Price List'
     __name__ = 'product.price_list'
 
+    def get_context_formula(self, product, quantity, uom, pattern=None):
+
+        print(f"self.price --------- {self.price}")
+        if product:
+            cost_price = product.get_multivalue('cost_price') or Decimal('0')
+            list_price = product.list_price_used
+        else:
+            cost_price = Decimal('0')
+            list_price = Null()
+        if self.price == 'list_price':
+            unit_price = list_price
+        elif self.price == 'cost_price':
+            unit_price = cost_price
+        else:
+            unit_price = Null()
+        return {
+            'names': {
+                'unit_price': unit_price if unit_price is not None else Null(),
+                'cost_price': cost_price if cost_price is not None else Null(),
+                'list_price': list_price if list_price is not None else Null(),
+                },
+            }
+
+    def get_uom(self, product):
+        return product.default_uom
+    
+
     def compute(self, product, quantity, uom, pattern=None):
         Uom = Pool().get('product.uom')
 
