@@ -139,6 +139,291 @@ class CreateServiceInvoice(metaclass=PoolMeta):
 #  @param : Insurance, service line product
 #  @return : Policy applied to that service line
 
+    # def transition_create_service_invoice(self):
+    #     pool = Pool()
+    #     HealthService = pool.get('gnuhealth.health_service')
+    #     Invoice = pool.get('account.invoice')
+    #     Party = pool.get('party.party')
+    #     Journal = pool.get('account.journal')
+    #     AcctConfig = pool.get('account.configuration')
+    #     Agent_Commission = pool.get('commission.agent')
+    #     acct_config = AcctConfig(1)
+
+    #     currency_id = Transaction().context.get('currency')
+
+    #     services = HealthService.browse(Transaction().context.get(
+    #         'active_ids'))
+    #     invoices = []
+
+    #     # Invoice Header
+    #     for service in services:
+    #         if service.state == 'invoiced':
+    #             raise ServiceInvoiced(
+    #                 gettext('health_insurance.msg_service_invoiced')
+    #                 )
+    #         if service.invoice_to:
+    #             party = service.invoice_to
+    #         else:
+    #             party = service.patient.party
+    #         invoice_data = {}
+    #         invoice_data['description'] = service.desc
+    #         invoice_data['party'] = party.id
+    #         invoice_data['type'] = 'out'
+    #         invoice_data['invoice_date'] = datetime.date.today()
+    #         invoice_data['company'] = service.company.id
+    #         invoice_data['agent'] = service.agent.id
+    #         invoice_data['tarifaire'] = service.patient.party.sale_price_list
+    #         # print("le tarifaire service ------- ", service.patient.name.sale_price_list)
+
+    #         """ Look for the AR account in the following order:
+    #             * Party
+    #             * Default AR in accounting config
+    #             * Raise an error if there is no AR account
+    #         """
+    #         if (party.account_receivable):
+    #             invoice_data['account'] = party.account_receivable.id
+    #         elif (acct_config.default_account_receivable):
+    #             invoice_data['account'] = \
+    #                 acct_config.default_account_receivable.id
+    #         else:
+    #             raise NoAccountReceivable(
+    #                 gettext('health_insurance.msg_no_account_receivable'))
+
+    #         ctx = {}
+    #         sale_price_list = None
+    #         if hasattr(party, 'sale_price_list'):
+    #             sale_price_list = party.sale_price_list
+
+    #         if sale_price_list:
+    #             ctx['price_list'] = sale_price_list.id
+    #             ctx['sale_date'] = datetime.date.today()
+    #             ctx['currency'] = currency_id
+    #             ctx['customer'] = party.id
+
+    #         print(f"le premier sale_price_list est : {sale_price_list} et le ctx est : {ctx}")
+
+    #         journals = Journal.search([
+    #             ('type', '=', 'revenue'),
+    #             ], limit=1)
+
+    #         if journals:
+    #             journal, = journals
+    #         else:
+    #             journal = None
+
+    #         invoice_data['journal'] = journal.id
+
+    #         party_address = Party.address_get(party, type='invoice')
+    #         if not party_address:
+    #             raise NoInvoiceAddress(
+    #                 gettext('health_insurance.msg_no_invoice_address')
+    #                 )
+
+    #         invoice_data['invoice_address'] = party_address.id
+    #         invoice_data['reference'] = service.name
+
+    #         """ Look for the payment term in the following order:
+    #             * Party
+    #             * Default payment term in accounting config
+    #             * Raise an error if there is no payment term
+    #         """
+    #         if (party.customer_payment_term):
+    #             invoice_data['payment_term'] = party.customer_payment_term.id
+    #         elif (acct_config.default_customer_payment_term):
+    #             invoice_data['payment_term'] = \
+    #                 acct_config.default_customer_payment_term.id
+    #         else:
+    #             raise NoPaymentTerm(
+    #                 gettext('health_insurance.msg_no_payment_term')
+    #                 )
+
+    #         # Invoice Lines
+    #         seq = 0
+    #         invoice_lines = []
+    #         plafond = Decimal(0)
+    #         if service.insurance_plan and service.insurance_plan.plafond :
+    #             plafond = service.insurance_plan.plafond
+    #         total_assurance = Decimal(0)
+    #         for line in service.service_line:
+    #             plafond2 = plafond
+    #             seq = seq + 1
+    #             account = line.product.template.account_revenue_used.id
+
+    #             if sale_price_list:
+    #                 with Transaction().set_context(ctx):
+    #                     unit_price = sale_price_list.compute(line.product,
+    #                          line.qty, line.product.default_uom)
+    #             else:
+    #                 unit_price = line.product.list_price
+                
+    #             unit_price2 = unit_price
+
+    #             print("11111111111111111111111111-- le line.product est : ", line.product, "le prix unitaire est : ", line.product.default_uom, "la quantité est : ", line.qty)
+
+    #             if line.to_invoice:
+    #                 taxes = []
+    #                 desc = line.desc
+
+    #                 print("5555555555555555555-- le sale price list est : ", sale_price_list, "le prix unitaire est : ", unit_price)
+
+    #                 # Include taxes related to the product on the invoice line
+    #                 for product_tax_line in line.product.customer_taxes_used:
+    #                     taxes.append(product_tax_line.id)
+
+    #                 # Check the Insurance policy for this service
+    #                 if service.insurance_plan:
+    #                     discount = self.discount_policy(
+    #                         service.insurance_plan,
+    #                         line.product)
+
+    #                     amount = unit_price * line.qty
+
+    #                     print("22222222222222 -- le prix unitaire  est : ", unit_price, "le amount est : ", amount, "la quantité est : ", line.qty)
+
+
+    #                     if discount :                            
+    #                         if discount['value'] == 100.0:
+    #                             if 'value' in list(discount.keys()):
+    #                                 if discount['value']:
+    #                                     if (discount['type'] == 'pct'):
+    #                                         unit_price = Decimal('0.1')
+    #                                         # Use price_decimal value from
+    #                                         # system configuration to set
+    #                                         # the number of decimals
+    #                                         unit_price = round_price(unit_price)
+
+    #                                         # Add remark on description discount
+    #                                         str_disc = str(discount['value']) + '%'
+    #                                         desc = line.desc + " (Assurance " + \
+    #                                             str(str_disc) + ")"
+                                            
+    #                                         montant_ass = (unit_price2)*line.qty
+                                                
+    #                                     else:
+    #                                         unit_price = discount['value']
+    #                                         desc = f"{line.desc} (Assurance plan)"
+    #                                         montant_ass = (unit_price2)*line.qty
+                            
+    #                                     montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+
+    #                         else :
+    #                             if 'value' in list(discount.keys()):
+    #                                 if discount['value']:
+    #                                     if (discount['type'] == 'pct'):
+    #                                         unit_price *= decimal.Decimal(
+    #                                             1 - discount['value']/100)
+    #                                         # Use price_decimal value from
+    #                                         # system configuration to set
+    #                                         # the number of decimals
+    #                                         unit_price = round_price(unit_price)
+
+    #                                         # Add remark on description discount
+    #                                         str_disc = str(discount['value']) + '%'
+    #                                         desc = line.desc + " (Assurance " + \
+    #                                             str(str_disc) + ")"
+
+    #                                         montant_ass = (unit_price2 - unit_price)*line.qty                            
+    #                                     else:
+    #                                         unit_price = discount['value']
+    #                                         desc = f"{line.desc} (Assurance plan)"
+    #                                         montant_ass = (unit_price2)*line.qty
+
+    #                     if service.insurance_plan.plafond != None and plafond == Decimal(0) :
+    #                             montant_ass = service.insurance_plan.plafond 
+    #                             if montant_ass :
+    #                                 montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    #                             unit_price = unit_price2
+    #                             amount = unit_price * line.qty
+
+    #                             print("3333333333-- le prix unitaire 2 est : ", unit_price2, "le prix unitaire est : ", unit_price, "la amount est : ", amount)
+
+
+    #                     if plafond != Decimal(0) :
+    #                         montant_ass = service.insurance_plan.plafond
+    #                         montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    #                         if discount :
+    #                             if discount['value'] :
+    #                                 str_disc = str(discount['value']) + '%'
+    #                                 desc = line.desc + " (Assurance " + \
+    #                                             str(str_disc) + ")"
+    #                         if Decimal(plafond) > Decimal(0) :
+    #                             if Decimal(amount) < Decimal(plafond) :
+    #                                 unit_price = Decimal('0.1')
+    #                                 plafond -= Decimal(amount)
+    #                             elif Decimal(amount) >= Decimal(plafond):
+    #                                 amount = amount - plafond
+    #                                 if amount == Decimal(0) :
+    #                                     unit_price = Decimal('0.1')
+    #                                 else :
+    #                                     unit_price = amount/line.qty
+    #                                     unit_price = unit_price.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)
+    #                                 plafond = Decimal(0)
+
+    #                 elif service.z_remise2 :
+    #                     remise = service.z_remise2
+    #                     amount = unit_price * line.qty
+    #                     if remise/100 != 1 :
+    #                         amount *= decimal.Decimal(1 - remise / 100)
+
+    #                         unit_price = amount/line.qty
+    #                         unit_price = unit_price.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)
+                    
+    #                 agent_realisation = None
+    #                 if line.product.code in products_code or line.product.account_category.name in products_code:
+    #                     agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXKNS238KWQ"), ('plan2', '!=', None)])
+    #                 elif line.product.code in infiltration or line.product.account_category.name in infiltration :
+    #                     agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXWWH987DMG"), ('plan2', '!=', None)])
+    #                 elif line.product.code in anatomo or line.product.account_category.name in anatomo :
+    #                     agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXVYP466SBQ"), ('plan2', '!=', None)])
+    #                 elif line.product.code in ophtalmologie or line.product.account_category.name in ophtalmologie :
+    #                     agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXXYP530SIH"), ('plan2', '!=', None)])
+    #                 elif line.product.code in kinesitherapie or line.product.account_category.name in kinesitherapie :
+    #                     agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXSRS840ZWU"), ('plan2', '!=', None)])
+    #                 elif line.product.code in psychiatrie or line.product.account_category.name in psychiatrie :
+    #                     agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXGHD415FDH"), ('plan2', '!=', None)])
+
+    #                 if agent_realisation :
+    #                     realisateur = agent_realisation[0]
+    #                 else :
+    #                     realisateur = None
+                    
+    #                 invoice_lines.append(('create', [{
+    #                         'origin': str(line),
+    #                         'product': line.product.id,
+    #                         'description': desc,
+    #                         'quantity': line.qty,
+    #                         'account': account,
+    #                         'unit': line.product.default_uom.id,
+    #                         'unit_price': unit_price,
+    #                         'agent2' : realisateur,
+    #                         'sequence': seq,
+    #                         'taxes': [('add', taxes)],
+    #                     }]))
+    #             invoice_data['lines'] = invoice_lines
+
+    #             if service.insurance_plan and service.insurance_plan.plafond :
+    #                 total_assurance = service.insurance_plan.plafond
+    #                 if plafond == Decimal(0):
+    #                     total_assurance = service.insurance_plan.plafond
+    #                 elif plafond != 0:
+    #                     total_assurance = service.insurance_plan.plafond - plafond
+    #             elif service.insurance_plan and not service.insurance_plan.plafond:
+    #                 total_assurance += montant_ass
+
+    #         total_assurance = total_assurance.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    #         invoice_data['montant_assurance'] = total_assurance
+
+    #         invoices.append(invoice_data)
+
+    #     Invoice.update_taxes(Invoice.create(invoices))
+
+    #     # Change to invoiced the status on the service document.
+    #     HealthService.write(services, {'state': 'invoiced'})
+
+    #     return 'end'
+
+
+
     def transition_create_service_invoice(self):
         pool = Pool()
         HealthService = pool.get('gnuhealth.health_service')
@@ -146,7 +431,6 @@ class CreateServiceInvoice(metaclass=PoolMeta):
         Party = pool.get('party.party')
         Journal = pool.get('account.journal')
         AcctConfig = pool.get('account.configuration')
-        Agent_Commission = pool.get('commission.agent')
         acct_config = AcctConfig(1)
 
         currency_id = Transaction().context.get('currency')
@@ -158,9 +442,9 @@ class CreateServiceInvoice(metaclass=PoolMeta):
         # Invoice Header
         for service in services:
             if service.state == 'invoiced':
-                raise ServiceInvoiced(
-                    gettext('health_insurance.msg_service_invoiced')
-                    )
+                raise ServiceAlreadyInvoiced(
+                    gettext('health_services.msg_service_already_invoiced'))
+
             if service.invoice_to:
                 party = service.invoice_to
             else:
@@ -171,9 +455,6 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             invoice_data['type'] = 'out'
             invoice_data['invoice_date'] = datetime.date.today()
             invoice_data['company'] = service.company.id
-            invoice_data['agent'] = service.agent.id
-            invoice_data['tarifaire'] = service.patient.party.sale_price_list
-            # print("le tarifaire service ------- ", service.patient.name.sale_price_list)
 
             """ Look for the AR account in the following order:
                 * Party
@@ -187,7 +468,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                     acct_config.default_account_receivable.id
             else:
                 raise NoAccountReceivable(
-                    gettext('health_insurance.msg_no_account_receivable'))
+                    gettext('health_services.msg_no_account_receivable'))
 
             ctx = {}
             sale_price_list = None
@@ -200,11 +481,9 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                 ctx['currency'] = currency_id
                 ctx['customer'] = party.id
 
-            print(f"le premier sale_price_list est : {sale_price_list} et le ctx est : {ctx}")
-
             journals = Journal.search([
                 ('type', '=', 'revenue'),
-                ], limit=1)
+            ], limit=1)
 
             if journals:
                 journal, = journals
@@ -216,9 +495,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             party_address = Party.address_get(party, type='invoice')
             if not party_address:
                 raise NoInvoiceAddress(
-                    gettext('health_insurance.msg_no_invoice_address')
-                    )
-
+                    gettext('health_services.msg_no_invoice_address'))
             invoice_data['invoice_address'] = party_address.id
             invoice_data['reference'] = service.name
 
@@ -234,184 +511,45 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                     acct_config.default_customer_payment_term.id
             else:
                 raise NoPaymentTerm(
-                    gettext('health_insurance.msg_no_payment_term')
-                    )
+                    gettext('health_services.msg_no_payment_term'))
 
             # Invoice Lines
             seq = 0
             invoice_lines = []
-            plafond = Decimal(0)
-            if service.insurance_plan and service.insurance_plan.plafond :
-                plafond = service.insurance_plan.plafond
-            total_assurance = Decimal(0)
             for line in service.service_line:
-                plafond2 = plafond
                 seq = seq + 1
                 account = line.product.template.account_revenue_used.id
 
                 if sale_price_list:
                     with Transaction().set_context(ctx):
-                        unit_price = sale_price_list.compute(line.product,
-                             line.qty, line.product.default_uom)
+                        unit_price = sale_price_list.compute(
+                            party,
+                            line.product, line.product.list_price,
+                            line.qty, line.product.default_uom)
                 else:
                     unit_price = line.product.list_price
                 
-                unit_price2 = unit_price
 
-                print("11111111111111111111111111-- le line.product est : ", line.product, "le prix unitaire est : ", line.product.default_uom, "la quantité est : ", line.qty)
+                print("11111111111111111111111111-- le line.product est : ", line.product, "le prix unitaire est : ", unit_price, "la quantité est : ", line.qty)
 
                 if line.to_invoice:
                     taxes = []
-                    desc = line.desc
-
-                    print("5555555555555555555-- le sale price list est : ", sale_price_list, "le prix unitaire est : ", unit_price)
-
                     # Include taxes related to the product on the invoice line
                     for product_tax_line in line.product.customer_taxes_used:
                         taxes.append(product_tax_line.id)
 
-                    # Check the Insurance policy for this service
-                    if service.insurance_plan:
-                        discount = self.discount_policy(
-                            service.insurance_plan,
-                            line.product)
-
-                        amount = unit_price * line.qty
-
-                        print("22222222222222 -- le prix unitaire  est : ", unit_price, "le amount est : ", amount, "la quantité est : ", line.qty)
-
-
-                        if discount :                            
-                            if discount['value'] == 100.0:
-                                if 'value' in list(discount.keys()):
-                                    if discount['value']:
-                                        if (discount['type'] == 'pct'):
-                                            unit_price = Decimal('0.1')
-                                            # Use price_decimal value from
-                                            # system configuration to set
-                                            # the number of decimals
-                                            unit_price = round_price(unit_price)
-
-                                            # Add remark on description discount
-                                            str_disc = str(discount['value']) + '%'
-                                            desc = line.desc + " (Assurance " + \
-                                                str(str_disc) + ")"
-                                            
-                                            montant_ass = (unit_price2)*line.qty
-                                                
-                                        else:
-                                            unit_price = discount['value']
-                                            desc = f"{line.desc} (Assurance plan)"
-                                            montant_ass = (unit_price2)*line.qty
-                            
-                                        montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-
-                            else :
-                                if 'value' in list(discount.keys()):
-                                    if discount['value']:
-                                        if (discount['type'] == 'pct'):
-                                            unit_price *= decimal.Decimal(
-                                                1 - discount['value']/100)
-                                            # Use price_decimal value from
-                                            # system configuration to set
-                                            # the number of decimals
-                                            unit_price = round_price(unit_price)
-
-                                            # Add remark on description discount
-                                            str_disc = str(discount['value']) + '%'
-                                            desc = line.desc + " (Assurance " + \
-                                                str(str_disc) + ")"
-
-                                            montant_ass = (unit_price2 - unit_price)*line.qty                            
-                                        else:
-                                            unit_price = discount['value']
-                                            desc = f"{line.desc} (Assurance plan)"
-                                            montant_ass = (unit_price2)*line.qty
-
-                        if service.insurance_plan.plafond != None and plafond == Decimal(0) :
-                                montant_ass = service.insurance_plan.plafond 
-                                if montant_ass :
-                                    montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-                                unit_price = unit_price2
-                                amount = unit_price * line.qty
-
-                                print("3333333333-- le prix unitaire 2 est : ", unit_price2, "le prix unitaire est : ", unit_price, "la amount est : ", amount)
-
-
-                        if plafond != Decimal(0) :
-                            montant_ass = service.insurance_plan.plafond
-                            montant_ass = montant_ass.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-                            if discount :
-                                if discount['value'] :
-                                    str_disc = str(discount['value']) + '%'
-                                    desc = line.desc + " (Assurance " + \
-                                                str(str_disc) + ")"
-                            if Decimal(plafond) > Decimal(0) :
-                                if Decimal(amount) < Decimal(plafond) :
-                                    unit_price = Decimal('0.1')
-                                    plafond -= Decimal(amount)
-                                elif Decimal(amount) >= Decimal(plafond):
-                                    amount = amount - plafond
-                                    if amount == Decimal(0) :
-                                        unit_price = Decimal('0.1')
-                                    else :
-                                        unit_price = amount/line.qty
-                                        unit_price = unit_price.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)
-                                    plafond = Decimal(0)
-
-                    elif service.z_remise2 :
-                        remise = service.z_remise2
-                        amount = unit_price * line.qty
-                        if remise/100 != 1 :
-                            amount *= decimal.Decimal(1 - remise / 100)
-
-                            unit_price = amount/line.qty
-                            unit_price = unit_price.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)
-                    
-                    agent_realisation = None
-                    if line.product.code in products_code or line.product.account_category.name in products_code:
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXKNS238KWQ"), ('plan2', '!=', None)])
-                    elif line.product.code in infiltration or line.product.account_category.name in infiltration :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXWWH987DMG"), ('plan2', '!=', None)])
-                    elif line.product.code in anatomo or line.product.account_category.name in anatomo :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXVYP466SBQ"), ('plan2', '!=', None)])
-                    elif line.product.code in ophtalmologie or line.product.account_category.name in ophtalmologie :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXXYP530SIH"), ('plan2', '!=', None)])
-                    elif line.product.code in kinesitherapie or line.product.account_category.name in kinesitherapie :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXSRS840ZWU"), ('plan2', '!=', None)])
-                    elif line.product.code in psychiatrie or line.product.account_category.name in psychiatrie :
-                        agent_realisation = Agent_Commission.search([('party.federation_account', '=', "XXXGHD415FDH"), ('plan2', '!=', None)])
-
-                    if agent_realisation :
-                        realisateur = agent_realisation[0]
-                    else :
-                        realisateur = None
-                    
                     invoice_lines.append(('create', [{
-                            'origin': str(line),
-                            'product': line.product.id,
-                            'description': desc,
-                            'quantity': line.qty,
-                            'account': account,
-                            'unit': line.product.default_uom.id,
-                            'unit_price': unit_price,
-                            'agent2' : realisateur,
-                            'sequence': seq,
-                            'taxes': [('add', taxes)],
-                        }]))
+                        'origin': str(line),
+                        'product': line.product.id,
+                        'description': line.desc,
+                        'quantity': line.qty,
+                        'account': account,
+                        'unit': line.product.default_uom.id,
+                        'unit_price': unit_price,
+                        'sequence': seq,
+                        'taxes': [('add', taxes)],
+                    }]))
                 invoice_data['lines'] = invoice_lines
-
-                if service.insurance_plan and service.insurance_plan.plafond :
-                    total_assurance = service.insurance_plan.plafond
-                    if plafond == Decimal(0):
-                        total_assurance = service.insurance_plan.plafond
-                    elif plafond != 0:
-                        total_assurance = service.insurance_plan.plafond - plafond
-                elif service.insurance_plan and not service.insurance_plan.plafond:
-                    total_assurance += montant_ass
-
-            total_assurance = total_assurance.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-            invoice_data['montant_assurance'] = total_assurance
 
             invoices.append(invoice_data)
 
