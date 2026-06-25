@@ -5,7 +5,6 @@ from trytond.pool import Pool
 from . import health_services
 from . import health
 from .wizard import wizard_health_insurance
-from . import price_list
 
 __all__ = ['register']
 
