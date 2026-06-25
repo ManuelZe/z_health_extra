@@ -10,10 +10,6 @@ from trytond.model import (
     DeactivableMixin, MatchMixin, ModelSQL, ModelView, fields,
     sequence_ordered)
 from trytond.pool import Pool
-from trytond.tools import decistmt
-from trytond.transaction import Transaction
-
-from .exceptions import FormulaError
 
 
 @total_ordering
