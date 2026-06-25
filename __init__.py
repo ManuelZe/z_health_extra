@@ -12,7 +12,6 @@ __all__ = ['register']
 
 def register():
     Pool.register(
-        price_list.PriceList,
         health_services.HealthService,
         health.Insurance,
         health.Invoice,
