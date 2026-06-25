@@ -200,6 +200,8 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                 ctx['currency'] = currency_id
                 ctx['customer'] = party.id
 
+            print(f"le premier sale_price_list est : {sale_price_list} et le ctx est : {ctx}")
+
             journals = Journal.search([
                 ('type', '=', 'revenue'),
                 ], limit=1)
@@ -256,13 +258,13 @@ class CreateServiceInvoice(metaclass=PoolMeta):
                 
                 unit_price2 = unit_price
 
-                print("11111111111111111111111111-- le prix unitaire 2 est : ", unit_price2, "le prix unitaire est : ", unit_price, "la quantité est : ", line.qty)
+                print("11111111111111111111111111-- le line.product est : ", line.product, "le prix unitaire est : ", line.product.default_uom, "la quantité est : ", line.qty)
 
                 if line.to_invoice:
                     taxes = []
                     desc = line.desc
 
-                    print("5555555555555555555-- le prix unitaire 2 est : ", unit_price2, "le prix unitaire est : ", unit_price, "la quantité est : ", amount)
+                    print("5555555555555555555-- le sale price list est : ", sale_price_list, "le prix unitaire est : ", unit_price)
 
                     # Include taxes related to the product on the invoice line
                     for product_tax_line in line.product.customer_taxes_used:
