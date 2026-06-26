@@ -892,7 +892,7 @@ class Invoice(metaclass=PoolMeta):
             if sale_price_list : 
                 unit_price = sale_price_list.compute(
                              line.product,
-                             line.qty, line.product.default_uom)
+                             line.quantity, line.product.default_uom)
 
                 liste_montants.append(float(unit_price)*line.quantity)
         
