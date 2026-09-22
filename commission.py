@@ -61,12 +61,13 @@ class InvoiceLine(metaclass=PoolMeta):
             sale_price_list = self.invoice.party.sale_price_list
 
         unit_price = Decimal(0)
-        if sale_price_list : 
+        if sale_price_list :
             unit_price = sale_price_list.compute(
-                            self.invoice.party,
-                            self.product, self.product.list_price,
-                            self.quantity, self.product.default_uom)
-            
+                            self.product, self.quantity,
+                            self.product.default_uom)
+            if unit_price is None:
+                unit_price = self.product.list_price
+
         return unit_price
     
     def get_commissions(self):
