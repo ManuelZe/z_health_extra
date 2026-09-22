@@ -164,7 +164,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             if service.invoice_to:
                 party = service.invoice_to
             else:
-                party = service.patient.name
+                party = service.patient.party
             invoice_data = {}
             invoice_data['description'] = service.desc
             invoice_data['party'] = party.id
@@ -172,7 +172,7 @@ class CreateServiceInvoice(metaclass=PoolMeta):
             invoice_data['invoice_date'] = datetime.date.today()
             invoice_data['company'] = service.company.id
             invoice_data['agent'] = service.agent.id
-            invoice_data['tarifaire'] = service.patient.name.sale_price_list
+            invoice_data['tarifaire'] = service.patient.party.sale_price_list
             # print("le tarifaire service ------- ", service.patient.name.sale_price_list)
 
             """ Look for the AR account in the following order:
