@@ -1228,7 +1228,7 @@ class InvoiceLine(metaclass=PoolMeta):
         if sale_price_list : 
             unit_price = sale_price_list.compute(
                             self.product,
-                            self.qty, self.product.default_uom)
+                            self.quantity, self.product.default_uom)
         
         return unit_price
     
