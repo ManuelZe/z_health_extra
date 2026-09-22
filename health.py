@@ -195,7 +195,8 @@ class PayInvoice(metaclass=PoolMeta):
                 self.start.amount, invoice.company.currency)
             amount_invoice = Currency.compute(
                 self.start.currency, self.start.amount, invoice.currency)
-        _, remainder = self.get_reconcile_lines_for_amount(invoice, amount)
+        _, remainder = self.get_reconcile_lines_for_amount(
+            invoice, amount, invoice.company.currency)
         if (remainder == Decimal('0.0')
                 and amount_invoice <= invoice.amount_to_pay):
             return 'pay'
